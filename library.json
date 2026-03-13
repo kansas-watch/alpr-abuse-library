@@ -20,20 +20,6 @@
   ],
   "entries": [
     {
-      "id": "EXAMPLE-001",
-      "url": "https://example.com/replace-with-real-article",
-      "title": "Example Entry — Replace With Real Approved Submission",
-      "publication": "Example Publication",
-      "submission_type": "news_report",
-      "date_published": "2024-01-01",
-      "date_added": "2024-01-01",
-      "jurisdiction_city": "",
-      "jurisdiction_state": "",
-      "agency": "",
-      "categories": ["dragnet_surveillance"],
-      "summary": "Brief description of the incident or concern documented in the article.",
-      "submitted_by": "Kansas Watch",
-      "notes": "Seed entry — replace with first real submission"
     }
   ]
 }
