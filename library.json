@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
+    "maintained_by": "Kansas Watch (kansas.watch)",
+    "last_updated": "2025-01-01",
+    "schema_version": "1.1",
+    "submission_form": "https://forms.gle/REPLACE_WITH_YOUR_FORM_LINK"
+  },
+  "abuse_categories": [
+    "false_arrest",
+    "stalking_targeting",
+    "data_breach",
+    "fusion_center_sharing",
+    "dragnet_surveillance",
+    "domestic_abuse_enablement",
+    "immigration_enforcement",
+    "protest_tracking",
+    "unauthorized_access",
+    "other"
+  ],
+  "entries": [
+    {
+      "id": "EXAMPLE-001",
+      "url": "https://example.com/replace-with-real-article",
+      "title": "Example Entry — Replace With Real Approved Submission",
+      "publication": "Example Publication",
+      "submission_type": "news_report",
+      "date_published": "2024-01-01",
+      "date_added": "2024-01-01",
+      "jurisdiction_city": "",
+      "jurisdiction_state": "",
+      "agency": "",
+      "categories": ["dragnet_surveillance"],
+      "summary": "Brief description of the incident or concern documented in the article.",
+      "submitted_by": "Kansas Watch",
+      "notes": "Seed entry — replace with first real submission"
+    }
+  ]
+}
