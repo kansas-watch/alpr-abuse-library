@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
+    "maintained_by": "Kansas Watch (kansas.watch)",
+    "last_updated": "2026-03-13",
+    "schema_version": "1.1",
+    "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
+  },
+  "abuse_categories": [
+    "false_arrest",
+    "stalking_targeting",
+    "data_breach",
+    "fusion_center_sharing",
+    "dragnet_surveillance",
+    "domestic_abuse_enablement",
+    "immigration_enforcement",
+    "protest_tracking",
+    "unauthorized_access",
+    "other"
+  ],
+  "entries": [
+    {
+      "id": "001",
+      "date_published": "2022-10-30",
+      "publication": "KWCH 12 News",
+      "submission_type": "case_study",
+      "title": "Kechi police lieutenant arrested for using police technology to stalk wife",
+      "url": "https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/",
+      "jurisdiction": "Kechi, KS",
+      "agency": "Kechi Police Department",
+      "abuse_categories": ["stalking_targeting"],
+      "description": "Kechi Police Lieutenant Victor Heiar was arrested by the Wichita Police Department after it was discovered he utilized his position within the police department to unlawfully access WPD's Flock license plate reader technology to monitor where his estranged wife was located.",
+      "status": "approved"
+    },
+    {
+      "id": "002",
+      "date_published": "2024-08-17",
+      "publication": "The Wichita Eagle",
+      "submission_type": "case_study",
+      "title": "Kansas police chief used Flock license plate cameras 164 times to track ex-girlfriend",
+      "url": "https://www.yahoo.com/news/kansas-police-chief-used-flock-093300946.html",
+      "jurisdiction": "Sedgwick, KS",
+      "agency": "Sedgwick Police Department",
+      "abuse_categories": ["stalking_targeting"],
+      "description": "Sedgwick, Kansas police chief used Flock Safety license plate readers to track his ex-girlfriend and her new boyfriend's vehicles over 200 times and resigned after admitting to misusing the technology.",
+      "status": "approved"
+    },
+    {
+      "id": "003",
+      "date_published": "2025-10-03",
+      "publication": "WTOL 11",
+      "submission_type": "case_study",
+      "title": "City of Toledo reaches $35K settlement with man who said he was injured by police K-9 during traffic stop",
+      "url": "https://www.wtol.com/article/news/local/city-of-toledo-to-pay-brandon-upchurch-35000-dollar-settlement-in-k9-attack-traffic-stop-local-news/512-e6ad4d91-75de-4bc7-a088-5aebbdd0907e",
+      "jurisdiction": "Toledo, OH",
+      "agency": "Toledo Police Department",
+      "abuse_categories": ["false_arrest", "dragnet_surveillance"],
+      "description": "Flock camera misread a \"7\" on Brandon Upchurch's license plate as a \"2,\" generating a stolen vehicle alert. Officer Adrian Wilson initiated a felony stop, drew weapons, and released a police dog on Upchurch before confirming plate ownership. Upchurch was jailed and charged; charges were dropped in August 2024 and the city of Toledo settled for $35,000. The officer received only a verbal reprimand.",
+      "status": "approved"
+    },
+    {
+      "id": "004",
+      "date_published": "2025-10-28",
+      "publication": "Colorado Sun",
+      "submission_type": "case_study",
+      "title": "After police used Flock cameras to accuse a Denver woman of theft, she had to prove her own innocence",
+      "url": "https://coloradosun.com/2025/10/28/flock-camera-police-colorado-columbine-valley/",
+      "jurisdiction": "Columbine Valley, CO",
+      "agency": "Columbine Valley Police Department",
+      "abuse_categories": ["false_arrest", "dragnet_surveillance"],
+      "description": "Columbine Valley Sgt. Jamie Milliman used Flock camera data to issue a summons to Denver financial advisor Chrisanna Elser for a package theft she did not commit. The sergeant refused to show Elser the alleged evidence and told her she had driven through the town 20 times in the past month. Elser spent days compiling GPS records, dashcam footage, and tailor receipts to prove her innocence. Charges were voided more than two weeks later.",
+      "status": "approved"
+    },
+    {
+      "id": "005",
+      "date_published": "2025-10-30",
+      "publication": "WSB-TV",
+      "submission_type": "case_study",
+      "title": "Sandy Springs police officer terminated after allegedly using city's Flock cameras for personal gain",
+      "url": "https://www.wsbtv.com/news/local/fulton-county/sandy-springs-police-officer-terminated-after-allegedly-using-citys-flock-cameras-personal-gain/FXWATJXJDRCFJKEHUOAHGLIE2U/",
+      "jurisdiction": "Sandy Springs, GA",
+      "agency": "Sandy Springs Police Department",
+      "abuse_categories": ["unauthorized_access", "data_breach"],
+      "description": "Reserve Sgt. Francis Esposito used his city Flock login to run license plates of multiple individuals and allegedly transferred the data to Signal 8, a private company he also worked for. A whistleblower former Signal 8 employee reported the data was used for beta testing and product validation. Esposito resigned during the investigation; Sandy Springs officially lists him as terminated and referred the case to the Georgia Peace Officer Standards & Training Council.",
+      "status": "approved"
+    },
+    {
+      "id": "006",
+      "date_published": "2026-02-23",
+      "publication": "International Business Times",
+      "submission_type": "news_report",
+      "title": "ICE Can Reportedly Access Flock Surveillance Cameras — Now Americans Are Destroying Them",
+      "url": "https://www.ibtimes.co.uk/flock-surveillance-cameras-backlash-1780945",
+      "jurisdiction": "National",
+      "agency": "ICE",
+      "abuse_categories": ["immigration_enforcement", "dragnet_surveillance"],
+      "description": "With Flock's cameras feeding data to ICE, a grassroots revolt over who gets to watch whom is erupting on roadsides and in council chambers across the US. Covers camera destruction incidents in Oregon, Virginia, Illinois, and Connecticut, as well as cities that have terminated Flock contracts following community opposition.",
+      "status": "approved"
+    },
+    {
+      "id": "007",
+      "date_published": "2026-03-09",
+      "publication": "Business Insider",
+      "submission_type": "investigative_article",
+      "title": "AI cameras are everywhere — and people are paying the price for their mistakes",
+      "url": "https://www.yahoo.com/news/articles/7-5-billion-cop-tech-090701190.html",
+      "jurisdiction": "National",
+      "agency": "Multiple",
+      "abuse_categories": ["false_arrest", "dragnet_surveillance"],
+      "description": "Business Insider reviewed police records, lawsuits, and local news coverage across more than a dozen cases nationally, finding that Flock ALPR misreads have resulted in people being stopped at gunpoint, sent to jail, and mauled by police dogs. Includes the Brandon Upchurch (Toledo) and Herron family (Morristown, TN) cases. Flock's stated accuracy is contested; IPVM independently found roughly 1-in-10 state misidentification rates in 2021 testing, after which Flock blocked further purchases for testing.",
+      "status": "approved"
+    }
+  ]
+}
