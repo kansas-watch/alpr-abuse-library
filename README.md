@@ -8,7 +8,7 @@ Maintained by **[Kansas Watch](https://kansas.watch)** · Curated by Drew
 
 ## 📋 Submit an Article
 
-Found a news report documenting ALPR abuse or misuse? [Submit it here →](https://forms.gle/REPLACE_WITH_YOUR_FORM_LINK)
+Found a news report documenting ALPR abuse or misuse? [Submit it here →](https://forms.gle/isGYpLcKu9YeFzSm9)
 
 All submissions are reviewed before being added to the library. You do not need a GitHub account to submit.
 
