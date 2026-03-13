@@ -20,12 +20,8 @@ Browse the full index: [`library.json`](./library.json) | [Formatted table below
 
 ### Index
 
-| Date | Publication | Type | Headline | Jurisdiction | Agency | Category |
+| Date | Publication | Type | Title | Jurisdiction | Agency | Category |
 |------|------------|------|----------|-------------|--------|----------|
-| 2024-03-15 | ACLU | News Report | [Flock Safety Cameras Raise Surveillance Concerns in Small Towns](https://example.com) | National | Multiple | Dragnet surveillance |
-| 2024-01-10 | The Intercept | Investigative Article | [How Police Are Using License Plate Readers to Track Protesters](https://example.com) | Multiple states | Various PDs | Targeting / stalking |
-
-> ⚠️ *Example entries shown above — replace with real approved submissions.*
 
 ---
 
