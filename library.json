@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
+    "description": "ALPR Abuse Library \u2014 curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-03-13",
+    "last_updated": "2026-03-31",
     "schema_version": "1.1",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
   },
@@ -28,7 +28,9 @@
       "url": "https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/",
       "jurisdiction": "Kechi, KS",
       "agency": "Kechi Police Department",
-      "abuse_categories": ["stalking_targeting"],
+      "abuse_categories": [
+        "stalking_targeting"
+      ],
       "description": "Kechi Police Lieutenant Victor Heiar was arrested by the Wichita Police Department after it was discovered he utilized his position within the police department to unlawfully access WPD's Flock license plate reader technology to monitor where his estranged wife was located.",
       "status": "approved"
     },
@@ -41,7 +43,9 @@
       "url": "https://www.yahoo.com/news/kansas-police-chief-used-flock-093300946.html",
       "jurisdiction": "Sedgwick, KS",
       "agency": "Sedgwick Police Department",
-      "abuse_categories": ["stalking_targeting"],
+      "abuse_categories": [
+        "stalking_targeting"
+      ],
       "description": "Sedgwick, Kansas police chief used Flock Safety license plate readers to track his ex-girlfriend and her new boyfriend's vehicles over 200 times and resigned after admitting to misusing the technology.",
       "status": "approved"
     },
@@ -54,7 +58,10 @@
       "url": "https://www.wtol.com/article/news/local/city-of-toledo-to-pay-brandon-upchurch-35000-dollar-settlement-in-k9-attack-traffic-stop-local-news/512-e6ad4d91-75de-4bc7-a088-5aebbdd0907e",
       "jurisdiction": "Toledo, OH",
       "agency": "Toledo Police Department",
-      "abuse_categories": ["false_arrest", "dragnet_surveillance"],
+      "abuse_categories": [
+        "false_arrest",
+        "dragnet_surveillance"
+      ],
       "description": "Flock camera misread a \"7\" on Brandon Upchurch's license plate as a \"2,\" generating a stolen vehicle alert. Officer Adrian Wilson initiated a felony stop, drew weapons, and released a police dog on Upchurch before confirming plate ownership. Upchurch was jailed and charged; charges were dropped in August 2024 and the city of Toledo settled for $35,000. The officer received only a verbal reprimand.",
       "status": "approved"
     },
@@ -67,8 +74,11 @@
       "url": "https://coloradosun.com/2025/10/28/flock-camera-police-colorado-columbine-valley/",
       "jurisdiction": "Columbine Valley, CO",
       "agency": "Columbine Valley Police Department",
-      "abuse_categories": ["false_arrest", "dragnet_surveillance"],
-      "description": "Columbine Valley Sgt. Jamie Milliman used Flock camera data to issue a summons to Denver financial advisor Chrisanna Elser for a package theft she did not commit. The sergeant refused to show Elser the alleged evidence and told her she had driven through the town 20 times in the past month. Elser spent days compiling GPS records, dashcam footage, and tailor receipts to prove her innocence. Charges were voided more than two weeks later.",
+      "abuse_categories": [
+        "false_arrest",
+        "dragnet_surveillance"
+      ],
+      "description": "Columbine Valley Sgt. Jamie Milliman used Flock camera data to issue a summons to Denver financial advisor Chrisanna Elser for a package theft she did not commit. He refused to show her the alleged evidence and told her she had driven through town 20 times in the past month. Elser spent days compiling GPS records, dashcam footage, and tailor receipts to prove her innocence. Charges were voided more than two weeks later. Follow-up reporting revealed Milliman had previously been fired from a prior agency; his discipline in this case was limited to extra training.",
       "status": "approved"
     },
     {
@@ -80,7 +90,10 @@
       "url": "https://www.wsbtv.com/news/local/fulton-county/sandy-springs-police-officer-terminated-after-allegedly-using-citys-flock-cameras-personal-gain/FXWATJXJDRCFJKEHUOAHGLIE2U/",
       "jurisdiction": "Sandy Springs, GA",
       "agency": "Sandy Springs Police Department",
-      "abuse_categories": ["unauthorized_access", "data_breach"],
+      "abuse_categories": [
+        "unauthorized_access",
+        "data_breach"
+      ],
       "description": "Reserve Sgt. Francis Esposito used his city Flock login to run license plates of multiple individuals and allegedly transferred the data to Signal 8, a private company he also worked for. A whistleblower former Signal 8 employee reported the data was used for beta testing and product validation. Esposito resigned during the investigation; Sandy Springs officially lists him as terminated and referred the case to the Georgia Peace Officer Standards & Training Council.",
       "status": "approved"
     },
@@ -89,11 +102,14 @@
       "date_published": "2026-02-23",
       "publication": "International Business Times",
       "submission_type": "news_report",
-      "title": "ICE Can Reportedly Access Flock Surveillance Cameras — Now Americans Are Destroying Them",
+      "title": "ICE Can Reportedly Access Flock Surveillance Cameras \u2014 Now Americans Are Destroying Them",
       "url": "https://www.ibtimes.co.uk/flock-surveillance-cameras-backlash-1780945",
       "jurisdiction": "National",
       "agency": "ICE",
-      "abuse_categories": ["immigration_enforcement", "dragnet_surveillance"],
+      "abuse_categories": [
+        "immigration_enforcement",
+        "dragnet_surveillance"
+      ],
       "description": "With Flock's cameras feeding data to ICE, a grassroots revolt over who gets to watch whom is erupting on roadsides and in council chambers across the US. Covers camera destruction incidents in Oregon, Virginia, Illinois, and Connecticut, as well as cities that have terminated Flock contracts following community opposition.",
       "status": "approved"
     },
@@ -102,12 +118,663 @@
       "date_published": "2026-03-09",
       "publication": "Business Insider",
       "submission_type": "investigative_article",
-      "title": "AI cameras are everywhere — and people are paying the price for their mistakes",
+      "title": "AI cameras are everywhere \u2014 and people are paying the price for their mistakes",
       "url": "https://www.yahoo.com/news/articles/7-5-billion-cop-tech-090701190.html",
       "jurisdiction": "National",
       "agency": "Multiple",
-      "abuse_categories": ["false_arrest", "dragnet_surveillance"],
+      "abuse_categories": [
+        "false_arrest",
+        "dragnet_surveillance"
+      ],
       "description": "Business Insider reviewed police records, lawsuits, and local news coverage across more than a dozen cases nationally, finding that Flock ALPR misreads have resulted in people being stopped at gunpoint, sent to jail, and mauled by police dogs. Includes the Brandon Upchurch (Toledo) and Herron family (Morristown, TN) cases. Flock's stated accuracy is contested; IPVM independently found roughly 1-in-10 state misidentification rates in 2021 testing, after which Flock blocked further purchases for testing.",
+      "status": "approved"
+    },
+    {
+      "id": "008",
+      "date_published": "2020-08-03",
+      "publication": "CBS News",
+      "submission_type": "news_report",
+      "title": "License Plate Readers Lead to Wrongful Stops Across the Country",
+      "url": "https://www.cbsnews.com/news/license-plate-readers-alpr-mistakes/",
+      "jurisdiction": "Aurora, CO",
+      "agency": "Aurora Police Department",
+      "abuse_categories": [
+        "false_arrest"
+      ],
+      "description": "Police held a Black family at gunpoint \u2014 including children \u2014 after an ALPR misread flagged their minivan as a stolen motorcycle. Officers forced them onto hot pavement before realizing the error. Body cam footage released publicly. The city settled for $1.9 million.",
+      "additional_urls": [
+        "https://gizmodo.com/cops-terrorize-black-family-but-blame-license-plate-rea-1844602731",
+        "https://www.eff.org/deeplinks/2024/11/human-toll-alpr-errors"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "009",
+      "date_published": "2024-03-07",
+      "publication": "Post and Courier",
+      "submission_type": "investigative_article",
+      "title": "ALPR Cameras in South Carolina: Flock Safety License Plate Readers",
+      "url": "https://www.postandcourier.com/news/alpr-cameras-south-carolina-flock-safety-license-plate-readers/article_787a262a-dbd2-11ee-a901-634acead588b.html",
+      "jurisdiction": "Greenville, SC",
+      "agency": "Greenville Police Department",
+      "abuse_categories": [
+        "false_arrest",
+        "unauthorized_access",
+        "other"
+      ],
+      "description": "Comprehensive investigative piece covering multiple South Carolina ALPR abuses: two sisters drawn on at gunpoint after a Flock camera wrongly flagged their rental car as stolen (lawsuit filed); 200+ Flock cameras installed on SC roads without SCDOT permits; a SLED officer who searched his own plate and altered the record to hide it; and the original Greenville Flock contract signed by Police Chief Kenneth Miller \u2014 who was under an active SLED investigation and resigned weeks later \u2014 using civil asset forfeiture funds to bypass council appropriations.",
+      "additional_urls": [
+        "https://www.courthousenews.com/privacy-advocates-police-spar-over-license-plate-cameras-in-south-carolina/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "010",
+      "date_published": "2026-02-26",
+      "publication": "Wisconsin Law Journal",
+      "submission_type": "case_study",
+      "title": "Milwaukee Officer Charged in Flock Camera Misuse",
+      "url": "https://wislawjournal.com/2026/02/26/milwaukee-officer-charged-in-flock-camera-misuse/",
+      "jurisdiction": "Milwaukee, WI",
+      "agency": "Milwaukee Police Department",
+      "abuse_categories": [
+        "stalking_targeting"
+      ],
+      "description": "Milwaukee Officer Josue Ayala used Flock to query the license plate of someone he was dating 120+ times and a second plate belonging to that person's ex 55 times, entering only 'investigation' as justification. Criminal charges filed. The same article covers a separate case: Menasha Officer Cristian Morales used Flock while off-duty to track his ex-girlfriend's vehicle across seven searches in a single week, facing a felony misconduct charge carrying up to 3.5 years.",
+      "additional_urls": [
+        "https://www.aclu-wi.org/press-releases/aclu-of-wisconsin-responds-to-accusations-of-milwaukee-police-officer-misusing-flock-surveillance-technology/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "011",
+      "date_published": "2025-01-15",
+      "publication": "Have I Been Flocked",
+      "submission_type": "case_study",
+      "title": "Georgia Police Chief Arrested for ALPR Stalking",
+      "url": "https://haveibeenflocked.com/news/ga-misuse",
+      "jurisdiction": "Braselton, GA",
+      "agency": "Braselton Police Department",
+      "abuse_categories": [
+        "stalking_targeting"
+      ],
+      "description": "Police Chief Michael Steffman was arrested by the GBI on charges including stalking and violation of oath for using ALPR to stalk and harass multiple private citizens \u2014 including searches of cameras in Capitola, California, thousands of miles from his jurisdiction. He resigned hours before his arrest, five days after being honored for 20 years of service.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "012",
+      "date_published": "2019-05-22",
+      "publication": "Post and Courier",
+      "submission_type": "news_report",
+      "title": "SC Lawmaker Wants Restrictions on Police Using Automatic License Plate Readers",
+      "url": "https://www.postandcourier.com/news/sc-lawmaker-wants-restrictions-on-police-using-automatic-license-plate/article_4c143334-7c8f-11e9-bfad-fb9ab937f2b6.html",
+      "jurisdiction": "South Carolina",
+      "agency": "Multiple SC agencies",
+      "abuse_categories": [
+        "domestic_abuse_enablement"
+      ],
+      "description": "A domestic abuser falsely reported a partner as 'missing' to trigger ALPR alerts on their vehicle and use police infrastructure to track their whereabouts. Documented by SC Rep. Todd Rutherford as evidence supporting legislation to restrict ALPR use.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "013",
+      "date_published": "2025-08-19",
+      "publication": "9News",
+      "submission_type": "investigative_article",
+      "title": "Flock Gave Federal Immigration Agents Access to Tracking Data",
+      "url": "https://www.9news.com/article/news/local/flock-federal-immigration-agents-access-tracking-data/73-a8aee742-56d4-4a57-b5bb-0373286dfef8",
+      "jurisdiction": "National",
+      "agency": "Flock Safety / U.S. Border Patrol",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "immigration_enforcement"
+      ],
+      "description": "Flock gave U.S. Border Patrol an account to send data-sharing invitations to local police departments without notifying those agencies. 25 Colorado departments approved CBP access through batch approval without understanding what they were agreeing to; Loveland PD stated CBP 'simply submitted a request like every other agency, which was batch approved.' CBP gained access to 1,600+ plate readers across 22 states. CEO Garrett Langley denied any federal contracts on camera July 30, 2025, then admitted it August 19 after 9News forced the issue.",
+      "additional_urls": [
+        "https://www.pbs.org/newshour/nation/border-patrol-monitoring-drivers-and-detaining-those-with-suspicious-travel-patterns",
+        "https://www.cbs8.com/article/news/local/flock-cameras-halt-federal-pilot-programs-following-data-access-concerns/509-bad3b0d7-f61f-43ea-bc27-c628c7ba0f73"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "014",
+      "date_published": "2026-02-03",
+      "publication": "Local News Matters",
+      "submission_type": "news_report",
+      "title": "Mountain View Police Turn Off License Plate Readers",
+      "url": "https://localnewsmatters.org/2026/02/03/mountain-view-police-turn-off-license-plate-readers-flock-safety/",
+      "jurisdiction": "Mountain View, CA",
+      "agency": "Mountain View Police Department",
+      "abuse_categories": [
+        "fusion_center_sharing"
+      ],
+      "description": "An audit revealed that Flock had enabled the nationwide search setting on Mountain View's system without the city's knowledge, exposing local data to hundreds of agencies including the ATF, Air Force, and GSA Inspector General \u2014 none of whom had city authorization. The police chief immediately disabled cameras and the city terminated the contract.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "015",
+      "date_published": "2025-08-25",
+      "publication": "Illinois Secretary of State",
+      "submission_type": "investigative_article",
+      "title": "Illinois Audit Finds Flock in Violation of State Law",
+      "url": "https://www.ilsos.gov/news/2025/august-25-2025-giannoulias-audit-finds-license-plate-reader-company-in-violation-of-state-law.html",
+      "jurisdiction": "Illinois",
+      "agency": "Flock Safety / Forest Park PD / Multiple IL agencies",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "unauthorized_access",
+        "immigration_enforcement"
+      ],
+      "description": "State audit found Flock gave CBP access to data from 12 local agencies in violation of Illinois state law, which bans sharing plate data with agencies investigating undocumented immigrants. Forest Park PD was separately sharing data with CBP through Motorola Solutions equipment. A suburban officer shared their Flock login with a DEA agent who conducted unauthorized searches. 47 agencies were removed from access to Illinois data following the audit.",
+      "additional_urls": [
+        "https://www.ilsos.gov/news/2025/september-5-2025-giannoulias-audit-uncovers-forest-park-police-department-sharing-license-plate-reader-data.html",
+        "https://www.nbcchicago.com/news/local/company-violated-illinois-law-by-sharing-license-plate-data-with-customs-and-border-protection-giannoulias/3814914/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "016",
+      "date_published": "2025-10-21",
+      "publication": "UW Center for Human Rights",
+      "submission_type": "investigative_article",
+      "title": "Leaving the Door Wide Open: Federal Access to Washington State ALPR Data",
+      "url": "https://jsis.washington.edu/humanrights/2025/10/21/leaving-the-door-wide-open/",
+      "jurisdiction": "Washington State",
+      "agency": "Multiple WA agencies",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "unauthorized_access",
+        "immigration_enforcement"
+      ],
+      "description": "UWCHR documented three modes of unauthorized federal access to WA ALPR data: 8 agencies explicitly authorized CBP sharing ('front door'), Border Patrol accessed data from 10+ agencies that never authorized sharing ('back door'), and local officers searched on behalf of federal agents using their own accounts ('side door'). Specific examples: Renton PD searched for 'Special Agent Michael R. Bonner' (HSI); Richland PD searched 82 networks for 'HSI Investigation -- Intel'; Auburn PD stated access 'occurred unknowingly to us.'",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "017",
+      "date_published": "2025-05-15",
+      "publication": "404 Media",
+      "submission_type": "investigative_article",
+      "title": "ICE Taps Into Nationwide AI-Enabled Camera Network",
+      "url": "https://www.404media.co/ice-taps-into-nationwide-ai-enabled-camera-network-data-shows/",
+      "jurisdiction": "National",
+      "agency": "ICE / Multiple agencies",
+      "abuse_categories": [
+        "immigration_enforcement"
+      ],
+      "description": "Data obtained from Danville, IL police showed 4,000+ lookups nationally with search reasons citing 'immigration,' 'ICE+ERO,' or 'ICE WARRANT.' Local officers searched on behalf of federal agents using their own accounts, providing ICE backdoor access to Flock's national network in circumvention of local sanctuary policies.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "018",
+      "date_published": "2025-10-09",
+      "publication": "VPM / VCIJ",
+      "submission_type": "investigative_article",
+      "title": "Flock Safety Cameras Used for Federal Immigration Enforcement in Virginia",
+      "url": "https://www.vpm.org/news/2025-10-09/flock-safety-cameras-alprs-federal-immigration-enforcement-lehmann-kochis",
+      "jurisdiction": "Virginia",
+      "agency": "Multiple VA agencies",
+      "abuse_categories": [
+        "immigration_enforcement",
+        "dragnet_surveillance"
+      ],
+      "description": "VCIJ documented nearly 3,000 searches using terms 'ICE,' 'ERO,' 'immigration,' and 'deportee' on Virginia's Flock network over a 12-month period. In Bridgewater, VA (population ~6,000), just five cameras generated 6.9 million searches by outside agencies in 12 months, with 9 in 10 searches from out-of-state law enforcement.",
+      "additional_urls": [
+        "https://www.vpm.org/news/2025-07-07/vcij-immigration-enforcement-flock-safety-license-plate-readers-poggenklass",
+        "https://vcij.org/stories/virginias-flock-network-was-searched-regularly-for-immigration-offenses-heres-who-was-looking"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "019",
+      "date_published": "2025-07-16",
+      "publication": "VPM",
+      "submission_type": "news_report",
+      "title": "ATF Analyst Searched Richmond Flock Data Without Authorization",
+      "url": "https://www.vpm.org/news/2025-07-16/flock-license-plate-readers-ice-atf-rva-edwards-kaiser-aclu-cherian",
+      "jurisdiction": "Richmond, VA",
+      "agency": "ATF / Richmond Police Department",
+      "abuse_categories": [
+        "unauthorized_access",
+        "immigration_enforcement"
+      ],
+      "description": "An ATF analyst searched 49 plates through Richmond PD's Flock system without permission from the department, receiving 400 results \u2014 over a quarter of which were related to an immigration case. The searches were conducted without Richmond PD's knowledge or authorization.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "020",
+      "date_published": "2025-08-06",
+      "publication": "Colorado Newsline",
+      "submission_type": "investigative_article",
+      "title": "Immigration Searches of Denver Flock Camera Data",
+      "url": "https://coloradonewsline.com/2025/08/06/immigration-denver-flock-camera/",
+      "jurisdiction": "Denver, CO",
+      "agency": "Denver Police Department",
+      "abuse_categories": [
+        "immigration_enforcement"
+      ],
+      "description": "1,400+ immigration-related searches of Denver's Flock data were conducted between June 2024 and April 2025. 80% of users accessing Denver's data were from outside DPD, including federal immigration agencies. This occurred despite Denver's sanctuary city status.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "021",
+      "date_published": "2026-02-15",
+      "publication": "The 74",
+      "submission_type": "investigative_article",
+      "title": "ICE Taps Into School Security Cameras to Aid Trump's Immigration Crackdown",
+      "url": "https://www.the74million.org/article/ice-taps-into-school-security-cameras-to-aid-trumps-immigration-crackdown-74-investigation-finds/",
+      "jurisdiction": "National",
+      "agency": "ICE / Multiple school districts",
+      "abuse_categories": [
+        "immigration_enforcement"
+      ],
+      "description": "Flock cameras installed in 100+ school systems for student safety were accessible to ICE through the same national network, allowing federal immigration enforcement agencies to query school camera data without the knowledge of school districts or parents.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "022",
+      "date_published": "2025-05-20",
+      "publication": "Electronic Frontier Foundation",
+      "submission_type": "investigative_article",
+      "title": "She Got an Abortion, So Texas Cops Used 83,000 Cameras to Track Her Down",
+      "url": "https://www.eff.org/deeplinks/2025/05/she-got-abortion-so-texas-cop-used-83000-cameras-track-her-down",
+      "jurisdiction": "Johnson County, TX",
+      "agency": "Johnson County Sheriff's Office",
+      "abuse_categories": [
+        "stalking_targeting",
+        "dragnet_surveillance"
+      ],
+      "description": "Johnson County deputies searched 83,345 cameras across 6,809 networks to track a woman who had a self-managed abortion, logging the search reason as 'had an abortion, search for female.' The agency lied to access Massachusetts ALPR data, falsely claiming the vehicle was related to a stolen vehicle investigation. Flock initially defended the search as a legitimate missing-person case. The search swept cameras in states where abortion is legally protected. Sheriff Adam King was subsequently indicted on unrelated felony charges.",
+      "additional_urls": [
+        "https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "023",
+      "date_published": "2025-11-15",
+      "publication": "Electronic Frontier Foundation",
+      "submission_type": "investigative_article",
+      "title": "How Cops Are Using Flock Safety's ALPR Network to Surveil Protesters and Activists",
+      "url": "https://www.eff.org/deeplinks/2025/11/how-cops-are-using-flock-safetys-alpr-network-surveil-protesters-and-activists",
+      "jurisdiction": "National",
+      "agency": "Multiple agencies",
+      "abuse_categories": [
+        "protest_tracking",
+        "dragnet_surveillance"
+      ],
+      "description": "EFF analysis of 12 million searches logged by 3,900+ agencies between December 2024 and October 2025 found that 50+ federal, state, and local agencies ran hundreds of searches in connection with protest activity \u2014 including the 50501 protests, Hands Off protests, and No Kings protests. In some cases, law enforcement specifically targeted known activist groups.",
+      "additional_urls": [
+        "https://www.eff.org/deeplinks/2025/12/effs-investigations-expose-flock-safetys-surveillance-abuses-2025-review"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "024",
+      "date_published": "2025-12-15",
+      "publication": "Electronic Frontier Foundation",
+      "submission_type": "investigative_article",
+      "title": "EFF Investigations Expose Flock Safety Surveillance Abuses: 2025 Review",
+      "url": "https://www.eff.org/deeplinks/2025/12/effs-investigations-expose-flock-safetys-surveillance-abuses-2025-review",
+      "jurisdiction": "National",
+      "agency": "Multiple agencies",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "EFF analysis found 80+ law enforcement agencies used racial slurs and ethnic stereotyping language targeting Romani people in Flock search reason fields, including terms such as 'g*psy ruse,' 'roma traveler,' and 'possible g*psy.' The EFF year-end review also synthesizes its 2025 investigations into immigration enforcement, protest tracking, and the Texas abortion case.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "025",
+      "date_published": "2025-11-20",
+      "publication": "The Record",
+      "submission_type": "investigative_article",
+      "title": "Flock Safety Cameras Remained Active After Cities Asked Them Turned Off",
+      "url": "https://therecord.media/flock-safety-cameras-remained-active-after-cities-asked-turned-off",
+      "jurisdiction": "Eugene, OR / Evanston, IL / Cambridge, MA",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Documents three cases of Flock cameras continuing to operate after shutdown orders: In Eugene, OR, at least one camera remained active weeks after officials ordered all 57 cameras off, scanning 8,500 vehicles \u2014 the city learned from a community member, not Flock. In Evanston, IL, Flock reinstalled cameras without permission after officials asked for shutdown; the city sent a cease-and-desist and encased cameras in plastic bags. In Cambridge, MA, Flock installed 2 new cameras less than a month after the city council ordered 16 deactivated; Cambridge terminated the contract citing 'material breach of trust.'",
+      "additional_urls": [
+        "https://evanstonroundtable.com/2025/09/24/flock-safety-reinstalls-evanston-cameras/",
+        "https://www.thecrimson.com/article/2025/12/10/cambridge-ends-flock-contract/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "026",
+      "date_published": "2025-12-15",
+      "publication": "Augusta Free Press",
+      "submission_type": "news_report",
+      "title": "Staunton to Cancel Flock Safety Camera Contract",
+      "url": "https://augustafreepress.com/news/staunton-to-cancel-flock-safety-camera-contract-doesnt-agree-with-ideology-of-ceo/",
+      "jurisdiction": "Staunton, VA",
+      "agency": "Staunton Police Department",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Flock CEO Garrett Langley sent an unsolicited email to all law enforcement clients characterizing community opposition as a 'coordinated attack' by people who want to 'defund the police, weaken public safety, and normalize lawlessness.' Staunton's 41-year police chief publicly rebuked Langley, writing: 'What we are seeing here is a group of local citizens who are raising concerns... it is democracy in action.' The city subsequently terminated its Flock contract.",
+      "additional_urls": [
+        "https://www.ci.staunton.va.us/Home/Components/News/News/2572/71"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "027",
+      "date_published": "2025-11-18",
+      "publication": "Electronic Frontier Foundation",
+      "submission_type": "news_report",
+      "title": "Lawsuit Challenges San Jose's Warrantless ALPR Mass Surveillance",
+      "url": "https://www.eff.org/press/releases/lawsuit-challenges-san-joses-warrantless-alpr-mass-surveillance",
+      "jurisdiction": "San Jose, CA",
+      "agency": "San Jose Police Department",
+      "abuse_categories": [
+        "dragnet_surveillance"
+      ],
+      "description": "SJPD logged 261,711 warrantless ALPR searches (~692/day) over a 12-month period. Including external agencies, total searches of San Jose's data reached 3,965,519. The city's cameras made 361 million plate scans in 2024; only 923,159 (0.2%) matched hot-list vehicles. EFF and ACLU-NC filed suit.",
+      "additional_urls": [
+        "https://www.mercurynews.com/2025/11/18/civil-liberties-groups-sue-san-jose-over-warrantless-access-to-license-plate-reader-data/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "028",
+      "date_published": "2025-01-15",
+      "publication": "Institute for Justice",
+      "submission_type": "case_study",
+      "title": "Norfolk ALPR Mass Surveillance \u2014 IJ Case",
+      "url": "https://ij.org/case/norfolk-alpr/",
+      "jurisdiction": "Norfolk, VA",
+      "agency": "Norfolk Police Department",
+      "abuse_categories": [
+        "dragnet_surveillance"
+      ],
+      "description": "Lee Schmidt's car was logged 526 times in 3.5 months simply driving to work. Crystal Arrington's location was recorded 849 times. Neither was a suspect or under investigation. Norfolk police installed 172 cameras with the stated goal of making it 'difficult to drive anywhere of any distance without running into a camera somewhere.' The Institute for Justice filed suit; a Virginia court later ruled ALPR surveillance does not require a warrant.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "029",
+      "date_published": "2020-02-01",
+      "publication": "California State Auditor",
+      "submission_type": "investigative_article",
+      "title": "California State Auditor Report on ALPR \u2014 LAPD",
+      "url": "https://information.auditor.ca.gov/reports/2019-118/summary.html",
+      "jurisdiction": "Los Angeles, CA",
+      "agency": "Los Angeles Police Department",
+      "abuse_categories": [
+        "dragnet_surveillance"
+      ],
+      "description": "State audit found LAPD had accumulated 320 million ALPR images. Only 400,000 generated an immediate match \u2014 meaning 99.9% of stored images were of vehicles not on any hot list. LAPD retained all data for 5+ years and had no ALPR usage policy in place, despite state law requiring one since 2016.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "030",
+      "date_published": "2025-12-01",
+      "publication": "Have I Been Flocked / 404 Media",
+      "submission_type": "investigative_article",
+      "title": "FBI Instructed Flock Users to Evade Audit Transparency",
+      "url": "https://haveibeenflocked.com/news/fbi-investigation",
+      "jurisdiction": "National",
+      "agency": "FBI / Houston HIDTA",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "A Houston HIDTA bulletin, forwarded by the FBI to its intelligence community, instructed Flock users to enter search reasons 'as vague as permissible' (e.g., simply 'Investigation'), to exclude agencies that comply with public records laws from their data-sharing networks, and to limit searches to in-state to avoid jurisdictions that release audit logs.",
+      "additional_urls": [
+        "https://www.404media.co/police-told-to-be-as-vague-as-permissible-about-why-they-use-flock/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "031",
+      "date_published": "2025-11-01",
+      "publication": "Have I Been Flocked / 404 Media",
+      "submission_type": "investigative_article",
+      "title": "Flock Safety Strips Officer Names and Plates from Audit Logs",
+      "url": "https://haveibeenflocked.com/news/secret-searches-part2",
+      "jurisdiction": "National",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "After stalking officers were identified through audit log patterns, Flock unilaterally stripped officer names and license plates from the audit logs it provides to police agencies \u2014 replacing unique identifiers with 'redacted' \u2014 and blocked VPN access to transparency portals. The company had previously described these logs as 'immutable' and 'tamper-proof.' Flock also sent takedown notices to the Have I Been Flocked watchdog site, calling the published audit data 'an immediate threat to public safety.' Flock's chief engineer assured customers they were developing 'redaction capabilities.' A redaction error subsequently unmasked millions of surveillance targets.",
+      "additional_urls": [
+        "https://haveibeenflocked.com/news/transparency-portals/",
+        "https://www.404media.co/police-unmask-millions-of-surveillance-targets-because-of-flock-redaction-error/",
+        "https://haveibeenflocked.com/news/colwell-files"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "032",
+      "date_published": "2025-12-01",
+      "publication": "Columbia Muckraker",
+      "submission_type": "news_report",
+      "title": "SC Sheriff Quoted Journalist $9,152 for Flock Audit Logs",
+      "url": "https://columbiamuckraker.substack.com/p/sc-sheriffs-office-quoted-me-9000",
+      "jurisdiction": "Richland County, SC",
+      "agency": "Richland County Sheriff's Department",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Richland County Sheriff's Department quoted a journalist $9,152 for two CSV files containing Flock audit logs \u2014 the same files Florence County PD provided for free within one business day, and Bluffton PD mailed on a USB drive for $20. Documents the wide disparity in public records compliance across South Carolina agencies.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "033",
+      "date_published": "2025-10-01",
+      "publication": "9News",
+      "submission_type": "investigative_article",
+      "title": "Flock Denies Sharing Data with Private Investigators After Employee Comments",
+      "url": "https://www.9news.com/article/news/local/next/next-with-kyle-clark/flock-denies-sharing-license-plate-data-with-private-investigators-after-employee-comments-in-recorded-call/73-d1622f01-b64f-47e5-bdb3-4ec46dbc7cef",
+      "jurisdiction": "Colorado",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "A 9News investigation caught a Flock sales representative on a recorded Zoom call stating that Flock had previously been 'doing partnerships with private investigators or large investigative firms.' Flock denied the claim after the recording was published, but the admission was on video.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "034",
+      "date_published": "2025-05-15",
+      "publication": "GovTech / 404 Media",
+      "submission_type": "news_report",
+      "title": "Flock Safety's Nova Platform: Dark Web Data Considered for Warrantless Tracking",
+      "url": "https://www.govtech.com/biz/flock-safety-pushes-back-on-data-breach-product-criticism",
+      "jurisdiction": "National",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "data_breach",
+        "other"
+      ],
+      "description": "404 Media reported Flock had been developing a platform called Nova to supplement ALPR data with information from data breaches and commercially available data to enable warrantless tracking of individuals. The EFF described it as a 'dystopian panopticon.' After the reporting, Flock stated it had explored sourcing dark web/breach data but decided against it.",
+      "additional_urls": [
+        "https://www.404media.co/flock-decides-not-to-use-hacked-data-in-people-search-tool/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "035",
+      "date_published": "2026-02-15",
+      "publication": "Have I Been Flocked",
+      "submission_type": "investigative_article",
+      "title": "Flock Rewrites Terms of Service to Claim Perpetual Data Rights",
+      "url": "https://haveibeenflocked.com/news/terms-feb2026",
+      "jurisdiction": "National",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Flock rewrote its Terms of Service twice in three months, making 147 documented changes. Key deletions and additions: removed the sentence 'Flock does not own and shall not sell Customer Data'; eliminated training data safeguards; added a perpetual data license; moved mandatory arbitration to Georgia; eliminated the gross negligence exception from liability caps; and restricted government termination rights.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "036",
+      "date_published": "2025-11-05",
+      "publication": "9News",
+      "submission_type": "investigative_article",
+      "title": "Researchers Claim Flock Cameras Are Easy to Hack \u2014 51 Vulnerabilities Found",
+      "url": "https://www.9news.com/article/tech/researchers-claim-flock-cameras-are-easy-to-hack/73-6c805b4a-7b64-4d71-828e-961dda84b8e5",
+      "jurisdiction": "National",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "data_breach"
+      ],
+      "description": "Security researcher Jon Gaines demonstrated that anyone with physical access to a Flock camera can press a button sequence to create a Wi-Fi hotspot, connect, enable ADB, and gain root access to the device. Cameras run Android Things 8, discontinued by Google in 2021. 51 total security findings documented, 22 confirmed CVEs in the National Vulnerability Database. Researcher Benn Jordan found Flock police login credentials for sale on dark web marketplaces. Flock does not require MFA for law enforcement accounts.",
+      "additional_urls": [
+        "https://www.privacyguides.org/news/2025/11/17/ben-jordan-exposes-severe-security-vulnerabilities-in-flock-surveillance-cameras/",
+        "https://gainsec.com/2025/11/05/formalizing-my-flock-safety-security-research/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "037",
+      "date_published": "2025-11-15",
+      "publication": "U.S. Senate / U.S. House",
+      "submission_type": "news_report",
+      "title": "Wyden and Krishnamoorthi Urge FTC to Investigate Flock Safety",
+      "url": "https://www.wyden.senate.gov/news/press-releases/wyden-krishnamoorthi-urge-ftc-to-investigate-surveillance-tech-company-on-negligently-handling-americans-personal-data",
+      "jurisdiction": "National",
+      "agency": "Flock Safety",
+      "abuse_categories": [
+        "data_breach"
+      ],
+      "description": "Senator Ron Wyden and Rep. Raja Krishnamoorthi cited data from Hudson Rock showing at least 35 Flock customer law enforcement accounts had been stolen by hackers. Flock does not require MFA for police accounts. In at least one documented case, a DEA task force used a local detective's Flock credentials to conduct unauthorized searches.",
+      "additional_urls": [
+        "https://krishnamoorthi.house.gov/media/press-releases/congressman-krishnamoorthi-senator-wyden-urge-ftc-investigate-surveillance"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "038",
+      "date_published": "2025-09-15",
+      "publication": "AZ Free News",
+      "submission_type": "news_report",
+      "title": "Sedona Council Terminates License Plate Reader Program",
+      "url": "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program/",
+      "jurisdiction": "Sedona, AZ",
+      "agency": "Sedona Police Department",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Sedona's police department signed the Flock contract without notifying city council. Residents spotted cameras on social media. The mayor initially supported the cameras but reversed position after learning the scope of data sharing. Council voted unanimously to terminate the contract.",
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "039",
+      "date_published": "2025-05-29",
+      "publication": "Post and Courier",
+      "submission_type": "case_study",
+      "title": "Spartanburg Sheriff Chuck Wright Pleads Guilty to Federal Charges",
+      "url": "https://www.postandcourier.com/spartanburg/news/spartanburg-sheriff-chuck-wright-fbi-investigation-career-controversies/article_aa5d54be-7354-4507-be0c-dfdc456bdc57.html",
+      "jurisdiction": "Spartanburg County, SC",
+      "agency": "Spartanburg County Sheriff's Office",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Sheriff Chuck Wright, who oversaw countywide Flock camera deployment, pled guilty to federal charges: conspiracy to commit theft from federal programs, conspiracy to commit wire fraud, and obtaining controlled substances through fraud. He faces up to 30 years. Raises concerns about the integrity of ALPR oversight when the official responsible for the surveillance infrastructure is himself a criminal.",
+      "additional_urls": [
+        "https://www.foxcarolina.com/2025/05/29/chuck-wrights-name-covered-spartanburg-county-sheriffs-office-sign/"
+      ],
+      "status": "approved",
+      "submitted_by": "DeflockSC"
+    },
+    {
+      "id": "040",
+      "date_published": "2026-02-27",
+      "publication": "KTVU Fox 2",
+      "submission_type": "case_study",
+      "title": "Class Action Lawsuit Alleges Flock License Plate Readers Violate California Law",
+      "url": "https://www.ktvu.com/news/class-action-lawsuit-alleges-flock-license-plate-readers-violate-ca-law-privacy-residents",
+      "jurisdiction": "California",
+      "agency": "Flock Safety / Multiple CA agencies",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "immigration_enforcement",
+        "dragnet_surveillance"
+      ],
+      "description": "Oakland law firm Gibbs Mura filed a class action lawsuit against Flock Safety in San Francisco Superior Court on February 26, 2026, alleging violations of California's ALPR Privacy Act. Out-of-state agencies searched SFPD's Flock database more than 1.6 million times in seven months; Los Altos data was searched more than a million times. Oxnard PD suspended cameras after discovering a 'vendor-based issue' had enabled nationwide access despite being set to 'California only.' Ventura County found 364,000 unauthorized external searches. Plaintiffs seek $2,500+ per violation.",
+      "status": "approved"
+    },
+    {
+      "id": "041",
+      "date_published": "2026-02-02",
+      "publication": "KCUR",
+      "submission_type": "case_study",
+      "title": "Lenexa Police Investigated Op-Ed Writer Who Criticized ICE Response",
+      "url": "https://www.kcur.org/politics-elections-and-government/2026-02-02/lenexa-police-investigated-column-writer-critical-failure-warn-ice-raid-councilwoman-investigation",
+      "jurisdiction": "Lenexa, KS",
+      "agency": "Lenexa Police Department",
+      "abuse_categories": [
+        "protest_tracking",
+        "stalking_targeting"
+      ],
+      "description": "After Canyen Ashworth published a guest column in the Kansas City Star criticizing Lenexa PD's failure to warn the community before an ICE raid, Police Chief Dawn Layman launched an investigation into him using the city's ALPR system to track his movements. Three weeks later, Layman issued a department-wide BOLO linking Ashworth to someone who had posted anti-ICE flyers, with internal directives telling officers to 'Make Your Own Case' \u2014 find any reason to stop him. No charges were filed. The ACLU of Kansas called it 'a wanton and disgraceful abuse of power.' Chief Layman subsequently left for another department.",
+      "status": "approved"
+    },
+    {
+      "id": "042",
+      "date_published": "2025-11-25",
+      "publication": "ACLU of Wisconsin",
+      "submission_type": "opinion_piece",
+      "title": "What the Flock: Police Surveillance is Ripe for Abuse",
+      "url": "https://www.aclu-wi.org/news/what-the-flock-police-surveillance-is-ripe-for-abuse",
+      "jurisdiction": "Greenfield, WI",
+      "agency": "Greenfield Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "domestic_abuse_enablement"
+      ],
+      "description": "ACLU-WI analysis centered on Greenfield Police Chief Jay Johnson, who is facing felony misconduct charges for ordering the installation of a department-owned surveillance camera outside his personal home during divorce proceedings \u2014 after being explicitly told by the city attorney he could not. The piece also documents Wauwatosa PD conducting nearly 1,900 Flock ALPR searches in six months with the sole justification 'investigation,' with no further description, and synthesizes the broader pattern of officers misusing ALPR systems against domestic partners.",
+      "status": "approved"
+    },
+    {
+      "id": "043",
+      "date_published": "2026-02-26",
+      "publication": "Woodburn Independent",
+      "submission_type": "case_study",
+      "title": "Border Patrol, DHS Accessed Woodburn Flock Camera Data, City Audit Shows",
+      "url": "https://woodburnindependent.com/2026/02/26/border-patrol-dhs-accessed-woodburn-flock-camera-data-city-audit-shows/",
+      "jurisdiction": "Woodburn, OR",
+      "agency": "U.S. Border Patrol / DHS / Woodburn Police Department",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "immigration_enforcement"
+      ],
+      "description": "Despite earlier city assurances that Woodburn's Flock data was accessible only to Woodburn PD and Oregon law enforcement, a city audit confirmed DHS accessed Woodburn's camera data 175 times between March and May 2025, and Border Patrol conducted 209 searches between May and June 2025 \u2014 all through a federal pilot program implemented by Flock without the city's knowledge. The city had 24 cameras covering a predominantly Latino community with significant concerns about immigration enforcement. Cameras remain powered off with no reinstatement date.",
       "status": "approved"
     }
   ]
