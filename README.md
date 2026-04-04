@@ -56,7 +56,9 @@ Browse the full index: [`library.json`](./library.json) | [Formatted table below
 | 2025-12-01 | Have I Been Flocked / 404 Media | Investigative | [FBI Instructed Flock Users to Evade Audit Transparency](https://haveibeenflocked.com/news/fbi-investigation) | National | FBI / Houston HIDTA | unauthorized_access |
 | 2025-12-15 | Augusta Free Press | News Report | [Staunton to Cancel Flock Safety Camera Contract](https://augustafreepress.com/news/staunton-to-cancel-flock-safety-camera-contract-doesnt-agree-with-ideology-of-ceo/) | Staunton, VA | Staunton Police Department | other |
 | 2025-12-15 | Electronic Frontier Foundation | Investigative | [EFF Investigations Expose Flock Safety Surveillance Abuses: 2025 Review](https://www.eff.org/deeplinks/2025/12/effs-investigations-expose-flock-safetys-surveillance-abuses-2025-review) | National | Multiple agencies | other |
+| 2026-01-12 | KCTV5 | Case Study | [Joplin officer no longer employed after alleged misuse of license plate tracking system](https://www.kctv5.com/2026/01/12/joplin-officer-no-longer-employed-after-alleged-misuse-license-plate-tracking-system/) | Joplin, MO | Joplin Police Department | stalking_targeting, unauthorized_access |
 | 2026-02-02 | KCUR | Case Study | [Lenexa Police Investigated Op-Ed Writer Who Criticized ICE Response](https://www.kcur.org/politics-elections-and-government/2026-02-02/lenexa-police-investigated-column-writer-critical-failure-warn-ice-raid-councilwoman-investigation) | Lenexa, KS | Lenexa Police Department | protest_tracking, stalking_targeting |
+| 2026-02-03 | ACLU | Opinion / Analysis | [Kansas Town Uses License Plate Readers to Go After Man Who Wrote Op-Ed](https://www.aclu.org/news/privacy-technology/alpr-against-op-ed-writer) | Lenexa, KS | Lenexa Police Department | protest_tracking, stalking_targeting, unauthorized_access |
 | 2026-02-03 | Local News Matters | News Report | [Mountain View Police Turn Off License Plate Readers](https://localnewsmatters.org/2026/02/03/mountain-view-police-turn-off-license-plate-readers-flock-safety/) | Mountain View, CA | Mountain View Police Department | fusion_center_sharing |
 | 2026-02-15 | Have I Been Flocked | Investigative | [Flock Rewrites Terms of Service to Claim Perpetual Data Rights](https://haveibeenflocked.com/news/terms-feb2026) | National | Flock Safety | other |
 | 2026-02-15 | The 74 | Investigative | [ICE Taps Into School Security Cameras to Aid Trump's Immigration Crackdown](https://www.the74million.org/article/ice-taps-into-school-security-cameras-to-aid-trumps-immigration-crackdown-74-investigation-finds/) | National | ICE / Multiple school districts | immigration_enforcement |
@@ -65,6 +67,8 @@ Browse the full index: [`library.json`](./library.json) | [Formatted table below
 | 2026-02-26 | Woodburn Independent | Case Study | [Border Patrol, DHS Accessed Woodburn Flock Camera Data, City Audit Shows](https://woodburnindependent.com/2026/02/26/border-patrol-dhs-accessed-woodburn-flock-camera-data-city-audit-shows/) | Woodburn, OR | U.S. Border Patrol / DHS / Woodburn Police Department | fusion_center_sharing, immigration_enforcement |
 | 2026-02-27 | KTVU Fox 2 | Case Study | [Class Action Lawsuit Alleges Flock License Plate Readers Violate California Law](https://www.ktvu.com/news/class-action-lawsuit-alleges-flock-license-plate-readers-violate-ca-law-privacy-residents) | California | Flock Safety / Multiple CA agencies | fusion_center_sharing, immigration_enforcement, dragnet_surveillance |
 | 2026-03-09 | Business Insider | Investigative | [AI cameras are everywhere — and people are paying the price for their mistakes](https://www.yahoo.com/news/articles/7-5-billion-cop-tech-090701190.html) | National | Multiple | false_arrest, dragnet_surveillance |
+| 2026-03-30 | Rough Draft Atlanta | News Report | [Dunwoody City Council faces public backlash over Flock camera data sharing practices](https://roughdraftatlanta.com/2026/03/30/flock-data-sharing-concerns/) | Dunwoody, GA | Dunwoody Police Department | fusion_center_sharing, dragnet_surveillance |
+| 2026-04-01 | WIBW | Case Study | [KBI: Ex-detective misused police resources to track spouse; child sex abuse material found](https://www.wibw.com/2026/04/01/kbi-ex-detective-misused-police-resources-track-spouse-child-sex-abuse-material-found/) | Bonner Springs, KS | Bonner Springs Police Department | stalking_targeting, domestic_abuse_enablement, unauthorized_access |
 
 ---
 
@@ -92,7 +96,7 @@ flock-abuse-library/
 
 ## 📬 Contact
 
-Questions or press inquiries: [kansas.watch](https://kansas.watch)
+Questions or press inquiries: [info@kansas.watch](mailto:info@kansas.watch)
 
 ---
 
