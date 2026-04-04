@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library \u2014 curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-03-31",
+    "last_updated": "2026-04-04",
     "schema_version": "1.1",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
   },
@@ -775,6 +775,76 @@
         "immigration_enforcement"
       ],
       "description": "Despite earlier city assurances that Woodburn's Flock data was accessible only to Woodburn PD and Oregon law enforcement, a city audit confirmed DHS accessed Woodburn's camera data 175 times between March and May 2025, and Border Patrol conducted 209 searches between May and June 2025 \u2014 all through a federal pilot program implemented by Flock without the city's knowledge. The city had 24 cameras covering a predominantly Latino community with significant concerns about immigration enforcement. Cameras remain powered off with no reinstatement date.",
+      "status": "approved"
+    },
+    {
+      "id": "044",
+      "date_published": "2026-03-30",
+      "publication": "Rough Draft Atlanta",
+      "submission_type": "news_report",
+      "title": "Dunwoody City Council faces public backlash over Flock camera data sharing practices",
+      "url": "https://roughdraftatlanta.com/2026/03/30/flock-data-sharing-concerns/",
+      "jurisdiction": "Dunwoody, GA",
+      "agency": "Dunwoody Police Department",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "dragnet_surveillance"
+      ],
+      "description": "Dunwoody City Council postponed a vote on renewing its $15,000 Flock contract after residents packed a March 23 meeting demanding accountability over data sharing. Council Member Stacey Harris asked on record why 1,200 agencies can access Dunwoody's data and why SUNY is querying it. Flock's chief legal officer attended and promised contract revisions. A council member requested real-time notification of any outside agency access. Vote rescheduled for April 13.",
+      "status": "approved"
+    },
+    {
+      "id": "045",
+      "date_published": "2026-02-03",
+      "publication": "ACLU",
+      "submission_type": "opinion_piece",
+      "title": "Kansas Town Uses License Plate Readers to Go After Man Who Wrote Op-Ed",
+      "url": "https://www.aclu.org/news/privacy-technology/alpr-against-op-ed-writer",
+      "jurisdiction": "Lenexa, KS",
+      "agency": "Lenexa Police Department",
+      "abuse_categories": [
+        "protest_tracking",
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "ACLU Senior Policy Analyst Jay Stanley's analysis of the Lenexa/Ashworth case, adding significant detail beyond the primary KCUR report: the police chief's 'Make Your Own Case' (MYOC) directive instructing officers to manufacture a reason to stop Ashworth, the First Amendment implications of selective enforcement (lost-pet flyers left up while anti-ICE flyers removed), and the town's admission it had no formal poster policy. Frames the case as a textbook example of how mass surveillance infrastructure enables 'show me the man, I'll find you the crime' policing.",
+      "status": "approved"
+    },
+    {
+      "id": "046",
+      "date_published": "2026-01-12",
+      "publication": "KCTV5",
+      "submission_type": "case_study",
+      "title": "Joplin officer no longer employed after alleged misuse of license plate tracking system",
+      "url": "https://www.kctv5.com/2026/01/12/joplin-officer-no-longer-employed-after-alleged-misuse-license-plate-tracking-system/",
+      "jurisdiction": "Joplin, MO",
+      "agency": "Joplin Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "A Joplin officer was separated from the department after allegedly searching a single license plate approximately 395 times in violation of department policy. Notably, the abuse was discovered not by internal oversight but by a community member from Deflock Joplin reviewing publicly accessible Flock audit data who noticed an anomalous pattern of activity. The department referred potential criminal charges to the Missouri Highway Patrol and announced new monthly audit protocols.",
+      "status": "approved",
+      "submitted_by": "DeflockJoplin"
+    },
+    {
+      "id": "047",
+      "date_published": "2026-04-01",
+      "publication": "WIBW",
+      "submission_type": "case_study",
+      "title": "KBI: Ex-detective misused police resources to track spouse; child sex abuse material found",
+      "url": "https://www.wibw.com/2026/04/01/kbi-ex-detective-misused-police-resources-track-spouse-child-sex-abuse-material-found/",
+      "jurisdiction": "Bonner Springs, KS",
+      "agency": "Bonner Springs Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "domestic_abuse_enablement",
+        "unauthorized_access"
+      ],
+      "description": "Former Bonner Springs Detective Kyle Rector, 39, was arrested by the KBI after being suspected of using department resources while on duty to monitor and stalk his spouse. Bonner Springs PD requested KBI investigation January 28, 2026; Rector was terminated the same day. During the investigation, child sexual abuse material was also discovered. Wyandotte County DA Mark Dupree filed charges including five counts of sexual exploitation of a child under 14, five counts of breach of privacy, two counts of unlawful acts involving computers, one count of stalking, and five counts of official misconduct. Rector is held on $150,000 bond.",
+      "additional_urls": [
+        "https://fox4kc.com/news/former-bonner-springs-police-detective-arrested-charged-following-investigation/"
+      ],
       "status": "approved"
     }
   ]
