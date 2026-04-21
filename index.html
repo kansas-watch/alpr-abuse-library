@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPR Abuse Library — Kansas Watch</title>
+  <meta name="description" content="A publicly maintained index of news articles documenting abuses, misuses, and civil liberties concerns related to Automated License Plate Readers (ALPRs)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #F3B51A;
+      --gold-light: #F9D06A;
+      --gold-pale: #FEF6DC;
+      --blue: #175A7F;
+      --blue-dark: #0E3D57;
+      --blue-mid: #1E6E99;
+      --blue-light: #D6EAF4;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3D;
+      --ink-soft: #666;
+      --rule: #E0E0E0;
+      --bg: #F8F6F1;
+      --white: #FFFFFF;
+      --red-flag: #C0392B;
+      --category-pill-bg: #E8F4FB;
+      --category-pill-fg: #175A7F;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────────── */
+    header {
+      background: var(--blue-dark);
+      border-bottom: 4px solid var(--gold);
+      padding: 0;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 1.5rem;
+    }
+
+    .kw-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .kw-eyebrow a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .kw-eyebrow a:hover { text-decoration: underline; }
+
+    .kw-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .header-deck {
+      font-size: 1rem;
+      color: #B8CFD9;
+      max-width: 640px;
+      line-height: 1.6;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      flex-wrap: wrap;
+    }
+
+    .stat-chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--gold-light);
+      letter-spacing: 0.04em;
+    }
+
+    .stat-chip strong {
+      font-size: 1.1rem;
+      color: var(--white);
+      display: block;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .submit-link {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--gold);
+      color: var(--blue-dark);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.55rem 1rem;
+      border-radius: 2px;
+      transition: background 0.15s, transform 0.1s;
+    }
+
+    .submit-link:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    /* ── CONTROLS ────────────────────────────────────────────── */
+    .controls-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .controls-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.85rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+
+    select {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.88rem;
+      color: var(--ink);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      padding: 0.4rem 2rem 0.4rem 0.75rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.6rem center;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
+    .results-count {
+      margin-left: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.04em;
+    }
+
+    .results-count span {
+      color: var(--blue);
+      font-weight: 500;
+    }
+
+    .clear-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: none;
+      border: 1px solid var(--blue-light);
+      border-radius: 2px;
+      padding: 0.35rem 0.75rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .clear-btn:hover {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .clear-btn.hidden { display: none; }
+
+    /* ── MAIN CONTENT ────────────────────────────────────────── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    /* ── ENTRY ROWS ──────────────────────────────────────────── */
+    .entry-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .entry {
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.15s;
+    }
+
+    .entry:first-child {
+      border-top: 1px solid var(--rule);
+    }
+
+    .entry-header {
+      display: grid;
+      grid-template-columns: 90px 1fr auto;
+      gap: 1rem;
+      align-items: start;
+      padding: 1rem 0.5rem 1rem 0;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .entry:hover .entry-header {
+      background: rgba(23, 90, 127, 0.03);
+    }
+
+    .entry.open .entry-header {
+      background: var(--blue-light);
+    }
+
+    .entry-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.04em;
+      padding-top: 0.2rem;
+      white-space: nowrap;
+    }
+
+    .entry-main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .entry-title {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--blue-dark);
+      line-height: 1.4;
+    }
+
+    .entry-byline {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .entry-pub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      color: var(--ink-soft);
+      text-transform: uppercase;
+    }
+
+    .entry-jurisdiction {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.02em;
+    }
+
+    .entry-jurisdiction::before {
+      content: '·';
+      margin-right: 0.5rem;
+      color: var(--rule);
+    }
+
+    .entry-cats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.1rem;
+    }
+
+    .cat-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      background: var(--category-pill-bg);
+      color: var(--category-pill-fg);
+      white-space: nowrap;
+    }
+
+    .cat-pill.stalking_targeting   { background: #FDE8E8; color: #8B1A1A; }
+    .cat-pill.false_arrest         { background: #FFF3CD; color: #7A5200; }
+    .cat-pill.dragnet_surveillance { background: #E8F4FB; color: #175A7F; }
+    .cat-pill.immigration_enforcement { background: #E6F0E6; color: #2D5A2D; }
+    .cat-pill.fusion_center_sharing   { background: #F0EAF8; color: #4A2B7A; }
+    .cat-pill.unauthorized_access     { background: #FDE8E8; color: #8B1A1A; }
+    .cat-pill.data_breach             { background: #FFF0E6; color: #7A3300; }
+    .cat-pill.domestic_abuse_enablement { background: #FDE8E8; color: #8B1A1A; }
+    .cat-pill.protest_tracking        { background: #E6F0F8; color: #1A4A6B; }
+    .cat-pill.other                   { background: #F0F0F0; color: #555; }
+
+    .expand-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      color: var(--blue);
+      transition: background 0.15s, border-color 0.15s, transform 0.2s;
+    }
+
+    .entry.open .expand-icon {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+      transform: rotate(180deg);
+    }
+
+    .expand-icon svg {
+      display: block;
+    }
+
+    /* ── EXPANDED BODY ───────────────────────────────────────── */
+    .entry-body {
+      display: none;
+      padding: 0 0.5rem 1.25rem 106px;
+    }
+
+    .entry.open .entry-body {
+      display: block;
+    }
+
+    .entry-description {
+      font-size: 0.93rem;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      max-width: 700px;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .entry-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .entry-link-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: var(--blue);
+      color: var(--white);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+
+    .entry-link-primary:hover {
+      background: var(--blue-mid);
+    }
+
+    .entry-link-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: var(--blue);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--blue-light);
+      border-radius: 2px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .entry-link-secondary:hover {
+      background: var(--blue);
+      color: var(--white);
+      border-color: var(--blue);
+    }
+
+    .entry-type-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-left: auto;
+    }
+
+    /* ── EMPTY STATE ─────────────────────────────────────────── */
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--ink-soft);
+    }
+
+    .empty-state.visible { display: block; }
+
+    .empty-state p {
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    footer {
+      background: var(--blue-dark);
+      border-top: 3px solid var(--gold);
+      padding: 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-kw {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .footer-text {
+      font-size: 0.82rem;
+      color: #8AAABB;
+      font-style: italic;
+    }
+
+    .footer-links {
+      margin-left: auto;
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .footer-links a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--white); }
+
+    /* ── LOADING ─────────────────────────────────────────────── */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 2rem;
+      gap: 1rem;
+      color: var(--ink-soft);
+      font-style: italic;
+    }
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--blue-light);
+      border-top-color: var(--blue);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .header-inner { padding: 1.5rem 1rem 1rem; }
+      .controls-inner { padding: 0.75rem 1rem; gap: 0.6rem; }
+      main { padding: 1.5rem 1rem 3rem; }
+      .entry-header { grid-template-columns: 72px 1fr auto; gap: 0.6rem; }
+      .entry-body { padding-left: 80px; }
+      .submit-link { margin-left: 0; width: 100%; justify-content: center; }
+      .footer-inner { flex-direction: column; gap: 0.75rem; }
+      .footer-links { margin-left: 0; }
+      .results-count { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="kw-eyebrow">
+      <a href="https://kansas.watch">Kansas Watch</a>
+      &nbsp;/&nbsp; Civil Liberties
+    </div>
+    <h1>ALPR <span>Abuse</span> Library</h1>
+    <p class="header-deck">
+      A publicly maintained, editorially reviewed index of news articles documenting
+      abuses, misuses, and civil liberties concerns related to Automated License Plate
+      Readers — with a focus on Flock Safety deployments.
+    </p>
+    <div class="header-meta">
+      <div class="stat-chip">
+        <strong id="total-count">—</strong>
+        documented incidents
+      </div>
+      <div class="stat-chip">
+        <strong id="state-count">—</strong>
+        states &amp; jurisdictions
+      </div>
+      <div class="stat-chip">
+        <strong id="date-range">—</strong>
+        date range
+      </div>
+      <a class="submit-link" href="https://forms.gle/isGYpLcKu9YeFzSm9" target="_blank" rel="noopener">
+        ↗ Submit an Article
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="controls-bar">
+  <div class="controls-inner">
+    <span class="filter-label">Filter by</span>
+
+    <select id="filter-category" aria-label="Filter by abuse category">
+      <option value="">All categories</option>
+    </select>
+
+    <select id="filter-state" aria-label="Filter by jurisdiction">
+      <option value="">All jurisdictions</option>
+    </select>
+
+    <button class="clear-btn hidden" id="clear-btn">✕ Clear filters</button>
+
+    <div class="results-count" id="results-count"></div>
+  </div>
+</div>
+
+<main>
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <p>Loading library…</p>
+  </div>
+  <div class="entry-list" id="entry-list"></div>
+  <div class="empty-state" id="empty-state">
+    <p>No entries match the current filters.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-kw">Kansas Watch</span>
+    <span class="footer-text">All linked articles remain the property of their respective publishers.</span>
+    <nav class="footer-links">
+      <a href="https://kansas.watch">Home</a>
+      <a href="https://forms.gle/isGYpLcKu9YeFzSm9" target="_blank" rel="noopener">Submit</a>
+      <a href="mailto:info@kansas.watch">Contact</a>
+      <a href="./library.json" target="_blank">JSON</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const CATEGORY_LABELS = {
+    false_arrest:             'False Arrest',
+    stalking_targeting:       'Stalking / Targeting',
+    data_breach:              'Data Breach',
+    fusion_center_sharing:    'Fusion Center Sharing',
+    dragnet_surveillance:     'Dragnet Surveillance',
+    domestic_abuse_enablement:'Domestic Abuse Enablement',
+    immigration_enforcement:  'Immigration Enforcement',
+    protest_tracking:         'Protest Tracking',
+    unauthorized_access:      'Unauthorized Access',
+    other:                    'Other',
+  };
+
+  const TYPE_LABELS = {
+    case_study:          'Case Study',
+    news_report:         'News Report',
+    investigative_article:'Investigative',
+    opinion_piece:       'Opinion / Analysis',
+  };
+
+  let allEntries = [];
+  let activeCategory = '';
+  let activeState = '';
+
+  // ── Load data ──────────────────────────────────────────────
+  async function loadData() {
+    try {
+      const res = await fetch('./library.json');
+      if (!res.ok) throw new Error('fetch failed');
+      const data = await res.json();
+      allEntries = data.entries
+        .filter(e => e.status === 'approved')
+        .sort((a, b) => b.date_published.localeCompare(a.date_published));
+      initUI(data);
+    } catch (err) {
+      document.getElementById('loading').innerHTML =
+        '<p style="color:#C0392B;font-style:italic;">Could not load library data. Please try refreshing.</p>';
+    }
+  }
+
+  // ── Init UI ────────────────────────────────────────────────
+  function initUI(data) {
+    document.getElementById('loading').style.display = 'none';
+
+    // Header stats
+    document.getElementById('total-count').textContent = allEntries.length;
+    const jurisSet = new Set(allEntries.map(e => extractState(e.jurisdiction)).filter(Boolean));
+    document.getElementById('state-count').textContent = jurisSet.size;
+    const dates = allEntries.map(e => e.date_published).sort();
+    const fmt = d => { const [y] = d.split('-'); return y; };
+    document.getElementById('date-range').textContent =
+      fmt(dates[0]) + '–' + fmt(dates[dates.length - 1]);
+
+    // Populate category filter
+    const catSel = document.getElementById('filter-category');
+    const allCats = new Set(allEntries.flatMap(e => e.abuse_categories));
+    [...allCats].sort().forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = CATEGORY_LABELS[cat] || cat;
+      catSel.appendChild(opt);
+    });
+
+    // Populate state filter — extract unique states from jurisdiction
+    const stateSel = document.getElementById('filter-state');
+    const stateList = [...new Set(
+      allEntries.map(e => e.jurisdiction)
+    )].sort();
+    stateList.forEach(j => {
+      const opt = document.createElement('option');
+      opt.value = j;
+      opt.textContent = j;
+      stateSel.appendChild(opt);
+    });
+
+    renderEntries();
+
+    catSel.addEventListener('change', e => {
+      activeCategory = e.target.value;
+      updateClearBtn();
+      renderEntries();
+    });
+    stateSel.addEventListener('change', e => {
+      activeState = e.target.value;
+      updateClearBtn();
+      renderEntries();
+    });
+    document.getElementById('clear-btn').addEventListener('click', () => {
+      activeCategory = '';
+      activeState = '';
+      catSel.value = '';
+      stateSel.value = '';
+      updateClearBtn();
+      renderEntries();
+    });
+  }
+
+  function updateClearBtn() {
+    const btn = document.getElementById('clear-btn');
+    if (activeCategory || activeState) {
+      btn.classList.remove('hidden');
+    } else {
+      btn.classList.add('hidden');
+    }
+  }
+
+  // ── Render ─────────────────────────────────────────────────
+  function renderEntries() {
+    const list = document.getElementById('entry-list');
+    const emptyState = document.getElementById('empty-state');
+
+    const filtered = allEntries.filter(e => {
+      if (activeCategory && !e.abuse_categories.includes(activeCategory)) return false;
+      if (activeState && e.jurisdiction !== activeState) return false;
+      return true;
+    });
+
+    // Count display
+    document.getElementById('results-count').innerHTML =
+      `Showing <span>${filtered.length}</span> of ${allEntries.length} entries`;
+
+    list.innerHTML = '';
+
+    if (filtered.length === 0) {
+      emptyState.classList.add('visible');
+      return;
+    }
+    emptyState.classList.remove('visible');
+
+    filtered.forEach(entry => {
+      list.appendChild(buildEntry(entry));
+    });
+  }
+
+  // ── Build entry DOM ────────────────────────────────────────
+  function buildEntry(entry) {
+    const el = document.createElement('div');
+    el.className = 'entry';
+    el.dataset.id = entry.id;
+
+    const dateStr = formatDate(entry.date_published);
+    const catPills = entry.abuse_categories.map(c =>
+      `<span class="cat-pill ${c}">${CATEGORY_LABELS[c] || c}</span>`
+    ).join('');
+
+    const additionalLinks = (entry.additional_urls || []).map((url, i) =>
+      `<a class="entry-link-secondary" href="${esc(url)}" target="_blank" rel="noopener">
+        Source ${i + 2} ↗
+      </a>`
+    ).join('');
+
+    el.innerHTML = `
+      <div class="entry-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="entry-date">${dateStr}</div>
+        <div class="entry-main">
+          <div class="entry-title">${esc(entry.title)}</div>
+          <div class="entry-byline">
+            <span class="entry-pub">${esc(entry.publication)}</span>
+            <span class="entry-jurisdiction">${esc(entry.jurisdiction)}</span>
+          </div>
+          <div class="entry-cats">${catPills}</div>
+        </div>
+        <div class="expand-icon" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="entry-body" role="region">
+        <p class="entry-description">${esc(entry.description)}</p>
+        <div class="entry-links">
+          <a class="entry-link-primary" href="${esc(entry.url)}" target="_blank" rel="noopener">
+            Read Article ↗
+          </a>
+          ${additionalLinks}
+          <span class="entry-type-badge">${TYPE_LABELS[entry.submission_type] || entry.submission_type}</span>
+        </div>
+      </div>
+    `;
+
+    const header = el.querySelector('.entry-header');
+    header.addEventListener('click', () => toggleEntry(el));
+    header.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleEntry(el); }
+    });
+
+    return el;
+  }
+
+  function toggleEntry(el) {
+    const isOpen = el.classList.contains('open');
+    el.classList.toggle('open', !isOpen);
+    el.querySelector('.entry-header').setAttribute('aria-expanded', String(!isOpen));
+  }
+
+  // ── Helpers ────────────────────────────────────────────────
+  function esc(str) {
+    if (!str) return '';
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function formatDate(iso) {
+    const [y, m] = iso.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${months[parseInt(m,10)-1]} ${y}`;
+  }
+
+  function extractState(jurisdiction) {
+    if (!jurisdiction) return null;
+    const parts = jurisdiction.split(',');
+    if (parts.length >= 2) return parts[parts.length - 1].trim();
+    return jurisdiction.trim();
+  }
+
+  loadData();
+</script>
+</body>
+</html>
