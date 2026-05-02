@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-04-21",
+    "last_updated": "2026-04-30",
     "schema_version": "1.1",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
   },
@@ -644,7 +644,7 @@
       "publication": "9News",
       "submission_type": "investigative_article",
       "title": "Researchers Claim Flock Cameras Are Easy to Hack — 51 Vulnerabilities Found",
-      "url": "https://www.9news.com/article/tech/researchers-claim-flock-cameras-are-easy-to-hack/73-6c805b4a-7b64-4d71-828e-961dda84b8e5",
+      "url": "https://www.9news.com/article/news/tech/researchers-claim-flock-cameras-are-easy-to-hack/73-6c805b4a-7b64-4d71-828e-961dda84b8e5",
       "jurisdiction": "National",
       "agency": "Flock Safety",
       "abuse_categories": [
@@ -934,6 +934,55 @@
         "other"
       ],
       "description": "A CPRA records request revealed that Riverside County issued three encroachment permits for 500+ Flock cameras, all to the wrong permittee: the Sheriff's Department received permits that Flock had applied for in its own name, improperly triggering a public-agency fee exemption that a private company should not have qualified for. The permits also lacked required traffic control plans for the majority of installations. Between the first and second permits, cameras operated for over 13 months with no valid permit at all. The county's records custodian certified under oath that no other authorizations exist. The investigation positions the Riverside case as representative of a nationwide pattern: Flock cameras routinely go up on public roads under permits that are unreviewed, improperly issued, or absent — with no agency taking responsibility for verification.",
+      "status": "approved"
+    },
+    {
+      "id": "053",
+      "date_published": "2026-04-30",
+      "publication": "The Richmonder",
+      "submission_type": "news_report",
+      "title": "RPD discloses sergeant violated Flock camera policy by sharing info with federal agent",
+      "url": "https://www.richmonder.org/rpd-discloses-sergeant-violated-flock-camera-policy-by-sharing-info-with-federal-agent/",
+      "jurisdiction": "Richmond, VA",
+      "agency": "Richmond Police Department",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "unauthorized_access"
+      ],
+      "description": "A Q1 2026 audit of RPD's Flock system revealed a sergeant shared ALPR data with an FBI special agent investigating a Washington, D.C. homicide — a direct violation of both department policy and Virginia state law, which generally prohibits sharing ALPR data with agencies conducting out-of-state investigations (with narrow exceptions). Commonwealth's Attorney Colette McEachin reviewed the facts and declined to prosecute. The sergeant's Flock access was deactivated following an internal investigation. The disclosure came as anti-Flock activists maintained a regular presence at Richmond City Council meetings. RPD announced quarterly public disclosure of future compliance findings.",
+      "status": "approved",
+      "submitted_by": "able92@protonmail.com"
+    },
+    {
+      "id": "054",
+      "date_published": "2026-04-30",
+      "publication": "9News",
+      "submission_type": "news_report",
+      "title": "Not a one-off: More Coloradans stopped by police after data errors triggered Flock alerts",
+      "url": "https://www.9news.com/article/news/local/coloradan-stopped-by-police-data-errors-flock-alerts/73-593a3772-f43d-46b1-8744-af888b9bd7f2",
+      "jurisdiction": "Boulder County, CO / Jefferson County, CO",
+      "agency": "Boulder County Sheriff's Office / Jefferson County Sheriff's Office / Aurora Police Department",
+      "abuse_categories": [
+        "false_arrest",
+        "dragnet_surveillance"
+      ],
+      "description": "9News follow-up to its earlier reporting on Kyle Dausman — a driver repeatedly pulled over due to a database error linking his plate to an active warrant — documenting two additional victims. Sarah Judson, 76, was flagged after Flock cameras matched her plate to a stolen vehicle report from Colorado Springs; a Boulder County deputy later found her in a restaurant parking lot and told her two other officers were actively searching for her. Katie Rothman's plate had been entered into the Colorado Crime Information Center with a single-character typo by Aurora PD in 2023 — a '1' instead of 'I' — and the error remained in the system for nearly two years. An effort to require a warrant before querying historical ALPR data failed in the Colorado legislature the same week. All three drivers were ultimately removed from the hotlist, but none could obtain confirmation until after repeated stops.",
+      "status": "approved"
+    },
+    {
+      "id": "055",
+      "date_published": "2026-05-01",
+      "publication": "WYSO",
+      "submission_type": "news_report",
+      "title": "Dayton suspends automated license plate readers after 'egregious' data sharing violations",
+      "url": "https://www.wyso.org/news/2026-05-01/dayton-suspends-automated-license-plate-readers-after-egregious-data-sharing-violations",
+      "jurisdiction": "Dayton, OH",
+      "agency": "Dayton Police Department",
+      "abuse_categories": [
+        "fusion_center_sharing",
+        "immigration_enforcement"
+      ],
+      "description": "Dayton PD indefinitely suspended its Flock ALPR program after an internal review found a former Support Services Division commander had failed to implement required safeguards restricting external data access — resulting in 7,100 immigration-related search requests from outside agencies, in violation of city policy. The commander no longer works for the department. City Manager Shelley Dickstein described the failures as 'egregious violations of policy' that undermined community trust. Required processes not implemented included commander approval for external sharing, documentation barring immigration-enforcement use, and notification to the City Commission of data-sharing relationships. The violations were discovered in October 2025 when a newly assigned major noticed unexpectedly high external access levels; all outside sharing was disabled in November 2025 and fully cut off in April 2026. The city will not proceed with a previously approved 27-camera expansion pending independent review.",
       "status": "approved"
     }
   ]
