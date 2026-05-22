@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-05-04",
+    "last_updated": "2026-05-22",
     "schema_version": "1.1",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
   },
@@ -55,7 +55,7 @@
       "jurisdiction": "Toledo, OH",
       "agency": "Toledo Police Department",
       "abuse_categories": ["false_arrest", "dragnet_surveillance"],
-      "description": "Flock camera misread a \"7\" on Brandon Upchurch's license plate as a \"2,\" generating a stolen vehicle alert. Officer Adrian Wilson initiated a felony stop, drew weapons, and released a police dog on Upchurch before confirming plate ownership. Upchurch was jailed and charged; charges were dropped in August 2024 and the city of Toledo settled for $35,000. The officer received only a verbal reprimand.",
+      "description": "Flock camera misread a '7' on Brandon Upchurch's license plate as a '2,' generating a stolen vehicle alert. Officer Adrian Wilson initiated a felony stop, drew weapons, and released a police dog on Upchurch before confirming plate ownership. Upchurch was jailed and charged; charges were dropped in August 2024 and the city of Toledo settled for $35,000. The officer received only a verbal reprimand.",
       "status": "approved"
     },
     {
@@ -81,7 +81,7 @@
       "jurisdiction": "Sandy Springs, GA",
       "agency": "Sandy Springs Police Department",
       "abuse_categories": ["unauthorized_access", "data_breach"],
-      "description": "Reserve Sgt. Francis Esposito used his city Flock login to run license plates of multiple individuals and allegedly transferred the data to Signal 8, a private company he also worked for. A whistleblower former Signal 8 employee reported the data was used for beta testing and product validation. Esposito resigned during the investigation; Sandy Springs officially lists him as terminated and referred the case to the Georgia Peace Officer Standards & Training Council.",
+      "description": "Reserve Sgt. Francis Esposito used his city Flock login to run license plates of multiple individuals and allegedly transferred the data to Signal 8, a private company he also worked for. A whistleblower former Signal 8 employee reported the data was used for beta testing and product validation. Esposito resigned during the investigation; Sandy Springs officially lists him as terminated and referred the case to the Georgia Peace Officer Standards and Training Council.",
       "status": "approved"
     },
     {
@@ -120,7 +120,7 @@
       "jurisdiction": "Aurora, CO",
       "agency": "Aurora Police Department",
       "abuse_categories": ["false_arrest"],
-      "description": "Police held a Black family at gunpoint — including children — after an ALPR misread flagged their minivan as a stolen motorcycle. Officers forced them onto hot pavement before realizing the error. Body cam footage released publicly. The city settled for $1.9 million.",
+      "description": "Police held a Black family at gunpoint including children after an ALPR misread flagged their minivan as a stolen motorcycle. Officers forced them onto hot pavement before realizing the error. Body cam footage released publicly. The city settled for $1.9 million.",
       "additional_urls": [
         "https://gizmodo.com/cops-terrorize-black-family-but-blame-license-plate-rea-1844602731",
         "https://www.eff.org/deeplinks/2024/11/human-toll-alpr-errors"
@@ -138,7 +138,7 @@
       "jurisdiction": "Greenville, SC",
       "agency": "Greenville Police Department",
       "abuse_categories": ["false_arrest", "unauthorized_access", "other"],
-      "description": "Comprehensive investigative piece covering multiple South Carolina ALPR abuses: two sisters drawn on at gunpoint after a Flock camera wrongly flagged their rental car as stolen (lawsuit filed); 200+ Flock cameras installed on SC roads without SCDOT permits; a SLED officer who searched his own plate and altered the record to hide it; and the original Greenville Flock contract signed by Police Chief Kenneth Miller — who was under an active SLED investigation and resigned weeks later — using civil asset forfeiture funds to bypass council appropriations.",
+      "description": "Comprehensive investigative piece covering multiple South Carolina ALPR abuses: two sisters drawn on at gunpoint after a Flock camera wrongly flagged their rental car as stolen (lawsuit filed); 200+ Flock cameras installed on SC roads without SCDOT permits; a SLED officer who searched his own plate and altered the record to hide it; and the original Greenville Flock contract signed by Police Chief Kenneth Miller who was under an active SLED investigation and resigned weeks later using civil asset forfeiture funds to bypass council appropriations.",
       "additional_urls": [
         "https://www.courthousenews.com/privacy-advocates-police-spar-over-license-plate-cameras-in-south-carolina/"
       ],
@@ -173,7 +173,7 @@
       "jurisdiction": "Braselton, GA",
       "agency": "Braselton Police Department",
       "abuse_categories": ["stalking_targeting"],
-      "description": "Police Chief Michael Steffman was arrested by the GBI on charges including stalking and violation of oath for using ALPR to stalk and harass multiple private citizens — including searches of cameras in Capitola, California, thousands of miles from his jurisdiction. He resigned hours before his arrest, five days after being honored for 20 years of service.",
+      "description": "Police Chief Michael Steffman was arrested by the GBI on charges including stalking and violation of oath for using ALPR to stalk and harass multiple private citizens including searches of cameras in Capitola, California, thousands of miles from his jurisdiction. He resigned hours before his arrest, five days after being honored for 20 years of service.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -219,7 +219,7 @@
       "jurisdiction": "Mountain View, CA",
       "agency": "Mountain View Police Department",
       "abuse_categories": ["fusion_center_sharing"],
-      "description": "An audit revealed that Flock had enabled the nationwide search setting on Mountain View's system without the city's knowledge, exposing local data to hundreds of agencies including the ATF, Air Force, and GSA Inspector General — none of whom had city authorization. The police chief immediately disabled cameras and the city terminated the contract.",
+      "description": "An audit revealed that Flock had enabled the nationwide search setting on Mountain View's system without the city's knowledge, exposing local data to hundreds of agencies including the ATF, Air Force, and GSA Inspector General none of whom had city authorization. The police chief immediately disabled cameras and the city terminated the contract.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -251,7 +251,7 @@
       "jurisdiction": "Washington State",
       "agency": "Multiple WA agencies",
       "abuse_categories": ["fusion_center_sharing", "unauthorized_access", "immigration_enforcement"],
-      "description": "UWCHR documented three modes of unauthorized federal access to WA ALPR data: 8 agencies explicitly authorized CBP sharing ('front door'), Border Patrol accessed data from 10+ agencies that never authorized sharing ('back door'), and local officers searched on behalf of federal agents using their own accounts ('side door'). Specific examples: Renton PD searched for 'Special Agent Michael R. Bonner' (HSI); Richland PD searched 82 networks for 'HSI Investigation -- Intel'; Auburn PD stated access 'occurred unknowingly to us.'",
+      "description": "UWCHR documented three modes of unauthorized federal access to WA ALPR data: 8 agencies explicitly authorized CBP sharing (front door), Border Patrol accessed data from 10+ agencies that never authorized sharing (back door), and local officers searched on behalf of federal agents using their own accounts (side door). Specific examples: Renton PD searched for Special Agent Michael R. Bonner (HSI); Richland PD searched 82 networks for HSI Investigation Intel; Auburn PD stated access occurred unknowingly to us.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -265,7 +265,7 @@
       "jurisdiction": "National",
       "agency": "ICE / Multiple agencies",
       "abuse_categories": ["immigration_enforcement"],
-      "description": "Data obtained from Danville, IL police showed 4,000+ lookups nationally with search reasons citing 'immigration,' 'ICE+ERO,' or 'ICE WARRANT.' Local officers searched on behalf of federal agents using their own accounts, providing ICE backdoor access to Flock's national network in circumvention of local sanctuary policies.",
+      "description": "Data obtained from Danville, IL police showed 4,000+ lookups nationally with search reasons citing immigration, ICE+ERO, or ICE WARRANT. Local officers searched on behalf of federal agents using their own accounts, providing ICE backdoor access to Flock's national network in circumvention of local sanctuary policies.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -279,7 +279,7 @@
       "jurisdiction": "Virginia",
       "agency": "Multiple VA agencies",
       "abuse_categories": ["immigration_enforcement", "dragnet_surveillance"],
-      "description": "VCIJ documented nearly 3,000 searches using terms 'ICE,' 'ERO,' 'immigration,' and 'deportee' on Virginia's Flock network over a 12-month period. In Bridgewater, VA (population ~6,000), just five cameras generated 6.9 million searches by outside agencies in 12 months, with 9 in 10 searches from out-of-state law enforcement.",
+      "description": "VCIJ documented nearly 3,000 searches using terms ICE, ERO, immigration, and deportee on Virginia's Flock network over a 12-month period. In Bridgewater, VA (population ~6,000), just five cameras generated 6.9 million searches by outside agencies in 12 months, with 9 in 10 searches from out-of-state law enforcement.",
       "additional_urls": [
         "https://www.vpm.org/news/2025-07-07/vcij-immigration-enforcement-flock-safety-license-plate-readers-poggenklass",
         "https://vcij.org/stories/virginias-flock-network-was-searched-regularly-for-immigration-offenses-heres-who-was-looking"
@@ -297,7 +297,7 @@
       "jurisdiction": "Richmond, VA",
       "agency": "ATF / Richmond Police Department",
       "abuse_categories": ["unauthorized_access", "immigration_enforcement"],
-      "description": "An ATF analyst searched 49 plates through Richmond PD's Flock system without permission from the department, receiving 400 results — over a quarter of which were related to an immigration case. The searches were conducted without Richmond PD's knowledge or authorization.",
+      "description": "An ATF analyst searched 49 plates through Richmond PD's Flock system without permission from the department, receiving 400 results over a quarter of which were related to an immigration case. The searches were conducted without Richmond PD's knowledge or authorization.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -339,7 +339,7 @@
       "jurisdiction": "Johnson County, TX",
       "agency": "Johnson County Sheriff's Office",
       "abuse_categories": ["stalking_targeting", "dragnet_surveillance"],
-      "description": "Johnson County deputies searched 83,345 cameras across 6,809 networks to track a woman who had a self-managed abortion, logging the search reason as 'had an abortion, search for female.' The agency lied to access Massachusetts ALPR data, falsely claiming the vehicle was related to a stolen vehicle investigation. Flock initially defended the search as a legitimate missing-person case. Sheriff Adam King was subsequently indicted on unrelated felony charges.",
+      "description": "Johnson County deputies searched 83,345 cameras across 6,809 networks to track a woman who had a self-managed abortion, logging the search reason as had an abortion, search for female. The agency lied to access Massachusetts ALPR data, falsely claiming the vehicle was related to a stolen vehicle investigation. Flock initially defended the search as a legitimate missing-person case. Sheriff Adam King was subsequently indicted on unrelated felony charges.",
       "additional_urls": [
         "https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it"
       ],
@@ -356,7 +356,7 @@
       "jurisdiction": "National",
       "agency": "Multiple agencies",
       "abuse_categories": ["protest_tracking", "dragnet_surveillance"],
-      "description": "EFF analysis of 12 million searches logged by 3,900+ agencies between December 2024 and October 2025 found that 50+ federal, state, and local agencies ran hundreds of searches in connection with protest activity — including the 50501 protests, Hands Off protests, and No Kings protests. In some cases, law enforcement specifically targeted known activist groups.",
+      "description": "EFF analysis of 12 million searches logged by 3,900+ agencies between December 2024 and October 2025 found that 50+ federal, state, and local agencies ran hundreds of searches in connection with protest activity including the 50501 protests, Hands Off protests, and No Kings protests. In some cases, law enforcement specifically targeted known activist groups.",
       "additional_urls": [
         "https://www.eff.org/deeplinks/2025/12/effs-investigations-expose-flock-safetys-surveillance-abuses-2025-review"
       ],
@@ -387,7 +387,7 @@
       "jurisdiction": "Eugene, OR / Evanston, IL / Cambridge, MA",
       "agency": "Flock Safety",
       "abuse_categories": ["other"],
-      "description": "Documents three cases of Flock cameras continuing to operate after shutdown orders: In Eugene, OR, at least one camera remained active weeks after officials ordered all 57 cameras off. In Evanston, IL, Flock reinstalled cameras without permission; the city sent a cease-and-desist. In Cambridge, MA, Flock installed 2 new cameras less than a month after the city council ordered 16 deactivated; Cambridge terminated the contract citing 'material breach of trust.'",
+      "description": "Documents three cases of Flock cameras continuing to operate after shutdown orders: In Eugene, OR, at least one camera remained active weeks after officials ordered all 57 cameras off. In Evanston, IL, Flock reinstalled cameras without permission; the city sent a cease-and-desist. In Cambridge, MA, Flock installed 2 new cameras less than a month after the city council ordered 16 deactivated; Cambridge terminated the contract citing material breach of trust.",
       "additional_urls": [
         "https://evanstonroundtable.com/2025/09/24/flock-safety-reinstalls-evanston-cameras/",
         "https://www.thecrimson.com/article/2025/12/10/cambridge-ends-flock-contract/"
@@ -405,7 +405,7 @@
       "jurisdiction": "Staunton, VA",
       "agency": "Staunton Police Department",
       "abuse_categories": ["other"],
-      "description": "Flock CEO Garrett Langley sent an unsolicited email to all law enforcement clients characterizing community opposition as a 'coordinated attack.' Staunton's 41-year police chief publicly rebuked Langley and the city terminated its Flock contract.",
+      "description": "Flock CEO Garrett Langley sent an unsolicited email to all law enforcement clients characterizing community opposition as a coordinated attack. Staunton's 41-year police chief publicly rebuked Langley and the city terminated its Flock contract.",
       "additional_urls": ["https://www.ci.staunton.va.us/Home/Components/News/News/2572/71"],
       "status": "approved",
       "submitted_by": "DeflockSC"
@@ -437,7 +437,7 @@
       "jurisdiction": "Norfolk, VA",
       "agency": "Norfolk Police Department",
       "abuse_categories": ["dragnet_surveillance"],
-      "description": "Lee Schmidt's car was logged 526 times in 3.5 months simply driving to work. Crystal Arrington's location was recorded 849 times. Neither was a suspect or under investigation. Norfolk police installed 172 cameras with the stated goal of making it 'difficult to drive anywhere of any distance without running into a camera somewhere.' The Institute for Justice filed suit; a Virginia court later ruled ALPR surveillance does not require a warrant.",
+      "description": "Lee Schmidt's car was logged 526 times in 3.5 months simply driving to work. Crystal Arrington's location was recorded 849 times. Neither was a suspect or under investigation. Norfolk police installed 172 cameras with the stated goal of making it difficult to drive anywhere of any distance without running into a camera somewhere. The Institute for Justice filed suit; a Virginia court later ruled ALPR surveillance does not require a warrant.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -451,7 +451,7 @@
       "jurisdiction": "Los Angeles, CA",
       "agency": "Los Angeles Police Department",
       "abuse_categories": ["dragnet_surveillance"],
-      "description": "State audit found LAPD had accumulated 320 million ALPR images. Only 400,000 generated an immediate match — meaning 99.9% of stored images were of vehicles not on any hot list. LAPD retained all data for 5+ years and had no ALPR usage policy in place, despite state law requiring one since 2016.",
+      "description": "State audit found LAPD had accumulated 320 million ALPR images. Only 400,000 generated an immediate match meaning 99.9% of stored images were of vehicles not on any hot list. LAPD retained all data for 5+ years and had no ALPR usage policy in place, despite state law requiring one since 2016.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -465,7 +465,7 @@
       "jurisdiction": "National",
       "agency": "FBI / Houston HIDTA",
       "abuse_categories": ["unauthorized_access"],
-      "description": "A Houston HIDTA bulletin, forwarded by the FBI to its intelligence community, instructed Flock users to enter search reasons 'as vague as permissible,' to exclude agencies that comply with public records laws from their data-sharing networks, and to limit searches to in-state to avoid jurisdictions that release audit logs.",
+      "description": "A Houston HIDTA bulletin, forwarded by the FBI to its intelligence community, instructed Flock users to enter search reasons as vague as permissible, to exclude agencies that comply with public records laws from their data-sharing networks, and to limit searches to in-state to avoid jurisdictions that release audit logs.",
       "additional_urls": [
         "https://www.404media.co/police-told-to-be-as-vague-as-permissible-about-why-they-use-flock/"
       ],
@@ -482,7 +482,7 @@
       "jurisdiction": "National",
       "agency": "Flock Safety",
       "abuse_categories": ["other"],
-      "description": "After stalking officers were identified through audit log patterns, Flock unilaterally stripped officer names and license plates from the audit logs it provides to police agencies — replacing unique identifiers with 'redacted' — and blocked VPN access to transparency portals. The company had previously described these logs as 'immutable' and 'tamper-proof.' A redaction error subsequently unmasked millions of surveillance targets.",
+      "description": "After stalking officers were identified through audit log patterns, Flock unilaterally stripped officer names and license plates from the audit logs it provides to police agencies replacing unique identifiers with redacted and blocked VPN access to transparency portals. The company had previously described these logs as immutable and tamper-proof. A redaction error subsequently unmasked millions of surveillance targets.",
       "additional_urls": [
         "https://haveibeenflocked.com/news/transparency-portals/",
         "https://www.404media.co/police-unmask-millions-of-surveillance-targets-because-of-flock-redaction-error/",
@@ -501,7 +501,7 @@
       "jurisdiction": "Richland County, SC",
       "agency": "Richland County Sheriff's Department",
       "abuse_categories": ["other"],
-      "description": "Richland County Sheriff's Department quoted a journalist $9,152 for two CSV files containing Flock audit logs — the same files Florence County PD provided for free within one business day, and Bluffton PD mailed on a USB drive for $20. Documents the wide disparity in public records compliance across South Carolina agencies.",
+      "description": "Richland County Sheriff's Department quoted a journalist $9,152 for two CSV files containing Flock audit logs the same files Florence County PD provided for free within one business day, and Bluffton PD mailed on a USB drive for $20. Documents the wide disparity in public records compliance across South Carolina agencies.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -515,7 +515,7 @@
       "jurisdiction": "Colorado",
       "agency": "Flock Safety",
       "abuse_categories": ["unauthorized_access"],
-      "description": "A 9News investigation caught a Flock sales representative on a recorded Zoom call stating that Flock had previously been 'doing partnerships with private investigators or large investigative firms.' Flock denied the claim after the recording was published, but the admission was on video.",
+      "description": "A 9News investigation caught a Flock sales representative on a recorded Zoom call stating that Flock had previously been doing partnerships with private investigators or large investigative firms. Flock denied the claim after the recording was published, but the admission was on video.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -529,7 +529,7 @@
       "jurisdiction": "National",
       "agency": "Flock Safety",
       "abuse_categories": ["data_breach", "other"],
-      "description": "404 Media reported Flock had been developing a platform called Nova to supplement ALPR data with information from data breaches and commercially available data to enable warrantless tracking of individuals. The EFF described it as a 'dystopian panopticon.' After the reporting, Flock stated it had explored sourcing dark web/breach data but decided against it.",
+      "description": "404 Media reported Flock had been developing a platform called Nova to supplement ALPR data with information from data breaches and commercially available data to enable warrantless tracking of individuals. The EFF described it as a dystopian panopticon. After the reporting, Flock stated it had explored sourcing dark web/breach data but decided against it.",
       "additional_urls": [
         "https://www.404media.co/flock-decides-not-to-use-hacked-data-in-people-search-tool/"
       ],
@@ -546,7 +546,7 @@
       "jurisdiction": "National",
       "agency": "Flock Safety",
       "abuse_categories": ["other"],
-      "description": "Flock rewrote its Terms of Service twice in three months, making 147 documented changes. Key deletions: removed 'Flock does not own and shall not sell Customer Data'; eliminated training data safeguards; added a perpetual data license; moved mandatory arbitration to Georgia; eliminated the gross negligence exception from liability caps; and restricted government termination rights.",
+      "description": "Flock rewrote its Terms of Service twice in three months, making 147 documented changes. Key deletions: removed Flock does not own and shall not sell Customer Data; eliminated training data safeguards; added a perpetual data license; moved mandatory arbitration to Georgia; eliminated the gross negligence exception from liability caps; and restricted government termination rights.",
       "status": "approved",
       "submitted_by": "DeflockSC"
     },
@@ -626,7 +626,7 @@
       "jurisdiction": "California",
       "agency": "Flock Safety / Multiple CA agencies",
       "abuse_categories": ["fusion_center_sharing", "immigration_enforcement", "dragnet_surveillance"],
-      "description": "Oakland law firm Gibbs Mura filed a class action lawsuit against Flock Safety in San Francisco Superior Court on February 26, 2026, alleging violations of California's ALPR Privacy Act. Out-of-state agencies searched SFPD's Flock database more than 1.6 million times in seven months. Oxnard PD suspended cameras after discovering a 'vendor-based issue' had enabled nationwide access despite being set to 'California only.' Ventura County found 364,000 unauthorized external searches. Plaintiffs seek $2,500+ per violation.",
+      "description": "Oakland law firm Gibbs Mura filed a class action lawsuit against Flock Safety in San Francisco Superior Court on February 26, 2026, alleging violations of California's ALPR Privacy Act. Out-of-state agencies searched SFPD's Flock database more than 1.6 million times in seven months. Oxnard PD suspended cameras after discovering a vendor-based issue had enabled nationwide access despite being set to California only. Ventura County found 364,000 unauthorized external searches. Plaintiffs seek $2,500+ per violation.",
       "status": "approved"
     },
     {
@@ -639,7 +639,7 @@
       "jurisdiction": "Lenexa, KS",
       "agency": "Lenexa Police Department",
       "abuse_categories": ["protest_tracking", "stalking_targeting"],
-      "description": "After Canyen Ashworth published a guest column criticizing Lenexa PD's failure to warn the community before an ICE raid, Police Chief Dawn Layman launched an investigation into him using the city's ALPR system to track his movements. Three weeks later, Layman issued a department-wide BOLO and internal directives telling officers to 'Make Your Own Case' — find any reason to stop him. No charges were filed. The ACLU of Kansas called it 'a wanton and disgraceful abuse of power.' Chief Layman subsequently left for another department.",
+      "description": "After Canyen Ashworth published a guest column criticizing Lenexa PD's failure to warn the community before an ICE raid, Police Chief Dawn Layman launched an investigation into him using the city's ALPR system to track his movements. Three weeks later, Layman issued a department-wide BOLO and internal directives telling officers to Make Your Own Case find any reason to stop him. No charges were filed. The ACLU of Kansas called it a wanton and disgraceful abuse of power. Chief Layman subsequently left for another department.",
       "status": "approved"
     },
     {
@@ -652,7 +652,7 @@
       "jurisdiction": "Greenfield, WI",
       "agency": "Greenfield Police Department",
       "abuse_categories": ["stalking_targeting", "domestic_abuse_enablement"],
-      "description": "ACLU-WI analysis centered on Greenfield Police Chief Jay Johnson, facing felony misconduct charges for ordering installation of a department-owned surveillance camera outside his personal home during divorce proceedings — after being explicitly told by the city attorney he could not. The piece also documents Wauwatosa PD conducting nearly 1,900 Flock ALPR searches in six months with the sole justification 'investigation,' and synthesizes the broader pattern of ALPR domestic abuse.",
+      "description": "ACLU-WI analysis centered on Greenfield Police Chief Jay Johnson, facing felony misconduct charges for ordering installation of a department-owned surveillance camera outside his personal home during divorce proceedings after being explicitly told by the city attorney he could not. The piece also documents Wauwatosa PD conducting nearly 1,900 Flock ALPR searches in six months with the sole justification investigation, and synthesizes the broader pattern of ALPR domestic abuse.",
       "status": "approved"
     },
     {
@@ -665,7 +665,7 @@
       "jurisdiction": "Woodburn, OR",
       "agency": "U.S. Border Patrol / DHS / Woodburn Police Department",
       "abuse_categories": ["fusion_center_sharing", "immigration_enforcement"],
-      "description": "Despite earlier city assurances that Woodburn's Flock data was accessible only to Woodburn PD and Oregon law enforcement, a city audit confirmed DHS accessed Woodburn's camera data 175 times between March and May 2025, and Border Patrol conducted 209 searches between May and June 2025 — all through a federal pilot program implemented by Flock without the city's knowledge. Cameras remain powered off with no reinstatement date.",
+      "description": "Despite earlier city assurances that Woodburn's Flock data was accessible only to Woodburn PD and Oregon law enforcement, a city audit confirmed DHS accessed Woodburn's camera data 175 times between March and May 2025, and Border Patrol conducted 209 searches between May and June 2025 all through a federal pilot program implemented by Flock without the city's knowledge. Cameras remain powered off with no reinstatement date.",
       "status": "approved"
     },
     {
@@ -691,7 +691,7 @@
       "jurisdiction": "Lenexa, KS",
       "agency": "Lenexa Police Department",
       "abuse_categories": ["protest_tracking", "stalking_targeting", "unauthorized_access"],
-      "description": "ACLU Senior Policy Analyst Jay Stanley's analysis of the Lenexa/Ashworth case, adding significant detail: the police chief's 'Make Your Own Case' directive instructing officers to manufacture a reason to stop Ashworth, First Amendment implications of selective enforcement, and the town's admission it had no formal poster policy. Frames the case as a textbook example of how mass surveillance infrastructure enables 'show me the man, I'll find you the crime' policing.",
+      "description": "ACLU Senior Policy Analyst Jay Stanley's analysis of the Lenexa/Ashworth case, adding significant detail: the police chief's Make Your Own Case directive instructing officers to manufacture a reason to stop Ashworth, First Amendment implications of selective enforcement, and the town's admission it had no formal poster policy. Frames the case as a textbook example of how mass surveillance infrastructure enables show me the man, I'll find you the crime policing.",
       "status": "approved"
     },
     {
@@ -704,7 +704,7 @@
       "jurisdiction": "Joplin, MO",
       "agency": "Joplin Police Department",
       "abuse_categories": ["stalking_targeting", "unauthorized_access"],
-      "description": "A Joplin officer was separated from the department after allegedly searching a single license plate approximately 395 times in violation of department policy. The abuse was discovered by a community member from Deflock Joplin reviewing publicly accessible Flock audit data — not through internal oversight. The department referred potential criminal charges to the Missouri Highway Patrol and announced new monthly audit protocols.",
+      "description": "A Joplin officer was separated from the department after allegedly searching a single license plate approximately 395 times in violation of department policy. The abuse was discovered by a community member from Deflock Joplin reviewing publicly accessible Flock audit data not through internal oversight. The department referred potential criminal charges to the Missouri Highway Patrol and announced new monthly audit protocols.",
       "status": "approved",
       "submitted_by": "DeflockJoplin"
     },
@@ -750,7 +750,7 @@
       "jurisdiction": "Minneapolis, MN",
       "agency": "Minneapolis Police Department",
       "abuse_categories": ["dragnet_surveillance"],
-      "description": "Investigative report documenting MPD's deployment of 30 fixed Flock ALPR cameras across Minneapolis intersections, supplemented by approximately 70 additional privately-owned ALPRs at retail locations. In a two-month window (January–March 2026), these cameras logged data on more than 31 million vehicle passes. Of those, only 12,446 generated a hot-list match.",
+      "description": "Investigative report documenting MPD's deployment of 30 fixed Flock ALPR cameras across Minneapolis intersections, supplemented by approximately 70 additional privately-owned ALPRs at retail locations. In a two-month window (January-March 2026), these cameras logged data on more than 31 million vehicle passes. Of those, only 12,446 generated a hot-list match.",
       "status": "approved"
     },
     {
@@ -779,7 +779,7 @@
       "jurisdiction": "Virginia",
       "agency": "Multiple VA agencies",
       "abuse_categories": ["dragnet_surveillance", "unauthorized_access", "fusion_center_sharing"],
-      "description": "VCIJ at WHRO analyzed 200,000 Flock search logs from nearly 150 Virginia law enforcement agencies covering July–October 2025. Despite Virginia's new ALPR law requiring specific stated purposes, officers routinely used abbreviations ('CJ,' 'inv,' 'T') and single-word reasons. More than 1,800 searches used vague 'suspicious' variants. Virginia agencies also continued sharing data with 800 out-of-state agencies in apparent violation of the new law.",
+      "description": "VCIJ at WHRO analyzed 200,000 Flock search logs from nearly 150 Virginia law enforcement agencies covering July-October 2025. Despite Virginia's new ALPR law requiring specific stated purposes, officers routinely used abbreviations (CJ, inv, T) and single-word reasons. More than 1,800 searches used vague suspicious variants. Virginia agencies also continued sharing data with 800 out-of-state agencies in apparent violation of the new law.",
       "additional_urls": [
         "https://www.vpm.org/news/2026-04-13/virginia-police-alpr-cameras-surveillance-data-norfolk-flock-safety-vcij",
         "https://vcij.org/stories/virginia-police-search-vehicle-surveillance-data-247-why-isnt-always-clear"
@@ -809,7 +809,7 @@
       "jurisdiction": "Richmond, VA",
       "agency": "Richmond Police Department",
       "abuse_categories": ["fusion_center_sharing", "unauthorized_access"],
-      "description": "A Q1 2026 audit of RPD's Flock system revealed a sergeant shared ALPR data with an FBI special agent investigating a Washington, D.C. homicide — a violation of department policy and Virginia state law, which generally prohibits sharing ALPR data with agencies conducting out-of-state investigations. Commonwealth's Attorney Colette McEachin declined to prosecute. The sergeant's Flock access was deactivated following an internal investigation. RPD announced quarterly public disclosure of future compliance findings.",
+      "description": "A Q1 2026 audit of RPD's Flock system revealed a sergeant shared ALPR data with an FBI special agent investigating a Washington, D.C. homicide in violation of department policy and Virginia state law, which generally prohibits sharing ALPR data with agencies conducting out-of-state investigations. Commonwealth's Attorney Colette McEachin declined to prosecute. The sergeant's Flock access was deactivated following an internal investigation. RPD announced quarterly public disclosure of future compliance findings.",
       "status": "approved",
       "submitted_by": "gmoomaw@richmonder.org"
     },
@@ -836,7 +836,7 @@
       "jurisdiction": "Dayton, OH",
       "agency": "Dayton Police Department",
       "abuse_categories": ["fusion_center_sharing", "immigration_enforcement"],
-      "description": "Dayton PD indefinitely suspended its Flock ALPR program after an internal review found a former Support Services Division commander had failed to implement required safeguards restricting external data access — resulting in 7,100 immigration-related search requests from outside agencies in violation of city policy. City Manager Shelley Dickstein described the failures as 'egregious violations of policy.' The violations were discovered in October 2025; all outside sharing was cut off by April 2026. The city will not proceed with a previously approved 27-camera expansion pending independent review.",
+      "description": "Dayton PD indefinitely suspended its Flock ALPR program after an internal review found a former Support Services Division commander had failed to implement required safeguards restricting external data access resulting in 7,100 immigration-related search requests from outside agencies in violation of city policy. City Manager Shelley Dickstein described the failures as egregious violations of policy. The violations were discovered in October 2025; all outside sharing was cut off by April 2026. The city will not proceed with a previously approved 27-camera expansion pending independent review.",
       "status": "approved"
     },
     {
@@ -849,7 +849,7 @@
       "jurisdiction": "Frazer Township, PA",
       "agency": "Frazer Township Police Department",
       "abuse_categories": ["stalking_targeting", "domestic_abuse_enablement"],
-      "description": "Former Frazer Township Officer Michael McSherry pleaded guilty to stalking and official oppression after using the department's license plate reader to track his estranged wife and her mother. His wife told the court McSherry tracked her over 250 times and had monitored the family for nearly a decade using GPS devices, nanny cams, and social media threats in addition to the ALPR system. McSherry was sentenced to 11.5 to 23 months in prison plus five years' probation — one of the earliest documented criminal convictions involving ALPR misuse for domestic stalking.",
+      "description": "Former Frazer Township Officer Michael McSherry pleaded guilty to stalking and official oppression after using the department's license plate reader to track his estranged wife and her mother. His wife told the court McSherry tracked her over 250 times and had monitored the family for nearly a decade using GPS devices, nanny cams, and social media threats in addition to the ALPR system. McSherry was sentenced to 11.5 to 23 months in prison plus five years' probation, one of the earliest documented criminal convictions involving ALPR misuse for domestic stalking.",
       "status": "approved"
     },
     {
@@ -857,12 +857,12 @@
       "date_published": "2026-02-06",
       "publication": "KESQ",
       "submission_type": "case_study",
-      "title": "Ex-RSO deputy who stalked former fiancée, harassed volunteer sentenced",
+      "title": "Ex-RSO deputy who stalked former fiancee, harassed volunteer sentenced",
       "url": "https://kesq.com/news/crime/2026/02/06/ex-rso-deputy-who-stalked-former-fiancee-harassed-volunteer-sentenced/",
       "jurisdiction": "Riverside County, CA",
       "agency": "Riverside County Sheriff's Office",
       "abuse_categories": ["stalking_targeting", "unauthorized_access", "domestic_abuse_enablement"],
-      "description": "Former Riverside County Sheriff's Deputy Alexander Ravy Vanny, 35, was sentenced to six years in state prison after a December 2025 jury conviction on charges including stalking, unauthorized use of protected electronic data, illegal use of a tracking device, possession of child pornography, witness intimidation, and illicit eavesdropping. Vanny used the department's Flock ALPR system and physical GPS trackers to monitor his former fiancée after their split in summer 2024, forced her into his vehicle without consent, and continued offending while on bail. Prosecutors noted Vanny knowingly abused law enforcement access to facilitate the stalking.",
+      "description": "Former Riverside County Sheriff's Deputy Alexander Ravy Vanny, 35, was sentenced to six years in state prison after a December 2025 jury conviction on charges including stalking, unauthorized use of protected electronic data, illegal use of a tracking device, possession of child pornography, witness intimidation, and illicit eavesdropping. Vanny used the department's Flock ALPR system and physical GPS trackers to monitor his former fiancee after their split in summer 2024, forced her into his vehicle without consent, and continued offending while on bail. Prosecutors noted Vanny knowingly abused law enforcement access to facilitate the stalking.",
       "status": "approved"
     },
     {
@@ -875,7 +875,7 @@
       "jurisdiction": "Shelby County, TN",
       "agency": "Shelby County Sheriff's Office",
       "abuse_categories": ["stalking_targeting", "domestic_abuse_enablement", "unauthorized_access"],
-      "description": "Shelby County Sheriff's Deputy Thadius Gordon, 38, was relieved of duty with pay after his ex-wife reported he had used law enforcement ALPR databases to search her Tennessee license plate over 100 times — approximately 20 times in a single four-day span — without her knowledge. Gordon faces stalking and harassment charges. The SCSO Chief Deputy acknowledged the database could be misused and announced a review of policies and procedures.",
+      "description": "Shelby County Sheriff's Deputy Thadius Gordon, 38, was relieved of duty with pay after his ex-wife reported he had used law enforcement ALPR databases to search her Tennessee license plate over 100 times approximately 20 times in a single four-day span without her knowledge. Gordon faces stalking and harassment charges. The SCSO Chief Deputy acknowledged the database could be misused and announced a review of policies and procedures.",
       "status": "approved"
     },
     {
@@ -904,7 +904,7 @@
       "jurisdiction": "Jerome County, ID",
       "agency": "Jerome County Sheriff's Office",
       "abuse_categories": ["stalking_targeting", "unauthorized_access"],
-      "description": "Jerome County Sheriff George Oppedyk used Flock cameras to search for his wife's vehicle more than 700 times between July and September 2025 — just months after the system went live — labeling the searches as 'test.' A lieutenant detected the anomaly and notified the Idaho Attorney General's Office, which issued a subpoena and conducted a multi-month investigation. The AG found insufficient evidence to prove a crime, accepting Oppedyk's stated rationale of system reliability testing. Twin Falls Police briefly suspended Jerome County's cross-network access and required Oppedyk's removal from the system before restoring it. Oppedyk announced his retirement in March 2026, leaving office two years before the end of his four-year term.",
+      "description": "Jerome County Sheriff George Oppedyk used Flock cameras to search for his wife's vehicle more than 700 times between July and September 2025, just months after the system went live, labeling the searches as test. A lieutenant detected the anomaly and notified the Idaho Attorney General's Office, which issued a subpoena and conducted a multi-month investigation. The AG found insufficient evidence to prove a crime, accepting Oppedyk's stated rationale of system reliability testing. Twin Falls Police briefly suspended Jerome County's cross-network access and required Oppedyk's removal from the system before restoring it. Oppedyk announced his retirement in March 2026, leaving office two years before the end of his four-year term.",
       "status": "approved"
     },
     {
@@ -917,7 +917,7 @@
       "jurisdiction": "Kenosha County, WI",
       "agency": "Kenosha County Sheriff's Office",
       "abuse_categories": ["stalking_targeting", "unauthorized_access"],
-      "description": "Former Kenosha County Sheriff's Deputy Frank McGrath resigned with severance pay after an internal investigation found he conducted approximately 16 Flock ALPR searches on a single day — all labeled 'Suspicious' with no case number — and accessed the department's Polaris squad-vehicle GPS tracking system roughly 40 times while off-duty, apparently to track a coworker with whom he had a personal relationship. The sheriff's office never referred the matter to the DA, which told the Kenosha County Eye it had never been notified. The publication's editor filed a John Doe petition in Kenosha County Circuit Court seeking a judge to appoint a special prosecutor, citing a pattern of similar Wisconsin cases that had resulted in criminal charges elsewhere.",
+      "description": "Former Kenosha County Sheriff's Deputy Frank McGrath resigned with severance pay after an internal investigation found he conducted approximately 16 Flock ALPR searches on a single day, all labeled Suspicious with no case number, and accessed the department's Polaris squad-vehicle GPS tracking system roughly 40 times while off-duty, apparently to track a coworker with whom he had a personal relationship. The sheriff's office never referred the matter to the DA, which told the Kenosha County Eye it had never been notified. The publication's editor filed a John Doe petition in Kenosha County Circuit Court seeking a judge to appoint a special prosecutor, citing a pattern of similar Wisconsin cases that had resulted in criminal charges elsewhere.",
       "status": "approved"
     },
     {
@@ -930,8 +930,36 @@
       "jurisdiction": "Monroe County, FL",
       "agency": "Monroe County Sheriff's Office",
       "abuse_categories": ["stalking_targeting", "unauthorized_access"],
-      "description": "Monroe County Sheriff's Deputy Lamar Eliseo Roman, 28, was fired and arrested after using law enforcement databases — including placing the woman's plate on a hotlist — to track a complete stranger he had met as an extra on the Apple TV+ production 'Bad Monkey' filming in the Florida Keys. Roman cat-called the woman on set, later messaged her on Instagram after she showed no interest, then used the department's ALPR system to create an alert that would notify him when her vehicle passed a camera, with the apparent goal of engineering a traffic stop. The Institute for Justice identified this as the most distinctive of 14 nationally documented officer ALPR stalking cases specifically because the target was a stranger, not a former intimate partner.",
+      "description": "Monroe County Sheriff's Deputy Lamar Eliseo Roman, 28, was fired and arrested after using law enforcement databases including placing the woman's plate on a hotlist to track a complete stranger he had met as an extra on the Apple TV+ production Bad Monkey filming in the Florida Keys. Roman cat-called the woman on set, later messaged her on Instagram after she showed no interest, then used the department's ALPR system to create an alert that would notify him when her vehicle passed a camera, with the apparent goal of engineering a traffic stop. The Institute for Justice identified this as the most distinctive of 14 nationally documented officer ALPR stalking cases specifically because the target was a stranger, not a former intimate partner.",
       "status": "approved"
+    },
+    {
+      "id": "063",
+      "date_published": "2026-05-08",
+      "publication": "TMJ4 Milwaukee (CBS)",
+      "submission_type": "case_study",
+      "title": "Milwaukee police investigating second former officer for alleged misuse of license plate reader database",
+      "url": "https://www.tmj4.com/about-us/lighthouse/milwaukee-police-investigating-second-former-officer-for-alleged-misuse-of-license-plate-reader-database",
+      "jurisdiction": "Milwaukee, WI",
+      "agency": "Milwaukee Police Department",
+      "abuse_categories": ["unauthorized_access", "stalking_targeting", "domestic_abuse_enablement"],
+      "description": "Milwaukee police opened an investigation into a second former officer for alleged ALPR misuse, coming approximately three months after a different officer was fired for using the system to stalk an ex-partner. The back-to-back cases raise questions about internal oversight and access controls within the department.",
+      "status": "approved",
+      "submitted_by": "Kseniya"
+    },
+    {
+      "id": "064",
+      "date_published": "2026-02-24",
+      "publication": "State of Wisconsin v. Josue Ayala (Criminal Complaint)",
+      "submission_type": "case_study",
+      "title": "Criminal Complaint: State of Wisconsin v. Josue Ayala",
+      "url": "https://mkepdpio.org/wp-content/uploads/2026/02/Criminal-Complaint_3-Ayala-Josue.pdf",
+      "jurisdiction": "Milwaukee, WI",
+      "agency": "Milwaukee Police Department",
+      "abuse_categories": ["stalking_targeting", "unauthorized_access", "domestic_abuse_enablement"],
+      "description": "Primary source criminal complaint charging Milwaukee Officer Josue Ayala with attempted misconduct in public office for unauthorized ALPR queries on a victim's license plate. The complaint documents that the victim discovered she had been surveilled by checking her plate on haveibeenflocked.com, a notable instance of a civilian accountability tool directly surfacing law enforcement misuse of Flock data.",
+      "status": "approved",
+      "submitted_by": "Kseniya"
     }
   ]
 }
