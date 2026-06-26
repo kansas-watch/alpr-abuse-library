@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-05-22",
+    "last_updated": "2026-06-26",
     "schema_version": "1.1",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
   },
@@ -960,6 +960,42 @@
       "description": "Primary source criminal complaint charging Milwaukee Officer Josue Ayala with attempted misconduct in public office for unauthorized ALPR queries on a victim's license plate. The complaint documents that the victim discovered she had been surveilled by checking her plate on haveibeenflocked.com, a notable instance of a civilian accountability tool directly surfacing law enforcement misuse of Flock data.",
       "status": "approved",
       "submitted_by": "Kseniya"
+    }
+    {
+      "id": "065",
+      "date_published": "2025-09-11",
+      "publication": "Central Current",
+      "submission_type": "investigative_article",
+      "title": "Federal immigration agents accessed Syracuse drivers' data through secret Flock Safety deal",
+      "url": "https://centralcurrent.org/federal-immigration-agents-accessed-syracuse-drivers-data-through-secret-flock-safety-deal/",
+      "jurisdiction": "Syracuse, NY",
+      "agency": "Syracuse Police Department",
+      "abuse_categories": ["data_breach", "fusion_center_sharing", "dragnet_surveillance", "immigration_enforcement", "unauthorized_access"],
+      "description": "A follow-up investigation by Central Current found that Syracuse PD had inadvertently enrolled in Flock Safety's nationwide data-sharing network, exposing driver location data to thousands of law enforcement agencies. A separate investigation revealed Flock's contract language allows the company to retain anonymized user data in perpetuity for its own commercial purposes, even if a municipality cancels its contract -- despite Flock's repeated public assurances that customers are the sole owners of their data.",
+      "additional_urls": [
+        "https://centralcurrent.org/syracuse-police-exposed-driver-data-to-thousands-of-cops-around-the-country/",
+        "https://centralcurrent.org/why-flock-will-get-to-keep-syracuse-drivers-anonymized-data-even-if-lawmakers-cancel-their-contract/"
+      ],
+      "date_added": "2026-06-26",
+      "submitted_by": "Patrick McCarthy",
+      "status": "approved",
+      "notes": "Submitted by the reporter. Agency field corrected from 'Central Current' (publication) to 'Syracuse Police Department.' Description rewritten from submitter's raw text; inline URLs moved to additional_urls."
+    },
+    {
+      "id": "066",
+      "date_published": "2025-11-03",
+      "publication": "Electronic Frontier Foundation",
+      "submission_type": "investigative_article",
+      "title": "License Plate Surveillance Logs Reveal Racist Policing Against Romani People",
+      "url": "https://www.eff.org/deeplinks/2025/11/license-plate-surveillance-logs-reveal-racist-policing-against-romani-people",
+      "jurisdiction": "Multiple jurisdictions (nationwide)",
+      "agency": "80+ agencies, including Lake County SO (IL), Sacramento PD (CA), Palos Heights PD (IL), Irvine PD (CA), Fairfax County PD (VA), Grand Prairie PD (TX)",
+      "abuse_categories": ["dragnet_surveillance", "other"],
+      "description": "EFF analysis of Flock Safety audit logs from more than 80 law enforcement agencies found officers conducted hundreds of ALPR searches using ethnic slurs and stereotypes targeting Romani people, often without specifying any crime. Search reasons included terms such as 'g*psy vehicle,' 'possible g*psy,' and 'g*psy ruse.' The Grand Prairie (TX) PD used Flock's Convoy feature -- which identifies vehicles traveling together -- to target a traveling Romani community as a group. Several agencies acknowledged the inappropriate language after EFF inquiry; Fairfax County PD defended the practice.",
+      "date_added": "2026-06-26",
+      "submitted_by": "David (Lucy Parsons Labs)",
+      "status": "approved",
+      "notes": "Submitted by Lucy Parsons Labs. Category corrected from 'racism' (not a schema category) to dragnet_surveillance + other. Jurisdiction broadened from 'Skokie' (not mentioned in article) to nationwide. Agency field expanded to reflect multi-agency scope. Description written by editor from source article."
     }
   ]
 }
