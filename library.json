@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-06-26",
+    "last_updated": "2026-07-21",
     "schema_version": "1.1",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
   },
@@ -996,6 +996,65 @@
       "submitted_by": "David (Lucy Parsons Labs)",
       "status": "approved",
       "notes": "Submitted by Lucy Parsons Labs. Category corrected from 'racism' (not a schema category) to dragnet_surveillance + other. Jurisdiction broadened from 'Skokie' (not mentioned in article) to nationwide. Agency field expanded to reflect multi-agency scope. Description written by editor from source article."
+    },
+    {
+      "id": "067",
+      "date_published": "2026-07-14",
+      "publication": "Fox Carolina",
+      "submission_type": "news_report",
+      "title": "2 Greer officers terminated for violating policy on Flock cameras, police say",
+      "url": "https://www.foxcarolina.com/2026/07/14/2-greer-officers-terminated-violating-policy-flock-cameras-police-say/",
+      "jurisdiction": "Greer, SC",
+      "agency": "Greer Police Department",
+      "abuse_categories": ["stalking_targeting"],
+      "description": "Greer Police officer Lynch was fired after using Flock cameras to search for a fellow officer he was romantically involved with, logging the searches under false pretenses such as 'welfare checks' and 'city planning.' A second officer, Echeverry, was also terminated for searching several citizens' plates and logging the reason as 'alcohol offenses' when that was not true.",
+      "date_added": "2026-07-21",
+      "status": "approved"
+    },
+    {
+      "id": "068",
+      "date_published": "2026-07-09",
+      "publication": "Fox 5 Atlanta",
+      "submission_type": "news_report",
+      "title": "Georgia cops' alleged misuse of Flock license plate tracking data fuels privacy concerns",
+      "url": "https://www.fox5atlanta.com/news/georgia-cops-alleged-misuse-flock-license-plate-tracking-data-fuels-privacy-concerns",
+      "jurisdiction": "Greene County, Cherokee County, and Albany, GA",
+      "agency": "Multiple Georgia law enforcement agencies",
+      "abuse_categories": ["stalking_targeting", "unauthorized_access"],
+      "description": "At least ten Georgia police officers have been arrested and charged with misusing the Flock license plate reader database for personal reasons, spanning departments in Greene County, Cherokee County, and Albany. Flock's co-founder attributed the misuse to individual human conduct rather than the technology, while the ACLU of Georgia raised broader concerns about oversight and access controls.",
+      "date_added": "2026-07-21",
+      "status": "approved",
+      "notes": "Date published corrected from submitter's 2024-07-09 to 2026-07-09 (article is part of a July 2026 wave of Georgia coverage, confirmed via search). data_breach category dropped per editorial review; excerpt describes unauthorized use by authorized personnel, not a data exposure/leak."
+    },
+    {
+      "id": "069",
+      "date_published": "2025-11-07",
+      "publication": "Santa Cruz Local",
+      "submission_type": "investigative_article",
+      "title": "ICE accessed Capitola license plate data. Police say it was a mistake.",
+      "url": "https://santacruzlocal.org/2025/11/07/ice-accessed-capitola-license-plate-data-police-say-it-was-a-mistake/",
+      "jurisdiction": "Capitola, CA",
+      "agency": "Capitola Police Department",
+      "abuse_categories": ["fusion_center_sharing", "immigration_enforcement", "unauthorized_access"],
+      "description": "Capitola police shared license plate reader data across state lines in a manner that unwittingly violated California state law restricting cooperation with federal immigration enforcement. The department characterized the sharing as an unintentional error rather than a deliberate policy.",
+      "date_added": "2026-07-21",
+      "submitted_by": "Bennett Williamson",
+      "status": "approved"
+    },
+    {
+      "id": "070",
+      "date_published": "2026-06-23",
+      "publication": "Atlanta News First",
+      "submission_type": "news_report",
+      "title": "Metro Atlanta deputies fired, arrested, accused of misusing license plate readers",
+      "url": "https://www.atlantanewsfirst.com/2026/06/23/3-cherokee-county-deputies-fired-arrested-accused-misusing-license-plate-reader-database/?outputType=amp",
+      "jurisdiction": "Cherokee County, GA",
+      "agency": "Cherokee County Sheriff's Office",
+      "abuse_categories": ["unauthorized_access"],
+      "description": "Three Cherokee County Sheriff's Office deputies were fired and arrested after an internal investigation found they had misused the Flock license plate reader database.",
+      "date_added": "2026-07-21",
+      "submitted_by": "Mariah Brandon",
+      "status": "approved"
     }
   ]
 }
