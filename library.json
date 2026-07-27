@@ -1055,6 +1055,48 @@
       "date_added": "2026-07-21",
       "submitted_by": "Mariah Brandon",
       "status": "approved"
+    },
+    {
+      "id": "071",
+      "date_published": "2026-07-09",
+      "publication": "KARE 11",
+      "submission_type": "news_report",
+      "title": "Automotive journalist surrounded by police due to Flock camera confusion",
+      "url": "https://www.kare11.com/article/news/local/breaking-the-news/automotive-journalist-surrounded-by-police-due-to-flock-camera-confusion/89-f65ee040-3216-43f1-91e2-e8dde53d419c",
+      "jurisdiction": "Plymouth, MN",
+      "agency": "Plymouth Police Department",
+      "abuse_categories": ["false_arrest"],
+      "description": "Automotive journalist Joel Feder and his wife were boxed in by four Plymouth, MN squad cars and detained after a Flock camera flagged their Range Rover press vehicle as stolen. The alert traced back to a data-entry error at a California agency that mis-keyed a lost manufacturer plate as stolen, causing multiple JLR press vehicles nationwide with similar plate patterns to be flagged.",
+      "date_added": "2026-07-27",
+      "status": "approved"
+    },
+    {
+      "id": "072",
+      "date_published": "2026-03-18",
+      "publication": "ABC 7 On Your Side (KATV)",
+      "submission_type": "news_report",
+      "title": "Sherwood stop sparked after Flock camera misread plate by one letter as stolen",
+      "url": "https://katv.com/news/local/sherwood-stop-sparked-after-flock-camera-misread-plate-by-one-letter-as-stolen-katv-news-share-inform-public-community-safety",
+      "jurisdiction": "Sherwood, AR",
+      "agency": "Sherwood Police Department",
+      "abuse_categories": ["false_arrest"],
+      "description": "A Flock camera in Sherwood, AR flagged a vehicle as stolen after misreading its plate by a single character (APX 55X read as the stolen plate APX 55Y). Officers conducted a gunpoint stop in a Kohl's parking lot, detaining the driver and a passenger seated next to a one-month-old infant, before releasing them once the discrepancy was discovered.",
+      "date_added": "2026-07-27",
+      "status": "approved"
+    },
+    {
+      "id": "073",
+      "date_published": "2026-07-24",
+      "publication": "Fox 35 Orlando",
+      "submission_type": "news_report",
+      "title": "Sumter County suspends license plate reader program after detective accused of misuse",
+      "url": "https://www.fox35orlando.com/news/sumter-county-suspends-license-plate-reader-program-after-detective-accused-misuse.amp",
+      "jurisdiction": "Sumter County, FL",
+      "agency": "Sumter County Sheriff's Office",
+      "abuse_categories": ["stalking_targeting", "unauthorized_access"],
+      "description": "Sumter County, FL Detective Brandy Almany was fired and criminally charged after an internal audit found she used the Flock ALPR system, along with the state driver database and a case-management system, to gather information on her husband's ex-wife, allegedly fabricating case numbers to disguise the searches as legitimate investigations. Sheriff Pat Breeden suspended the agency's entire Flock program pending a full audit.",
+      "date_added": "2026-07-27",
+      "status": "approved"
     }
   ]
 }
