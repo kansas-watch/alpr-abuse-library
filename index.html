@@ -659,6 +659,15 @@
     <div class="spinner"></div>
     <p>Loading library…</p>
   </div>
+  <div id="heatmap-section" style="display:none; margin-bottom: 2rem;">
+    <div id="state-map" style="width: 100%; position: relative;"></div>
+    <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; color: var(--ink-soft);">
+      <span>0</span>
+      <div id="map-legend-gradient" style="flex: 1; max-width: 200px; height: 8px; border-radius: 4px;"></div>
+      <span id="map-legend-max"></span>
+      <span style="margin-left: 8px;">entries per state · click a state to filter</span>
+    </div>
+  </div>
   <div class="entry-list" id="entry-list"></div>
   <div class="empty-state" id="empty-state">
     <p>No entries match the current filters.</p>
@@ -678,6 +687,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson-client/3.1.0/topojson-client.min.js"></script>
 <script>
   const CATEGORY_LABELS = {
     false_arrest:             'False Arrest',
@@ -703,6 +714,28 @@
   let activeCategory = '';
   let activeState = '';
   let activeQuery = '';
+  let activeMapState = '';
+
+  // ── State names (for map path lookup / tooltip) ───────────
+  const STATE_NAMES = {
+    AL:'Alabama', AK:'Alaska', AZ:'Arizona', AR:'Arkansas', CA:'California',
+    CO:'Colorado', CT:'Connecticut', DE:'Delaware', FL:'Florida', GA:'Georgia',
+    HI:'Hawaii', ID:'Idaho', IL:'Illinois', IN:'Indiana', IA:'Iowa', KS:'Kansas',
+    KY:'Kentucky', LA:'Louisiana', ME:'Maine', MD:'Maryland', MA:'Massachusetts',
+    MI:'Michigan', MN:'Minnesota', MS:'Mississippi', MO:'Missouri', MT:'Montana',
+    NE:'Nebraska', NV:'Nevada', NH:'New Hampshire', NJ:'New Jersey',
+    NM:'New Mexico', NY:'New York', NC:'North Carolina', ND:'North Dakota',
+    OH:'Ohio', OK:'Oklahoma', OR:'Oregon', PA:'Pennsylvania', RI:'Rhode Island',
+    SC:'South Carolina', SD:'South Dakota', TN:'Tennessee', TX:'Texas',
+    UT:'Utah', VT:'Vermont', VA:'Virginia', WA:'Washington',
+    WV:'West Virginia', WI:'Wisconsin', WY:'Wyoming', DC:'District of Columbia',
+  };
+  const NAME_TO_CODE = Object.fromEntries(Object.entries(STATE_NAMES).map(([c, n]) => [n, c]));
+
+  function entryStates(entry) {
+    if (!entry.state) return [];
+    return Array.isArray(entry.state) ? entry.state : [entry.state];
+  }
 
   // ── Load data ──────────────────────────────────────────────
   async function loadData() {
@@ -756,6 +789,7 @@
     });
 
     renderEntries();
+    renderStateMap();
 
     catSel.addEventListener('change', e => {
       activeCategory = e.target.value;
@@ -784,21 +818,103 @@
       activeCategory = '';
       activeState = '';
       activeQuery = '';
+      activeMapState = '';
       catSel.value = '';
       stateSel.value = '';
       searchInput.value = '';
       updateClearBtn();
       renderEntries();
+      updateMapSelection();
     });
   }
 
   function updateClearBtn() {
     const btn = document.getElementById('clear-btn');
-    if (activeCategory || activeState || activeQuery) {
+    if (activeCategory || activeState || activeQuery || activeMapState) {
       btn.classList.remove('hidden');
     } else {
       btn.classList.add('hidden');
     }
+  }
+
+  // ── State heatmap ──────────────────────────────────────────
+  let mapSvgSelection = null;
+  let mapColorScale = null;
+
+  function renderStateMap() {
+    const counts = {};
+    allEntries.forEach(e => entryStates(e).forEach(code => {
+      counts[code] = (counts[code] || 0) + 1;
+    }));
+    const max = Math.max(1, ...Object.values(counts));
+
+    document.getElementById('heatmap-section').style.display = 'block';
+    const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    const ramp = ['#E6F1FB', '#B5D4F4', '#85B7EB', '#378ADD', '#185FA5', '#0C447C', '#042C53'];
+    mapColorScale = d3.scaleQuantize([0, max], isDark ? ramp.slice().reverse() : ramp);
+
+    document.getElementById('map-legend-max').textContent = max;
+    document.getElementById('map-legend-gradient').style.background =
+      `linear-gradient(to right, ${ramp[0]}, ${ramp[2]}, ${ramp[4]}, ${ramp[6]})`;
+
+    const mapEl = document.getElementById('state-map');
+    mapEl.innerHTML = '';
+    const svg = d3.select(mapEl).append('svg').attr('viewBox', '0 0 975 610').attr('width', '100%');
+    mapSvgSelection = svg;
+    const path = d3.geoPath();
+
+    const tooltip = d3.select(mapEl).append('div')
+      .style('position', 'absolute').style('pointer-events', 'none')
+      .style('background', 'var(--bg)').style('border', '1px solid var(--rule)')
+      .style('border-radius', '3px').style('padding', '4px 8px')
+      .style('font-family', "'JetBrains Mono', monospace").style('font-size', '11px')
+      .style('color', 'var(--ink)').style('opacity', '0').style('transition', 'opacity 0.1s')
+      .style('z-index', '10');
+
+    d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json').then(us => {
+      svg.selectAll('path')
+        .data(topojson.feature(us, us.objects.states).features)
+        .join('path')
+        .attr('d', path)
+        .attr('class', d => 'state-shape state-' + (NAME_TO_CODE[d.properties.name] || ''))
+        .attr('stroke', isDark ? 'rgba(255,255,255,.15)' : '#fff')
+        .attr('stroke-width', 0.5)
+        .attr('fill', d => {
+          const code = NAME_TO_CODE[d.properties.name];
+          const v = counts[code];
+          return v ? mapColorScale(v) : (isDark ? '#2c2c2a' : '#f1efe8');
+        })
+        .style('cursor', 'pointer')
+        .on('mousemove', (event, d) => {
+          const code = NAME_TO_CODE[d.properties.name];
+          const v = counts[code] || 0;
+          tooltip.style('opacity', 1)
+            .html(`${esc(d.properties.name)}: ${v} entr${v === 1 ? 'y' : 'ies'}`)
+            .style('left', (event.offsetX + 12) + 'px')
+            .style('top', (event.offsetY - 8) + 'px');
+        })
+        .on('mouseleave', () => tooltip.style('opacity', 0))
+        .on('click', (event, d) => {
+          const code = NAME_TO_CODE[d.properties.name];
+          if (!code || !counts[code]) return;
+          activeMapState = (activeMapState === code) ? '' : code;
+          updateClearBtn();
+          renderEntries();
+          updateMapSelection();
+        });
+      updateMapSelection();
+    });
+  }
+
+  function updateMapSelection() {
+    if (!mapSvgSelection) return;
+    const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    mapSvgSelection.selectAll('path.state-shape').each(function() {
+      const el = d3.select(this);
+      const selected = !!activeMapState && el.classed('state-' + activeMapState);
+      el.attr('stroke', selected ? 'var(--blue-dark)' : (isDark ? 'rgba(255,255,255,.15)' : '#fff'));
+      el.attr('stroke-width', selected ? 2 : 0.5);
+    });
   }
 
   // ── Render ─────────────────────────────────────────────────
@@ -810,6 +926,7 @@
       if (activeCategory && !e.abuse_categories.includes(activeCategory)) return false;
       if (activeState && e.jurisdiction !== activeState) return false;
       if (activeQuery && !matchesQuery(e, activeQuery)) return false;
+      if (activeMapState && !entryStates(e).includes(activeMapState)) return false;
       return true;
     });
 
