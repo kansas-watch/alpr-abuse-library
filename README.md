@@ -120,11 +120,15 @@ Browse the full index: [`library.json`](./library.json) | [Formatted table below
 
 ```
 flock-abuse-library/
-├── README.md           ← This file (rendered as the public library)
-├── library.json        ← Machine-readable index of all approved entries
-├── CONTRIBUTING.md     ← How the submission/review process works
-└── schema.md           ← Data field definitions
+├── README.md               ← This file (rendered as the public library)
+├── index.html               ← Live site (library.kansas.watch) — fetches library.json client-side
+├── library.json             ← Machine-readable index of all approved entries
+├── validate_library.py      ← Run before every commit: python3 validate_library.py library.json
+├── CONTRIBUTING.md          ← How the submission/review process works
+└── schema.md                ← Data field definitions and versioning notes
 ```
+
+Before committing changes to `library.json`, run `python3 validate_library.py library.json` — it checks required fields, the abuse-category vocabulary, valid `state` codes, and duplicate entries. See `schema.md` for field definitions and editorial notes on entry structure.
 
 ---
 
