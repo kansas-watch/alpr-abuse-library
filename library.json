@@ -3,8 +3,9 @@
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
     "last_updated": "2026-08-14",
-    "schema_version": "1.1",
-    "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9"
+    "schema_version": "1.2",
+    "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
+    "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
   },
   "abuse_categories": [
     "false_arrest",
@@ -27,6 +28,7 @@
       "title": "Kechi police lieutenant arrested for using police technology to stalk wife",
       "url": "https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/",
       "jurisdiction": "Kechi, KS",
+      "state": "KS",
       "agency": "Kechi Police Department",
       "abuse_categories": [
         "stalking_targeting"
@@ -42,6 +44,7 @@
       "title": "Kansas police chief used Flock license plate cameras 164 times to track ex-girlfriend",
       "url": "https://www.yahoo.com/news/kansas-police-chief-used-flock-093300946.html",
       "jurisdiction": "Sedgwick, KS",
+      "state": "KS",
       "agency": "Sedgwick Police Department",
       "abuse_categories": [
         "stalking_targeting"
@@ -57,6 +60,7 @@
       "title": "City of Toledo reaches $35K settlement with man who said he was injured by police K-9 during traffic stop",
       "url": "https://www.wtol.com/article/news/local/city-of-toledo-to-pay-brandon-upchurch-35000-dollar-settlement-in-k9-attack-traffic-stop-local-news/512-e6ad4d91-75de-4bc7-a088-5aebbdd0907e",
       "jurisdiction": "Toledo, OH",
+      "state": "OH",
       "agency": "Toledo Police Department",
       "abuse_categories": [
         "false_arrest",
@@ -73,6 +77,7 @@
       "title": "After police used Flock cameras to accuse a Denver woman of theft, she had to prove her own innocence",
       "url": "https://coloradosun.com/2025/10/28/flock-camera-police-colorado-columbine-valley/",
       "jurisdiction": "Columbine Valley, CO",
+      "state": "CO",
       "agency": "Columbine Valley Police Department",
       "abuse_categories": [
         "false_arrest",
@@ -89,6 +94,7 @@
       "title": "Sandy Springs police officer terminated after allegedly using city's Flock cameras for personal gain",
       "url": "https://www.wsbtv.com/news/local/fulton-county/sandy-springs-police-officer-terminated-after-allegedly-using-citys-flock-cameras-personal-gain/FXWATJXJDRCFJKEHUOAHGLIE2U/",
       "jurisdiction": "Sandy Springs, GA",
+      "state": "GA",
       "agency": "Sandy Springs Police Department",
       "abuse_categories": [
         "unauthorized_access",
@@ -105,6 +111,7 @@
       "title": "ICE Can Reportedly Access Flock Surveillance Cameras — Now Americans Are Destroying Them",
       "url": "https://www.ibtimes.co.uk/flock-surveillance-cameras-backlash-1780945",
       "jurisdiction": "National",
+      "state": null,
       "agency": "ICE",
       "abuse_categories": [
         "immigration_enforcement",
@@ -121,6 +128,7 @@
       "title": "AI cameras are everywhere — and people are paying the price for their mistakes",
       "url": "https://www.yahoo.com/news/articles/7-5-billion-cop-tech-090701190.html",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Multiple",
       "abuse_categories": [
         "false_arrest",
@@ -137,6 +145,7 @@
       "title": "License Plate Readers Lead to Wrongful Stops Across the Country",
       "url": "https://www.cbsnews.com/news/license-plate-readers-alpr-mistakes/",
       "jurisdiction": "Aurora, CO",
+      "state": "CO",
       "agency": "Aurora Police Department",
       "abuse_categories": [
         "false_arrest"
@@ -157,6 +166,7 @@
       "title": "ALPR Cameras in South Carolina: Flock Safety License Plate Readers",
       "url": "https://www.postandcourier.com/news/alpr-cameras-south-carolina-flock-safety-license-plate-readers/article_787a262a-dbd2-11ee-a901-634acead588b.html",
       "jurisdiction": "Greenville, SC",
+      "state": "SC",
       "agency": "Greenville Police Department",
       "abuse_categories": [
         "false_arrest",
@@ -178,6 +188,7 @@
       "title": "Milwaukee Officer Charged in Flock Camera Misuse",
       "url": "https://wislawjournal.com/2026/02/26/milwaukee-officer-charged-in-flock-camera-misuse/",
       "jurisdiction": "Milwaukee, WI",
+      "state": "WI",
       "agency": "Milwaukee Police Department",
       "abuse_categories": [
         "stalking_targeting"
@@ -198,6 +209,7 @@
       "title": "Georgia Police Chief Arrested for ALPR Stalking",
       "url": "https://haveibeenflocked.com/news/ga-misuse",
       "jurisdiction": "Braselton, GA",
+      "state": "GA",
       "agency": "Braselton Police Department",
       "abuse_categories": [
         "stalking_targeting"
@@ -214,6 +226,7 @@
       "title": "SC Lawmaker Wants Restrictions on Police Using Automatic License Plate Readers",
       "url": "https://www.postandcourier.com/news/sc-lawmaker-wants-restrictions-on-police-using-automatic-license-plate/article_4c143334-7c8f-11e9-bfad-fb9ab937f2b6.html",
       "jurisdiction": "South Carolina",
+      "state": "SC",
       "agency": "Multiple SC agencies",
       "abuse_categories": [
         "domestic_abuse_enablement"
@@ -230,6 +243,7 @@
       "title": "Flock Gave Federal Immigration Agents Access to Tracking Data",
       "url": "https://www.9news.com/article/news/local/flock-federal-immigration-agents-access-tracking-data/73-a8aee742-56d4-4a57-b5bb-0373286dfef8",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Flock Safety / U.S. Border Patrol",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -251,6 +265,7 @@
       "title": "Mountain View Police Turn Off License Plate Readers",
       "url": "https://localnewsmatters.org/2026/02/03/mountain-view-police-turn-off-license-plate-readers-flock-safety/",
       "jurisdiction": "Mountain View, CA",
+      "state": "CA",
       "agency": "Mountain View Police Department",
       "abuse_categories": [
         "fusion_center_sharing"
@@ -267,6 +282,7 @@
       "title": "Illinois Audit Finds Flock in Violation of State Law",
       "url": "https://www.ilsos.gov/news/2025/august-25-2025-giannoulias-audit-finds-license-plate-reader-company-in-violation-of-state-law.html",
       "jurisdiction": "Illinois",
+      "state": "IL",
       "agency": "Flock Safety / Forest Park PD / Multiple IL agencies",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -289,6 +305,7 @@
       "title": "Leaving the Door Wide Open: Federal Access to Washington State ALPR Data",
       "url": "https://jsis.washington.edu/humanrights/2025/10/21/leaving-the-door-wide-open/",
       "jurisdiction": "Washington State",
+      "state": "WA",
       "agency": "Multiple WA agencies",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -307,6 +324,7 @@
       "title": "ICE Taps Into Nationwide AI-Enabled Camera Network",
       "url": "https://www.404media.co/ice-taps-into-nationwide-ai-enabled-camera-network-data-shows/",
       "jurisdiction": "National",
+      "state": null,
       "agency": "ICE / Multiple agencies",
       "abuse_categories": [
         "immigration_enforcement"
@@ -323,6 +341,7 @@
       "title": "Flock Safety Cameras Used for Federal Immigration Enforcement in Virginia",
       "url": "https://www.vpm.org/news/2025-10-09/flock-safety-cameras-alprs-federal-immigration-enforcement-lehmann-kochis",
       "jurisdiction": "Virginia",
+      "state": "VA",
       "agency": "Multiple VA agencies",
       "abuse_categories": [
         "immigration_enforcement",
@@ -344,6 +363,7 @@
       "title": "ATF Analyst Searched Richmond Flock Data Without Authorization",
       "url": "https://www.vpm.org/news/2025-07-16/flock-license-plate-readers-ice-atf-rva-edwards-kaiser-aclu-cherian",
       "jurisdiction": "Richmond, VA",
+      "state": "VA",
       "agency": "ATF / Richmond Police Department",
       "abuse_categories": [
         "unauthorized_access",
@@ -361,6 +381,7 @@
       "title": "Immigration Searches of Denver Flock Camera Data",
       "url": "https://coloradonewsline.com/2025/08/06/immigration-denver-flock-camera/",
       "jurisdiction": "Denver, CO",
+      "state": "CO",
       "agency": "Denver Police Department",
       "abuse_categories": [
         "immigration_enforcement"
@@ -377,6 +398,7 @@
       "title": "ICE Taps Into School Security Cameras to Aid Trump's Immigration Crackdown",
       "url": "https://www.the74million.org/article/ice-taps-into-school-security-cameras-to-aid-trumps-immigration-crackdown-74-investigation-finds/",
       "jurisdiction": "National",
+      "state": null,
       "agency": "ICE / Multiple school districts",
       "abuse_categories": [
         "immigration_enforcement"
@@ -393,6 +415,7 @@
       "title": "She Got an Abortion, So Texas Cops Used 83,000 Cameras to Track Her Down",
       "url": "https://www.eff.org/deeplinks/2025/05/she-got-abortion-so-texas-cop-used-83000-cameras-track-her-down",
       "jurisdiction": "Johnson County, TX",
+      "state": "TX",
       "agency": "Johnson County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -413,6 +436,7 @@
       "title": "How Cops Are Using Flock Safety's ALPR Network to Surveil Protesters and Activists",
       "url": "https://www.eff.org/deeplinks/2025/11/how-cops-are-using-flock-safetys-alpr-network-surveil-protesters-and-activists",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Multiple agencies",
       "abuse_categories": [
         "protest_tracking",
@@ -433,6 +457,7 @@
       "title": "EFF Investigations Expose Flock Safety Surveillance Abuses: 2025 Review",
       "url": "https://www.eff.org/deeplinks/2025/12/effs-investigations-expose-flock-safetys-surveillance-abuses-2025-review",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Multiple agencies",
       "abuse_categories": [
         "other"
@@ -449,6 +474,11 @@
       "title": "Flock Safety Cameras Remained Active After Cities Asked Them Turned Off",
       "url": "https://therecord.media/flock-safety-cameras-remained-active-after-cities-asked-turned-off",
       "jurisdiction": "Eugene, OR / Evanston, IL / Cambridge, MA",
+      "state": [
+        "OR",
+        "IL",
+        "MA"
+      ],
       "agency": "Flock Safety",
       "abuse_categories": [
         "other"
@@ -469,6 +499,7 @@
       "title": "Staunton to Cancel Flock Safety Camera Contract",
       "url": "https://augustafreepress.com/news/staunton-to-cancel-flock-safety-camera-contract-doesnt-agree-with-ideology-of-ceo/",
       "jurisdiction": "Staunton, VA",
+      "state": "VA",
       "agency": "Staunton Police Department",
       "abuse_categories": [
         "other"
@@ -488,6 +519,7 @@
       "title": "Lawsuit Challenges San Jose's Warrantless ALPR Mass Surveillance",
       "url": "https://www.eff.org/press/releases/lawsuit-challenges-san-joses-warrantless-alpr-mass-surveillance",
       "jurisdiction": "San Jose, CA",
+      "state": "CA",
       "agency": "San Jose Police Department",
       "abuse_categories": [
         "dragnet_surveillance"
@@ -507,6 +539,7 @@
       "title": "Norfolk ALPR Mass Surveillance — IJ Case",
       "url": "https://ij.org/case/norfolk-alpr/",
       "jurisdiction": "Norfolk, VA",
+      "state": "VA",
       "agency": "Norfolk Police Department",
       "abuse_categories": [
         "dragnet_surveillance"
@@ -523,6 +556,7 @@
       "title": "California State Auditor Report on ALPR — LAPD",
       "url": "https://information.auditor.ca.gov/reports/2019-118/summary.html",
       "jurisdiction": "Los Angeles, CA",
+      "state": "CA",
       "agency": "Los Angeles Police Department",
       "abuse_categories": [
         "dragnet_surveillance"
@@ -539,6 +573,7 @@
       "title": "FBI Instructed Flock Users to Evade Audit Transparency",
       "url": "https://haveibeenflocked.com/news/fbi-investigation",
       "jurisdiction": "National",
+      "state": null,
       "agency": "FBI / Houston HIDTA",
       "abuse_categories": [
         "unauthorized_access"
@@ -558,6 +593,7 @@
       "title": "Flock Safety Strips Officer Names and Plates from Audit Logs",
       "url": "https://haveibeenflocked.com/news/secret-searches-part2",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Flock Safety",
       "abuse_categories": [
         "other"
@@ -579,6 +615,7 @@
       "title": "SC Sheriff Quoted Journalist $9,152 for Flock Audit Logs",
       "url": "https://columbiamuckraker.substack.com/p/sc-sheriffs-office-quoted-me-9000",
       "jurisdiction": "Richland County, SC",
+      "state": "SC",
       "agency": "Richland County Sheriff's Department",
       "abuse_categories": [
         "other"
@@ -595,6 +632,7 @@
       "title": "Flock Denies Sharing Data with Private Investigators After Employee Comments",
       "url": "https://www.9news.com/article/news/local/next/next-with-kyle-clark/flock-denies-sharing-license-plate-data-with-private-investigators-after-employee-comments-in-recorded-call/73-d1622f01-b64f-47e5-bdb3-4ec46dbc7cef",
       "jurisdiction": "Colorado",
+      "state": "CO",
       "agency": "Flock Safety",
       "abuse_categories": [
         "unauthorized_access"
@@ -611,6 +649,7 @@
       "title": "Flock Safety's Nova Platform: Dark Web Data Considered for Warrantless Tracking",
       "url": "https://www.govtech.com/biz/flock-safety-pushes-back-on-data-breach-product-criticism",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Flock Safety",
       "abuse_categories": [
         "data_breach",
@@ -631,6 +670,7 @@
       "title": "Flock Rewrites Terms of Service to Claim Perpetual Data Rights",
       "url": "https://haveibeenflocked.com/news/terms-feb2026",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Flock Safety",
       "abuse_categories": [
         "other"
@@ -647,6 +687,7 @@
       "title": "Researchers Claim Flock Cameras Are Easy to Hack — 51 Vulnerabilities Found",
       "url": "https://www.9news.com/article/news/tech/researchers-claim-flock-cameras-are-easy-to-hack/73-6c805b4a-7b64-4d71-828e-961dda84b8e5",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Flock Safety",
       "abuse_categories": [
         "data_breach"
@@ -667,6 +708,7 @@
       "title": "Wyden and Krishnamoorthi Urge FTC to Investigate Flock Safety",
       "url": "https://www.wyden.senate.gov/news/press-releases/wyden-krishnamoorthi-urge-ftc-to-investigate-surveillance-tech-company-on-negligently-handling-americans-personal-data",
       "jurisdiction": "National",
+      "state": null,
       "agency": "Flock Safety",
       "abuse_categories": [
         "data_breach"
@@ -686,6 +728,7 @@
       "title": "Sedona Council Terminates License Plate Reader Program",
       "url": "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program/",
       "jurisdiction": "Sedona, AZ",
+      "state": "AZ",
       "agency": "Sedona Police Department",
       "abuse_categories": [
         "other"
@@ -702,6 +745,7 @@
       "title": "Spartanburg Sheriff Chuck Wright Pleads Guilty to Federal Charges",
       "url": "https://www.postandcourier.com/spartanburg/news/spartanburg-sheriff-chuck-wright-fbi-investigation-career-controversies/article_aa5d54be-7354-4507-be0c-dfdc456bdc57.html",
       "jurisdiction": "Spartanburg County, SC",
+      "state": "SC",
       "agency": "Spartanburg County Sheriff's Office",
       "abuse_categories": [
         "other"
@@ -721,6 +765,7 @@
       "title": "Class Action Lawsuit Alleges Flock License Plate Readers Violate California Law",
       "url": "https://www.ktvu.com/news/class-action-lawsuit-alleges-flock-license-plate-readers-violate-ca-law-privacy-residents",
       "jurisdiction": "California",
+      "state": "CA",
       "agency": "Flock Safety / Multiple CA agencies",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -738,6 +783,7 @@
       "title": "Lenexa Police Investigated Op-Ed Writer Who Criticized ICE Response",
       "url": "https://www.kcur.org/politics-elections-and-government/2026-02-02/lenexa-police-investigated-column-writer-critical-failure-warn-ice-raid-councilwoman-investigation",
       "jurisdiction": "Lenexa, KS",
+      "state": "KS",
       "agency": "Lenexa Police Department",
       "abuse_categories": [
         "protest_tracking",
@@ -754,6 +800,7 @@
       "title": "What the Flock: Police Surveillance is Ripe for Abuse",
       "url": "https://www.aclu-wi.org/news/what-the-flock-police-surveillance-is-ripe-for-abuse",
       "jurisdiction": "Greenfield, WI",
+      "state": "WI",
       "agency": "Greenfield Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -770,6 +817,7 @@
       "title": "Border Patrol, DHS Accessed Woodburn Flock Camera Data, City Audit Shows",
       "url": "https://woodburnindependent.com/2026/02/26/border-patrol-dhs-accessed-woodburn-flock-camera-data-city-audit-shows/",
       "jurisdiction": "Woodburn, OR",
+      "state": "OR",
       "agency": "U.S. Border Patrol / DHS / Woodburn Police Department",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -786,6 +834,7 @@
       "title": "Dunwoody City Council faces public backlash over Flock camera data sharing practices",
       "url": "https://roughdraftatlanta.com/2026/03/30/flock-data-sharing-concerns/",
       "jurisdiction": "Dunwoody, GA",
+      "state": "GA",
       "agency": "Dunwoody Police Department",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -802,6 +851,7 @@
       "title": "Kansas Town Uses License Plate Readers to Go After Man Who Wrote Op-Ed",
       "url": "https://www.aclu.org/news/privacy-technology/alpr-against-op-ed-writer",
       "jurisdiction": "Lenexa, KS",
+      "state": "KS",
       "agency": "Lenexa Police Department",
       "abuse_categories": [
         "protest_tracking",
@@ -819,6 +869,7 @@
       "title": "Joplin officer no longer employed after alleged misuse of license plate tracking system",
       "url": "https://www.kctv5.com/2026/01/12/joplin-officer-no-longer-employed-after-alleged-misuse-license-plate-tracking-system/",
       "jurisdiction": "Joplin, MO",
+      "state": "MO",
       "agency": "Joplin Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -836,6 +887,7 @@
       "title": "KBI: Ex-detective misused police resources to track spouse; child sex abuse material found",
       "url": "https://www.wibw.com/2026/04/01/kbi-ex-detective-misused-police-resources-track-spouse-child-sex-abuse-material-found/",
       "jurisdiction": "Bonner Springs, KS",
+      "state": "KS",
       "agency": "Bonner Springs Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -856,6 +908,7 @@
       "title": "Thornton Police Looking Into Complaint That Officer Ran Nearly 20,000 Flock Searches",
       "url": "https://www.9news.com/article/news/local/colorado-news/thornton-police-complaint-officer-ran-20000-flock-searches/73-cf59c995-f38b-4b5b-a883-ee36a5b06c50",
       "jurisdiction": "Thornton, CO",
+      "state": "CO",
       "agency": "Thornton Police Department",
       "abuse_categories": [
         "unauthorized_access"
@@ -874,6 +927,7 @@
       "title": "ALPRs and Minneapolis' Growing Discriminatory Surveillance Dragnet",
       "url": "https://unicornriot.ninja/2026/alprs-and-minneapolis-growing-discriminatory-surveillance-dragnet/",
       "jurisdiction": "Minneapolis, MN",
+      "state": "MN",
       "agency": "Minneapolis Police Department",
       "abuse_categories": [
         "dragnet_surveillance"
@@ -889,6 +943,7 @@
       "title": "Former Orange County Officer Pleaded Guilty to Using Police Database to Track Mistress, Harassing Her with Thousands of Texts and Phone Calls",
       "url": "https://ktla.com/news/orange-county/former-orange-county-officer-pleaded-guilty-to-using-police-database-to-track-mistress-harassing-her-with-thousands-of-texts-and-phone-calls/",
       "jurisdiction": "Costa Mesa, CA",
+      "state": "CA",
       "agency": "Costa Mesa Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -908,6 +963,7 @@
       "title": "Virginia Police Search Vehicle Surveillance Data 24/7. 'Why?' Isn't Always Clear.",
       "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-04-02/virginia-police-often-search-alpr-surveillance-data-for-vague-reasons",
       "jurisdiction": "Virginia",
+      "state": "VA",
       "agency": "Multiple VA agencies",
       "abuse_categories": [
         "dragnet_surveillance",
@@ -929,6 +985,7 @@
       "title": "No Permit, No Problem: Riverside County's 500+ Unauthorized Surveillance Cameras",
       "url": "https://haveibeenflocked.com/news/riverside-permits",
       "jurisdiction": "Riverside County, CA",
+      "state": "CA",
       "agency": "Riverside County Sheriff's Department / Flock Safety",
       "abuse_categories": [
         "other"
@@ -944,6 +1001,7 @@
       "title": "RPD discloses sergeant violated Flock camera policy by sharing info with federal agent",
       "url": "https://www.richmonder.org/rpd-discloses-sergeant-violated-flock-camera-policy-by-sharing-info-with-federal-agent/",
       "jurisdiction": "Richmond, VA",
+      "state": "VA",
       "agency": "Richmond Police Department",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -961,6 +1019,7 @@
       "title": "Not a one-off: More Coloradans stopped by police after data errors triggered Flock alerts",
       "url": "https://www.9news.com/article/news/local/coloradan-stopped-by-police-data-errors-flock-alerts/73-593a3772-f43d-46b1-8744-af888b9bd7f2",
       "jurisdiction": "Boulder County, CO / Jefferson County, CO",
+      "state": "CO",
       "agency": "Boulder County Sheriff's Office / Jefferson County Sheriff's Office / Aurora Police Department",
       "abuse_categories": [
         "false_arrest",
@@ -977,6 +1036,7 @@
       "title": "Dayton suspends automated license plate readers after 'egregious' data sharing violations",
       "url": "https://www.wyso.org/news/2026-05-01/dayton-suspends-automated-license-plate-readers-after-egregious-data-sharing-violations",
       "jurisdiction": "Dayton, OH",
+      "state": "OH",
       "agency": "Dayton Police Department",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -993,6 +1053,7 @@
       "title": "Former police officer who tracked estranged wife's car pleads guilty to stalking",
       "url": "https://www.wpxi.com/news/top-stories/former-police-officer-who-tracked-estranged-wifes-car-pleads-guilty-stalking/T2NEW6QU4BB2TGGZX36WD5VS6I/",
       "jurisdiction": "Frazer Township, PA",
+      "state": "PA",
       "agency": "Frazer Township Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -1009,6 +1070,7 @@
       "title": "Ex-RSO deputy who stalked former fiancee, harassed volunteer sentenced",
       "url": "https://kesq.com/news/crime/2026/02/06/ex-rso-deputy-who-stalked-former-fiancee-harassed-volunteer-sentenced/",
       "jurisdiction": "Riverside County, CA",
+      "state": "CA",
       "agency": "Riverside County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -1026,6 +1088,7 @@
       "title": "Affidavit: Deputy used SCSO database to track ex-wife's location without her knowledge",
       "url": "https://www.actionnews5.com/2024/08/10/affidavit-deputy-used-scso-database-track-ex-wifes-location-without-her-knowledge/",
       "jurisdiction": "Shelby County, TN",
+      "state": "TN",
       "agency": "Shelby County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -1043,6 +1106,7 @@
       "title": "Former LMPD officer charged with official misconduct, stalking, harassment",
       "url": "https://www.whas11.com/article/news/crime/lmpd-roberto-cedeno-arrest-stalking-harassment-official-misconduct/417-bd87664e-1ac7-4789-8839-b6bdcf86f7f2",
       "jurisdiction": "Louisville, KY",
+      "state": "KY",
       "agency": "Louisville Metro Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -1062,6 +1126,7 @@
       "title": "Jerome County sheriff used Flock cameras to search for wife's vehicle, documents show",
       "url": "https://www.eastidahonews.com/2026/04/jerome-county-sheriff-used-flock-cameras-to-search-for-wifes-vehicle-documents-show/",
       "jurisdiction": "Jerome County, ID",
+      "state": "ID",
       "agency": "Jerome County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -1078,6 +1143,7 @@
       "title": "KCE Editor Files John Doe Petition Seeking Criminal Investigation Into Former Kenosha Deputy Over Alleged Database Misuse",
       "url": "https://kenoshacountyeye.com/2026/03/06/kce-editor-files-john-doe-petition-seeking-criminal-investigation-into-former-kenosha-deputy-over-alleged-database-misuse/",
       "jurisdiction": "Kenosha County, WI",
+      "state": "WI",
       "agency": "Kenosha County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -1094,6 +1160,7 @@
       "title": "Police officer allegedly used department database to stalk woman he met on TV set",
       "url": "https://local12.com/news/nation-world/police-officer-stalking-woman-tv-set-database-license-plate-reader-cop-department-bad-monkey-roman-cat-call-flirt-flirting-stalked-stalker-stalk-almost-cause-crash-boyfriend-woman-extra-television-show",
       "jurisdiction": "Monroe County, FL",
+      "state": "FL",
       "agency": "Monroe County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -1110,6 +1177,7 @@
       "title": "Milwaukee police investigating second former officer for alleged misuse of license plate reader database",
       "url": "https://www.tmj4.com/about-us/lighthouse/milwaukee-police-investigating-second-former-officer-for-alleged-misuse-of-license-plate-reader-database",
       "jurisdiction": "Milwaukee, WI",
+      "state": "WI",
       "agency": "Milwaukee Police Department",
       "abuse_categories": [
         "unauthorized_access",
@@ -1128,6 +1196,7 @@
       "title": "Criminal Complaint: State of Wisconsin v. Josue Ayala",
       "url": "https://mkepdpio.org/wp-content/uploads/2026/02/Criminal-Complaint_3-Ayala-Josue.pdf",
       "jurisdiction": "Milwaukee, WI",
+      "state": "WI",
       "agency": "Milwaukee Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -1146,6 +1215,7 @@
       "title": "Federal immigration agents accessed Syracuse drivers' data through secret Flock Safety deal",
       "url": "https://centralcurrent.org/federal-immigration-agents-accessed-syracuse-drivers-data-through-secret-flock-safety-deal/",
       "jurisdiction": "Syracuse, NY",
+      "state": "NY",
       "agency": "Syracuse Police Department",
       "abuse_categories": [
         "data_breach",
@@ -1172,6 +1242,7 @@
       "title": "License Plate Surveillance Logs Reveal Racist Policing Against Romani People",
       "url": "https://www.eff.org/deeplinks/2025/11/license-plate-surveillance-logs-reveal-racist-policing-against-romani-people",
       "jurisdiction": "Multiple jurisdictions (nationwide)",
+      "state": null,
       "agency": "80+ agencies, including Lake County SO (IL), Sacramento PD (CA), Palos Heights PD (IL), Irvine PD (CA), Fairfax County PD (VA), Grand Prairie PD (TX)",
       "abuse_categories": [
         "dragnet_surveillance",
@@ -1191,6 +1262,7 @@
       "title": "2 Greer officers terminated for violating policy on Flock cameras, police say",
       "url": "https://www.foxcarolina.com/2026/07/14/2-greer-officers-terminated-violating-policy-flock-cameras-police-say/",
       "jurisdiction": "Greer, SC",
+      "state": "SC",
       "agency": "Greer Police Department",
       "abuse_categories": [
         "stalking_targeting"
@@ -1207,6 +1279,7 @@
       "title": "Georgia cops' alleged misuse of Flock license plate tracking data fuels privacy concerns",
       "url": "https://www.fox5atlanta.com/news/georgia-cops-alleged-misuse-flock-license-plate-tracking-data-fuels-privacy-concerns",
       "jurisdiction": "Greene County, Cherokee County, and Albany, GA",
+      "state": "GA",
       "agency": "Multiple Georgia law enforcement agencies",
       "abuse_categories": [
         "stalking_targeting",
@@ -1225,6 +1298,7 @@
       "title": "ICE accessed Capitola license plate data. Police say it was a mistake.",
       "url": "https://santacruzlocal.org/2025/11/07/ice-accessed-capitola-license-plate-data-police-say-it-was-a-mistake/",
       "jurisdiction": "Capitola, CA",
+      "state": "CA",
       "agency": "Capitola Police Department",
       "abuse_categories": [
         "fusion_center_sharing",
@@ -1244,6 +1318,7 @@
       "title": "Metro Atlanta deputies fired, arrested, accused of misusing license plate readers",
       "url": "https://www.atlantanewsfirst.com/2026/06/23/3-cherokee-county-deputies-fired-arrested-accused-misusing-license-plate-reader-database/?outputType=amp",
       "jurisdiction": "Cherokee County, GA",
+      "state": "GA",
       "agency": "Cherokee County Sheriff's Office",
       "abuse_categories": [
         "unauthorized_access"
@@ -1261,6 +1336,7 @@
       "title": "Automotive journalist surrounded by police due to Flock camera confusion",
       "url": "https://www.kare11.com/article/news/local/breaking-the-news/automotive-journalist-surrounded-by-police-due-to-flock-camera-confusion/89-f65ee040-3216-43f1-91e2-e8dde53d419c",
       "jurisdiction": "Plymouth, MN",
+      "state": "MN",
       "agency": "Plymouth Police Department",
       "abuse_categories": [
         "false_arrest"
@@ -1277,6 +1353,7 @@
       "title": "Sherwood stop sparked after Flock camera misread plate by one letter as stolen",
       "url": "https://katv.com/news/local/sherwood-stop-sparked-after-flock-camera-misread-plate-by-one-letter-as-stolen-katv-news-share-inform-public-community-safety",
       "jurisdiction": "Sherwood, AR",
+      "state": "AR",
       "agency": "Sherwood Police Department",
       "abuse_categories": [
         "false_arrest"
@@ -1293,6 +1370,7 @@
       "title": "Sumter County suspends license plate reader program after detective accused of misuse",
       "url": "https://www.fox35orlando.com/news/sumter-county-suspends-license-plate-reader-program-after-detective-accused-misuse.amp",
       "jurisdiction": "Sumter County, FL",
+      "state": "FL",
       "agency": "Sumter County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting",
@@ -1310,6 +1388,7 @@
       "title": "CMPD officer accused of illegally accessing FLOCK camera system",
       "url": "https://www.wcnc.com/article/news/local/officer-accused-of-improperly-using-flock-cameras/275-96c07558-0516-4a3f-8e11-5f2a4fd4a7e3",
       "jurisdiction": "Charlotte, NC",
+      "state": "NC",
       "agency": "Charlotte-Mecklenburg Police Department",
       "abuse_categories": [
         "unauthorized_access"
@@ -1326,6 +1405,7 @@
       "title": "Habersham County deputy fired, arrested after Flock license plate reader audit",
       "url": "https://www.atlantanewsfirst.com/2026/07/31/habersham-county-deputy-fired-arrested-after-flock-license-plate-reader-audit/",
       "jurisdiction": "Habersham County, GA",
+      "state": "GA",
       "agency": "Habersham County Sheriff's Office",
       "abuse_categories": [
         "stalking_targeting"
@@ -1342,6 +1422,7 @@
       "title": "Six Savannah police employees placed on leave over alleged Flock misuse",
       "url": "https://www.wjcl.com/article/savannah-police-flock-system-misuse-investigation/73321620",
       "jurisdiction": "Savannah, GA",
+      "state": "GA",
       "agency": "Savannah Police Department",
       "abuse_categories": [
         "stalking_targeting",
@@ -1359,6 +1440,7 @@
       "title": "Former Holiday Hills police chief charged with making nearly 300 unauthorized searches",
       "url": "https://chicago.suntimes.com/crime/2026/07/20/former-holiday-hills-police-chief-charged-with-making-nearly-300-unauthorized-searches-court-records",
       "jurisdiction": "Holiday Hills / Prairie Grove, IL",
+      "state": "IL",
       "agency": "Prairie Grove Police Department / Holiday Hills Police Department",
       "abuse_categories": [
         "stalking_targeting"
@@ -1375,6 +1457,7 @@
       "title": "2 Ohio police officers resign over alleged Flock camera misuse",
       "url": "https://www.wkbn.com/news/ohio/2-ohio-police-officers-resign-over-alleged-flock-camera-misuse/",
       "jurisdiction": "Reynoldsburg, OH",
+      "state": "OH",
       "agency": "Reynoldsburg Division of Police",
       "abuse_categories": [
         "unauthorized_access"
@@ -1391,6 +1474,7 @@
       "title": "3 Coweta sheriff's employees resign amid Flock review",
       "url": "https://www.fox5atlanta.com/news/3-coweta-sheriffs-employees-resign-amid-flock-review",
       "jurisdiction": "Coweta County, GA",
+      "state": "GA",
       "agency": "Coweta County Sheriff's Office",
       "abuse_categories": [
         "other"
@@ -1407,8 +1491,11 @@
       "title": "Fort Bend County Sheriff's Office lieutenant admits to improper use of Flock cameras",
       "url": "https://abc13.com/post/fort-bend-county-sheriffs-office-lieutenant-admits-improper-use-flock-cameras-docs/19528986/",
       "jurisdiction": "Fort Bend County, TX",
+      "state": "TX",
       "agency": "Fort Bend County Sheriff's Office",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "A Fort Bend County Sheriff's Office lieutenant used the Flock ALPR system to search two license plates a combined 189 times between January 2022 and December 2025. The lieutenant admitted the searches were not related to official law enforcement work. No criminal charges were filed; the lieutenant was suspended for two days.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1421,8 +1508,12 @@
       "title": "Flock cameras in Houston area face privacy concerns after Pasadena officer accused of misuse",
       "url": "https://www.fox26houston.com/news/flock-cameras-houston-area-face-privacy-concerns-after-pasadena-officer-accused-misuse",
       "jurisdiction": "Pasadena, TX",
+      "state": "TX",
       "agency": "Pasadena Police Department",
-      "abuse_categories": ["stalking_targeting", "unauthorized_access"],
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
       "description": "Pasadena Police Sgt. Michael Palitz was accused of using the department's Flock ALPR system to track and stalk a fellow female officer. Palitz resigned during the internal investigation.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1435,8 +1526,11 @@
       "title": "Baytown officer under investigation for allegedly misusing Flock cameras resigns, police chief says",
       "url": "https://abc13.com/post/baytown-police-officer-investigation-allegedly-misusing-flock-cameras-resigns-chief-john-stringer-says/19602683/",
       "jurisdiction": "Baytown, TX",
+      "state": "TX",
       "agency": "Baytown Police Department",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "An unnamed Baytown police officer resigned amid an internal and a separate criminal investigation into alleged misuse of the department's Flock ALPR system. Both investigations remain active following the resignation, according to Police Chief John Stringer.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1449,8 +1543,11 @@
       "title": "New Bedford police officer accused of using Flock cameras to track and follow ex-romantic partner",
       "url": "https://newbedfordlight.org/new-bedford-police-officer-accused-of-using-flock-cameras-to-track-and-follow-ex-romantic-partner/",
       "jurisdiction": "New Bedford, MA",
+      "state": "MA",
       "agency": "New Bedford Police Department",
-      "abuse_categories": ["stalking_targeting"],
+      "abuse_categories": [
+        "stalking_targeting"
+      ],
       "description": "New Bedford Police Officer Emily Pacheco was accused of using the department's Flock ALPR system to track and follow her ex-girlfriend. Pacheco faces an internal investigation.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1463,8 +1560,12 @@
       "title": "New Bedford pauses use of Flock cameras, puts officer on leave",
       "url": "https://www.youtube.com/watch?v=rSvUphO4HJc",
       "jurisdiction": "New Bedford, MA",
+      "state": "MA",
       "agency": "New Bedford Police Department",
-      "abuse_categories": ["unauthorized_access", "other"],
+      "abuse_categories": [
+        "unauthorized_access",
+        "other"
+      ],
       "description": "New Bedford Police Chief Jason Thody announced the department was temporarily suspending its Flock ALPR system after an internal audit resulted in internal investigations and an officer being placed on paid administrative leave.",
       "date_added": "2026-08-14",
       "submitted_by": "tony schwartz",
@@ -1479,8 +1580,11 @@
       "title": "Moody officer terminated, Springville officer resigns after Flock investigations",
       "url": "https://abc3340.com/news/local/moody-officer-terminated-springville-officer-resigns-after-flock-investigations-alea",
       "jurisdiction": "Moody, St. Clair County, AL",
+      "state": "AL",
       "agency": "Moody Police Department",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "An unnamed Moody police officer was terminated on July 16, 2026 after an internal investigation found the officer violated the department's ALPR policy. Findings were forwarded to the Alabama Law Enforcement Agency for consideration of criminal charges.",
       "date_added": "2026-08-14",
       "status": "approved",
@@ -1494,8 +1598,11 @@
       "title": "Moody officer terminated, Springville officer resigns after Flock investigations",
       "url": "https://abc3340.com/news/local/moody-officer-terminated-springville-officer-resigns-after-flock-investigations-alea",
       "jurisdiction": "Springville, St. Clair County, AL",
+      "state": "AL",
       "agency": "Springville Police Department",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "A department audit found an unnamed Springville police officer used the Flock ALPR system to conduct searches involving a family member, all occurring on a single day. The officer resigned and is no longer employed in law enforcement. Findings were forwarded to ALEA for further review.",
       "date_added": "2026-08-14",
       "status": "approved",
@@ -1509,8 +1616,11 @@
       "title": "Innocent Woman Jailed 13 Days After Fatal Hit-and-Run Probe Focused on Wrong Car",
       "url": "https://globemagazine.com/innocent-woman-jailed-13-days-after-fatal-hit-and-run-probe-focused-on-wrong-car/",
       "jurisdiction": "Volusia County, FL",
+      "state": "FL",
       "agency": "Florida Highway Patrol",
-      "abuse_categories": ["false_arrest"],
+      "abuse_categories": [
+        "false_arrest"
+      ],
       "description": "Following an October 2025 triple-fatal crash on Interstate 4, Florida Highway Patrol investigators used a Flock camera hit near the Volusia/Seminole county line to identify a black Dodge Durango registered to Lindsey Isaacs as the vehicle that fled the scene. Isaacs was arrested more than six months later and held without bond for thirteen days on charges including three counts of vehicular homicide. Prosecutors dismissed all charges in May 2026 after defense counsel challenged the vehicle identification and physical evidence; a second suspect driving a different-colored Durango was arrested the same day on the original charges plus evidence tampering. Isaacs subsequently filed a federal civil rights lawsuit against the lead investigator and a supervising sergeant.",
       "additional_urls": [
         "https://mcgeehanlaw.com/thirteen-days-lindsey-isaacs/"
@@ -1527,8 +1637,11 @@
       "title": "Chandler police officer resigns, admits to misusing Flock cameras",
       "url": "https://www.azfamily.com/2026/08/13/chandler-police-officer-resigns-admits-misusing-flock-cameras/",
       "jurisdiction": "Chandler, AZ",
+      "state": "AZ",
       "agency": "Chandler Police Department",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "The Chandler Police Department found an anomaly during a routine review of Flock camera usage, leading to an investigation in which an unnamed officer admitted using the system to locate a family member. The officer resigned during the investigation, which was then closed.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1541,8 +1654,11 @@
       "title": "Ex-911 director arrested for misusing Flock camera",
       "url": "https://www.wsbtv.com/news/local/paulding-county/ex-911-director-arrested-misusing-flock-camera/SK2OPFQWFJAQBFH3SEUIZJ63FE/",
       "jurisdiction": "Dallas, GA (Paulding County)",
+      "state": "GA",
       "agency": "Dallas Police Department",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "Heidi Taylor, former 911 Director for the Dallas, GA Police Department, was arrested by the Georgia Bureau of Investigation and booked on two misdemeanor counts of ALPR misuse. She is accused of accessing the Flock system between 2024 and 2025 for non-law-enforcement purposes.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1555,8 +1671,11 @@
       "title": "IMPD officer accused of misusing Flock license plate readers gets suspended",
       "url": "https://fox59.com/news/indycrime/impd-officer-accused-of-misusing-flock-license-plate-readers-gets-suspended/",
       "jurisdiction": "Indianapolis, IN",
+      "state": "IN",
       "agency": "Indianapolis Metropolitan Police Department",
-      "abuse_categories": ["unauthorized_access"],
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
       "description": "An unnamed IMPD officer was suspended and remains under investigation for using the department's Flock ALPR system for personal reasons. No charges have been filed, but the police chief has recommended termination.",
       "date_added": "2026-08-14",
       "status": "approved"
@@ -1569,8 +1688,12 @@
       "title": "Haines City officer used Flock cameras to track estranged wife on 717 occasions: affidavit",
       "url": "https://www.wfla.com/news/polk-county/haines-city-officer-used-flock-cameras-to-track-estranged-wife-on-717-occasions-affidavit/",
       "jurisdiction": "Haines City, FL",
+      "state": "FL",
       "agency": "Haines City Police Department",
-      "abuse_categories": ["stalking_targeting", "unauthorized_access"],
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
       "description": "Officer Christopher Goodson was arrested after allegedly searching for his estranged wife's vehicle in the Flock database 717 times between late 2024 and mid-2026, both on and off duty, while misrepresenting the reason for the searches. Goodson confessed after learning the Washington Post was investigating officer misuse of Flock nationally. He agreed to resign and faces charges of computer offenses and official misconduct.",
       "date_added": "2026-08-14",
       "status": "approved"
