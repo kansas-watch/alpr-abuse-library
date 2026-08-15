@@ -688,7 +688,7 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson-client/3.1.0/topojson-client.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script>
   const CATEGORY_LABELS = {
     false_arrest:             'False Arrest',
@@ -872,6 +872,9 @@
       .style('z-index', '10');
 
     d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json').then(us => {
+      if (typeof topojson === 'undefined') {
+        throw new Error('topojson library failed to load');
+      }
       svg.selectAll('path')
         .data(topojson.feature(us, us.objects.states).features)
         .join('path')
@@ -903,6 +906,10 @@
           updateMapSelection();
         });
       updateMapSelection();
+    }).catch(err => {
+      mapEl.style.minHeight = '0';
+      mapEl.innerHTML = '<p style="font-style: italic; color: var(--ink-soft); padding: 1rem 0;">Map failed to load (' + esc(err.message) + '). The list below is unaffected.</p>';
+      console.error('State map failed to render:', err);
     });
   }
 
