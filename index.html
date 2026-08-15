@@ -849,9 +849,8 @@
     const max = Math.max(1, ...Object.values(counts));
 
     document.getElementById('heatmap-section').style.display = 'block';
-    const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
     const ramp = ['#E6F1FB', '#B5D4F4', '#85B7EB', '#378ADD', '#185FA5', '#0C447C', '#042C53'];
-    mapColorScale = d3.scaleQuantize([0, max], isDark ? ramp.slice().reverse() : ramp);
+    mapColorScale = d3.scaleQuantize([0, max], ramp);
 
     document.getElementById('map-legend-max').textContent = max;
     document.getElementById('map-legend-gradient').style.background =
@@ -880,12 +879,12 @@
         .join('path')
         .attr('d', path)
         .attr('class', d => 'state-shape state-' + (NAME_TO_CODE[d.properties.name] || ''))
-        .attr('stroke', isDark ? 'rgba(255,255,255,.15)' : '#fff')
+        .attr('stroke', '#fff')
         .attr('stroke-width', 0.5)
         .attr('fill', d => {
           const code = NAME_TO_CODE[d.properties.name];
           const v = counts[code];
-          return v ? mapColorScale(v) : (isDark ? '#2c2c2a' : '#f1efe8');
+          return v ? mapColorScale(v) : '#f1efe8';
         })
         .style('cursor', 'pointer')
         .on('mousemove', (event, d) => {
@@ -915,11 +914,10 @@
 
   function updateMapSelection() {
     if (!mapSvgSelection) return;
-    const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
     mapSvgSelection.selectAll('path.state-shape').each(function() {
       const el = d3.select(this);
       const selected = !!activeMapState && el.classed('state-' + activeMapState);
-      el.attr('stroke', selected ? 'var(--blue-dark)' : (isDark ? 'rgba(255,255,255,.15)' : '#fff'));
+      el.attr('stroke', selected ? 'var(--blue-dark)' : '#fff');
       el.attr('stroke-width', selected ? 2 : 0.5);
     });
   }
