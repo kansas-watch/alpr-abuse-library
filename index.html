@@ -200,6 +200,44 @@
       border-color: var(--blue);
     }
 
+    .search-wrap {
+      position: relative;
+      flex: 1 1 220px;
+      min-width: 180px;
+      max-width: 340px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 0.65rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--ink-soft);
+      pointer-events: none;
+    }
+
+    #filter-search {
+      width: 100%;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.88rem;
+      color: var(--ink);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      padding: 0.42rem 0.75rem 0.42rem 2.1rem;
+      transition: border-color 0.15s;
+    }
+
+    #filter-search::placeholder {
+      color: var(--ink-soft);
+      font-style: italic;
+    }
+
+    #filter-search:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
     .results-count {
       margin-left: auto;
       font-family: 'JetBrains Mono', monospace;
@@ -594,6 +632,14 @@
   <div class="controls-inner">
     <span class="filter-label">Filter by</span>
 
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M9.6 9.6L13 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="filter-search" placeholder="Search title, officer, agency, keyword…" aria-label="Search entries by keyword" autocomplete="off" />
+    </div>
+
     <select id="filter-category" aria-label="Filter by abuse category">
       <option value="">All categories</option>
     </select>
@@ -656,6 +702,7 @@
   let allEntries = [];
   let activeCategory = '';
   let activeState = '';
+  let activeQuery = '';
 
   // ── Load data ──────────────────────────────────────────────
   async function loadData() {
@@ -720,11 +767,26 @@
       updateClearBtn();
       renderEntries();
     });
+
+    const searchInput = document.getElementById('filter-search');
+    let searchDebounce;
+    searchInput.addEventListener('input', e => {
+      clearTimeout(searchDebounce);
+      const val = e.target.value;
+      searchDebounce = setTimeout(() => {
+        activeQuery = val.trim().toLowerCase();
+        updateClearBtn();
+        renderEntries();
+      }, 120);
+    });
+
     document.getElementById('clear-btn').addEventListener('click', () => {
       activeCategory = '';
       activeState = '';
+      activeQuery = '';
       catSel.value = '';
       stateSel.value = '';
+      searchInput.value = '';
       updateClearBtn();
       renderEntries();
     });
@@ -732,7 +794,7 @@
 
   function updateClearBtn() {
     const btn = document.getElementById('clear-btn');
-    if (activeCategory || activeState) {
+    if (activeCategory || activeState || activeQuery) {
       btn.classList.remove('hidden');
     } else {
       btn.classList.add('hidden');
@@ -747,6 +809,7 @@
     const filtered = allEntries.filter(e => {
       if (activeCategory && !e.abuse_categories.includes(activeCategory)) return false;
       if (activeState && e.jurisdiction !== activeState) return false;
+      if (activeQuery && !matchesQuery(e, activeQuery)) return false;
       return true;
     });
 
@@ -844,6 +907,17 @@
     return `${months[parseInt(m,10)-1]} ${y}`;
   }
 
+  function matchesQuery(entry, query) {
+    const haystack = [
+      entry.title,
+      entry.description,
+      entry.publication,
+      entry.jurisdiction,
+      entry.agency,
+    ].filter(Boolean).join(' ').toLowerCase();
+    return haystack.includes(query);
+  }
+
   function extractState(jurisdiction) {
     if (!jurisdiction) return null;
     const parts = jurisdiction.split(',');
@@ -853,5 +927,6 @@
 
   loadData();
 </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"a8ba472b627543a8a2d669ef95bb3c22","r":1}' crossorigin="anonymous"></script>
 </body>
 </html>
