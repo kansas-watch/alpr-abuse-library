@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-08-14",
+    "last_updated": "2026-08-15",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -787,10 +787,15 @@
       "agency": "Lenexa Police Department",
       "abuse_categories": [
         "protest_tracking",
-        "stalking_targeting"
+        "stalking_targeting",
+        "unauthorized_access"
       ],
-      "description": "After Canyen Ashworth published a guest column criticizing Lenexa PD's failure to warn the community before an ICE raid, Police Chief Dawn Layman launched an investigation into him using the city's ALPR system to track his movements. Three weeks later, Layman issued a department-wide BOLO and internal directives telling officers to Make Your Own Case find any reason to stop him. No charges were filed. The ACLU of Kansas called it a wanton and disgraceful abuse of power. Chief Layman subsequently left for another department.",
-      "status": "approved"
+      "description": "After Canyen Ashworth published a guest column criticizing Lenexa PD's failure to warn the community before an ICE raid, Police Chief Dawn Layman launched an investigation into him using the city's ALPR system to track his movements. Three weeks later, Layman issued a department-wide BOLO and internal directives telling officers to Make Your Own Case find any reason to stop him. No charges were filed, and the town later admitted it had no formal policy on political yard signs, undercutting its stated rationale for the investigation. The ACLU of Kansas called it a wanton and disgraceful abuse of power; a follow-up ACLU analysis by Senior Policy Analyst Jay Stanley framed the case as a textbook example of show me the man, I'll find you the crime policing, with troubling First Amendment implications for selective enforcement against critics. Chief Layman subsequently left for another department.",
+      "status": "approved",
+      "additional_urls": [
+        "https://www.aclu.org/news/privacy-technology/alpr-against-op-ed-writer"
+      ],
+      "notes": "Merged with a since-removed duplicate entry (formerly id 045, ACLU analysis of the same case) per editorial review on 2026-08-15: both described the same Lenexa/Ashworth incident, not distinct cases, so consolidated into one entry with the ACLU piece kept as a secondary source."
     },
     {
       "id": "042",
@@ -841,24 +846,6 @@
         "dragnet_surveillance"
       ],
       "description": "Dunwoody City Council postponed a vote on renewing its $15,000 Flock contract after residents packed a meeting demanding accountability. Council Member Stacey Harris asked on record why 1,200 agencies can access Dunwoody's data and why SUNY is querying it. Flock's chief legal officer attended and promised contract revisions.",
-      "status": "approved"
-    },
-    {
-      "id": "045",
-      "date_published": "2026-02-03",
-      "publication": "ACLU",
-      "submission_type": "opinion_piece",
-      "title": "Kansas Town Uses License Plate Readers to Go After Man Who Wrote Op-Ed",
-      "url": "https://www.aclu.org/news/privacy-technology/alpr-against-op-ed-writer",
-      "jurisdiction": "Lenexa, KS",
-      "state": "KS",
-      "agency": "Lenexa Police Department",
-      "abuse_categories": [
-        "protest_tracking",
-        "stalking_targeting",
-        "unauthorized_access"
-      ],
-      "description": "ACLU Senior Policy Analyst Jay Stanley's analysis of the Lenexa/Ashworth case, adding significant detail: the police chief's Make Your Own Case directive instructing officers to manufacture a reason to stop Ashworth, First Amendment implications of selective enforcement, and the town's admission it had no formal poster policy. Frames the case as a textbook example of how mass surveillance infrastructure enables show me the man, I'll find you the crime policing.",
       "status": "approved"
     },
     {
