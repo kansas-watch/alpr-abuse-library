@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-08-15",
+    "last_updated": "2026-08-21",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -1684,6 +1684,47 @@
       "description": "Officer Christopher Goodson was arrested after allegedly searching for his estranged wife's vehicle in the Flock database 717 times between late 2024 and mid-2026, both on and off duty, while misrepresenting the reason for the searches. Goodson confessed after learning the Washington Post was investigating officer misuse of Flock nationally. He agreed to resign and faces charges of computer offenses and official misconduct.",
       "date_added": "2026-08-14",
       "status": "approved"
+    },
+    {
+      "id": "092",
+      "date_published": "2026-08-06",
+      "publication": "ABC News",
+      "submission_type": "news_report",
+      "title": "Officer allegedly used Flock license plate cameras to track boyfriend's ex-wife",
+      "url": "https://abcnews.com/US/officer-allegedly-flock-license-plate-cameras-track-boyfriends/story?id=135418955",
+      "jurisdiction": "Mooresville, NC",
+      "state": "NC",
+      "agency": "Mooresville Police Department",
+      "abuse_categories": [
+        "stalking_targeting"
+      ],
+      "description": "Mooresville Officer Elizabeth Snowman used Flock license plate cameras to track her boyfriend's ex-wife on 31 occasions, both on- and off-duty, falsely logging most searches as motor vehicle infractions. The misuse surfaced during a department audit; Snowman was arrested and charged with accessing computers, with a court appearance scheduled for August 27, 2026. The department identified 10 additional potential misuse cases, three flagged as problematic.",
+      "date_added": "2026-08-21",
+      "submitted_by": "jones",
+      "status": "approved"
+    },
+    {
+      "id": "093",
+      "date_published": "2026-08-19",
+      "publication": "Your Observer",
+      "submission_type": "case_study",
+      "title": "Sarasota police officer fired, arrested in Flock camera case",
+      "url": "https://www.yourobserver.com/news/2026/aug/19/sarasota-police-officer-arrested-flock-camera/",
+      "jurisdiction": "Sarasota, FL",
+      "state": "FL",
+      "agency": "Sarasota Police Department",
+      "abuse_categories": [
+        "unauthorized_access",
+        "stalking_targeting"
+      ],
+      "description": "Former Sarasota Officer Cory Waiters queried the same license plate 335 times between May and July 2025 through the Flock and DAVID databases, mislabeling it a 'suspicious vehicle.' The plate belonged to a woman with whom he'd had a personal relationship. Waiters was fired and arrested August 19-20, 2026, facing felony charges for official misconduct and computer offenses, plus a misdemeanor public records violation.",
+      "additional_urls": [
+        "https://www.wfla.com/news/sarasota-county/sarasota-officer-fired-arrested-for-misuse-of-flock-camera-david-databases-police/",
+        "https://www.fox13news.com/news/sarasota-police-officer-terminated-following-illegal-misuse-flock-among-other-databases"
+      ],
+      "date_added": "2026-08-21",
+      "status": "approved",
+      "notes": "Submitted URL was the department's own press release (sarasotapd.org), which returned HTTP 403 to automated review. Swapped primary source to independent reporting (Your Observer) for stronger detail (named victim relationship, exact query count) and credibility. Added stalking_targeting category alongside submitter's unauthorized_access tag -- 335 queries on an ex-partner's plate fits targeted tracking of a specific person."
     }
   ]
 }
