@@ -127,8 +127,15 @@
       font-family: 'Playfair Display', serif;
     }
 
-    .submit-link {
+    .header-actions {
       margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .submit-link {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
@@ -147,6 +154,30 @@
 
     .submit-link:hover {
       background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .donate-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: transparent;
+      color: var(--gold-light);
+      border: 1px solid var(--gold);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.55rem 1rem;
+      border-radius: 2px;
+      transition: background 0.15s, color 0.15s, transform 0.1s;
+    }
+
+    .donate-link:hover {
+      background: var(--gold);
+      color: var(--blue-dark);
       transform: translateY(-1px);
     }
 
@@ -587,7 +618,8 @@
       main { padding: 1.5rem 1rem 3rem; }
       .entry-header { grid-template-columns: 72px 1fr auto; gap: 0.6rem; }
       .entry-body { padding-left: 80px; }
-      .submit-link { margin-left: 0; width: 100%; justify-content: center; }
+      .header-actions { margin-left: 0; width: 100%; }
+      .donate-link, .submit-link { flex: 1 1 0; justify-content: center; }
       .footer-inner { flex-direction: column; gap: 0.75rem; }
       .footer-links { margin-left: 0; }
       .results-count { display: none; }
@@ -621,9 +653,14 @@
         <strong id="date-range">—</strong>
         date range
       </div>
-      <a class="submit-link" href="https://forms.gle/isGYpLcKu9YeFzSm9" target="_blank" rel="noopener">
-        ↗ Submit an Article
-      </a>
+      <div class="header-actions">
+        <a class="donate-link" href="https://ko-fi.com/kansaswatch" target="_blank" rel="noopener">
+          ♥ Donate
+        </a>
+        <a class="submit-link" href="https://forms.gle/isGYpLcKu9YeFzSm9" target="_blank" rel="noopener">
+          ↗ Submit an Article
+        </a>
+      </div>
     </div>
   </div>
 </header>
