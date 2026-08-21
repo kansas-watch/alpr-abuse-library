@@ -114,6 +114,7 @@ Browse the full index: [`library.json`](./library.json) | [Formatted table below
 | 2026-08-13 | WSB-TV | News Report | [Ex-911 director arrested for misusing Flock camera](https://www.wsbtv.com/news/local/paulding-county/ex-911-director-arrested-misusing-flock-camera/SK2OPFQWFJAQBFH3SEUIZJ63FE/) | Dallas, GA (Paulding County) | Dallas Police Department | unauthorized_access |
 | 2026-08-13 | Fox59 | News Report | [IMPD officer accused of misusing Flock license plate readers gets suspended](https://fox59.com/news/indycrime/impd-officer-accused-of-misusing-flock-license-plate-readers-gets-suspended/) | Indianapolis, IN | Indianapolis Metropolitan Police Department | unauthorized_access |
 | 2026-08-19 | Your Observer | Case Study | [Sarasota police officer fired, arrested in Flock camera case](https://www.yourobserver.com/news/2026/aug/19/sarasota-police-officer-arrested-flock-camera/) | Sarasota, FL | Sarasota Police Department | unauthorized_access, stalking_targeting |
+| 2026-08-20 | KLTV | News Report | [1 officer arrested, 1 placed on leave amid Lufkin Flock camera misuse investigation](https://www.kltv.com/2026/08/20/1-officer-arrested-1-placed-leave-amid-lufkin-flock-camera-misuse-investigation/) | Lufkin, TX | Lufkin Police Department | unauthorized_access |
 
 ---
 

@@ -1725,6 +1725,29 @@
       "date_added": "2026-08-21",
       "status": "approved",
       "notes": "Submitted URL was the department's own press release (sarasotapd.org), which returned HTTP 403 to automated review. Swapped primary source to independent reporting (Your Observer) for stronger detail (named victim relationship, exact query count) and credibility. Added stalking_targeting category alongside submitter's unauthorized_access tag -- 335 queries on an ex-partner's plate fits targeted tracking of a specific person."
+    },
+    {
+      "id": "094",
+      "date_published": "2026-08-20",
+      "publication": "KLTV",
+      "submission_type": "news_report",
+      "title": "1 officer arrested, 1 placed on leave amid Lufkin Flock camera misuse investigation",
+      "url": "https://www.kltv.com/2026/08/20/1-officer-arrested-1-placed-leave-amid-lufkin-flock-camera-misuse-investigation/",
+      "jurisdiction": "Lufkin, TX",
+      "state": "TX",
+      "agency": "Lufkin Police Department",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "Lufkin Officer Zachary Anthony Klein, an 11-year veteran, was arrested by the Texas Rangers and charged with abuse of official capacity and tampering with a government record after the department's internal audit flagged misuse of its Flock automated license plate reader system; no bond has been set. A second, unnamed officer was placed on administrative leave pending a separate review of his use of the technology. Chief Travis Brazil suspended Flock camera use department-wide while both investigations continue. The specific nature of the misuse -- who or what was searched, and why -- has not been publicly disclosed.",
+      "additional_urls": [
+        "https://www.cbs19.tv/article/news/local/lufkin-officer-accused-of-misusing-automated-license-plate-reader-another-officer-leave/501-7fe1ae19-8013-42d0-aa9a-c7917becf175",
+        "https://www.txan24.com/post/lufkin-police-officer-arrested-amid-investigation-into-flock-license-plate-reader-use",
+        "https://kicks105.com/lufkin-officer-flock-camera-misuse/"
+      ],
+      "date_added": "2026-08-21",
+      "status": "approved",
+      "notes": "Submitter-linked URL (cbs19.tv) returned 403/timeout to automated fetching; primary source swapped to KLTV, which was fully accessible with a matching byline and date. Categorized unauthorized_access rather than stalking_targeting since no source discloses what was searched or the motive."
     }
   ]
 }
