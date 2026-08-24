@@ -1748,6 +1748,24 @@
       "date_added": "2026-08-21",
       "status": "approved",
       "notes": "Submitter-linked URL (cbs19.tv) returned 403/timeout to automated fetching; primary source swapped to KLTV, which was fully accessible with a matching byline and date. Categorized unauthorized_access rather than stalking_targeting since no source discloses what was searched or the motive."
+    },
+    {
+      "id": "095",
+      "date_published": "2026-08-20",
+      "publication": "WCIV (ABC News 4)",
+      "submission_type": "news_report",
+      "title": "Lieutenant fired after audit finds over 2K cases of unauthorized use of Flock cameras: Colleton County Sheriff's Office",
+      "url": "https://abcnews4.com/news/local/lieutenant-fired-after-audit-finds-over-2k-cases-of-unauthorized-use-of-flock-cameras-colleton-county-sheriffs-office",
+      "jurisdiction": "Colleton County, SC",
+      "state": "SC",
+      "agency": "Colleton County Sheriff's Office",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "An internal audit found Lt. Ruben Carter conducted more than 2,700 unauthorized Flock ALPR searches over about a year, involving 14 people including himself, fellow deputies, friends, and former associates. Sheriff Guerry \"Buddy\" Hill Jr. fired Carter on August 20, 2026, and requested SLED investigate for possible criminal conduct; the misuse surfaced after the office adopted Flock's AI-based \"Audit Assistance\" tool on August 12. The department restricted Flock access to its Communications Division and instituted weekly audits by the Office of Professional Responsibility.",
+      "date_added": "2026-08-23",
+      "submitted_by": "andrew.cranmer",
+      "status": "approved"
     }
   ]
 }
