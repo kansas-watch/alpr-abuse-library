@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-29",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -1766,6 +1766,65 @@
       "date_added": "2026-08-23",
       "submitted_by": "andrew.cranmer",
       "status": "approved"
+    },
+    {
+      "id": "096",
+      "date_published": "2026-08-26",
+      "publication": "Gadget Review",
+      "submission_type": "case_study",
+      "title": "Police Pull Guns On Vehicle Occupants: Vehicle Was Cleared Weeks Ago – The Database Never Updated",
+      "url": "https://www.gadgetreview.com/police-pull-guns-on-vehicle-occupants-vehicle-was-cleared-weeks-ago-the-database-never-updated",
+      "jurisdiction": "Milwaukee, WI",
+      "state": "WI",
+      "agency": "Milwaukee Police Department",
+      "abuse_categories": [
+        "false_arrest"
+      ],
+      "description": "An active Flock Safety ALPR alert on a vehicle that had already been cleared weeks earlier was never removed from the system and continued broadcasting to multiple agencies across the region. The stale alert led officers to conduct a guns-drawn felony stop on innocent vehicle occupants. The driver has retained an attorney.",
+      "date_added": "2026-08-29",
+      "status": "approved"
+    },
+    {
+      "id": "097",
+      "date_published": "2026-08-26",
+      "publication": "CNN",
+      "submission_type": "news_report",
+      "title": "Police officer arrested after using Flock to track ex-girlfriend, authorities say",
+      "url": "https://www.cnn.com/2026/08/26/us/flock-kentucky-police-officer-arrest",
+      "additional_urls": [
+        "https://www.msn.com/en-us/news/other/shively-police-officer-accused-of-using-flock-system-to-track-harass-woman-for-months/ar-AA2aYcmg?ocid=BingNewsSerp"
+      ],
+      "jurisdiction": "Shively, KY",
+      "state": "KY",
+      "agency": "Shively Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Shively Police Officer Asad Zahir conducted 2,048 Flock ALPR searches from January through May 2026 to track two vehicles belonging to his child's mother, falsely listing the reason as a narcotics investigation. Investigators found 241 of those searches occurred after the victim obtained a protective order against him. Zahir's activity was flagged by Flock's newly required AI-powered audit tool; he was arrested and charged with five counts of official misconduct and five counts of unlawful access to a computer, and is suspended without pay pending the outcome.",
+      "date_added": "2026-08-29",
+      "submitted_by": "Daniel F. Williams",
+      "status": "approved",
+      "notes": "Submitter's MSN.com link is a syndicated reprint; swapped CNN as primary source for far greater detail (officer name, search counts, charges, chief's on-record comments), kept MSN as additional_urls."
+    },
+    {
+      "id": "098",
+      "date_published": "2026-08-24",
+      "publication": "Patch (Elmhurst, IL)",
+      "submission_type": "news_report",
+      "title": "West Suburban Officer On Leave After Flock Camera Investigation: Officials",
+      "url": "https://patch.com/illinois/elmhurst/west-suburban-officer-leave-after-flock-camera-investigation-officials",
+      "jurisdiction": "Bloomingdale, IL",
+      "state": "IL",
+      "agency": "Bloomingdale Police Department",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "A Bloomingdale, Illinois police officer was placed on administrative leave after an internal audit of the department's Flock camera system, prompted by broader concerns about ALPR misuse, found the officer had allegedly used department technology for a purpose not authorized by the village. The matter was referred to the DuPage County State's Attorney's Office for review; no officer name or specific charges have been made public.",
+      "date_added": "2026-08-29",
+      "submitted_by": "andrew.cranmer",
+      "status": "approved",
+      "notes": "Article is published on Patch's Elmhurst, IL regional subdomain and its headline references 'Elmhurst,' but the incident itself is in neighboring Bloomingdale, IL per the article body. Not submitted via the form; added directly from a user-supplied article."
     }
   ]
 }
