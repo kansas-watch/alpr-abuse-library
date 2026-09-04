@@ -6,7 +6,7 @@ This library uses a **form-in, editor-out** workflow. You do not need a GitHub a
 
 ### Step 1 — Submit via Google Form
 
-Use the [submission form](https://forms.gle/wL2LzXVJkSTSgbaR7) to submit an article. You'll be asked for:
+Use the [submission form](https://forms.gle/isGYpLcKu9YeFzSm9) to submit an article. You'll be asked for:
 
 | Field | Required | Notes |
 |-------|----------|-------|
