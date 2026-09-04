@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-08-29",
+    "last_updated": "2026-09-03",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -1825,6 +1825,99 @@
       "submitted_by": "andrew.cranmer",
       "status": "approved",
       "notes": "Article is published on Patch's Elmhurst, IL regional subdomain and its headline references 'Elmhurst,' but the incident itself is in neighboring Bloomingdale, IL per the article body. Not submitted via the form; added directly from a user-supplied article."
+    },
+    {
+      "id": "099",
+      "date_published": "2026-08-31",
+      "publication": "WDRB/WAVE News",
+      "submission_type": "case_study",
+      "title": "Former Jackson County deputy accused of making more than 2,000 unauthorized Flock searches",
+      "url": "https://www.wdrbwave.com/2026/08/31/former-jackson-county-deputy-accused-making-more-than-2000-unauthorized-flock-searches/",
+      "jurisdiction": "Jackson County, IN",
+      "state": "IN",
+      "agency": "Jackson County Sheriff's Office",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Former Jackson County, Indiana sheriff's deputy Skylar Thompson allegedly conducted 2,055 searches of the same license plate between December 31, 2025, and August 2, 2026, falsely listing the reason as city planning/traffic analysis despite having no such assignment. A routine audit uncovered the pattern; the sheriff's office asked Indiana State Police to conduct an independent investigation, and Thompson faces a felony official misconduct charge and a misdemeanor fraud charge. He is no longer employed by the department.",
+      "date_added": "2026-09-03",
+      "status": "approved",
+      "notes": "Publication (WDRB/WAVE) is a Louisville, KY outlet; confirmed the incident is in Jackson County, Indiana via the article's reference to Indiana State Police handling the independent investigation."
+    },
+    {
+      "id": "100",
+      "date_published": "2026-08-21",
+      "publication": "Temple Daily Telegram",
+      "submission_type": "case_study",
+      "title": "Temple Police officer resigns after internal investigation into misuse of Flock Safety automatic license plate reader system",
+      "url": "https://www.tdtnews.com/news/central_texas_news/article_098b249d-2a30-4d0d-a182-e556053d0d27.html",
+      "jurisdiction": "Temple, TX",
+      "state": "TX",
+      "agency": "Temple Police Department",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "A Temple, Texas police officer resigned after an internal investigation found they conducted a Flock Safety ALPR search without a legitimate law enforcement purpose. The search was flagged by Flock's automated audit tool; the Texas Rangers are conducting an independent review, and no criminal charges had been filed as of publication. The department did not release the officer's name.",
+      "date_added": "2026-09-03",
+      "submitted_by": "Eli Meier",
+      "status": "approved"
+    },
+    {
+      "id": "101",
+      "date_published": "2026-08-28",
+      "publication": "The Red & Black",
+      "submission_type": "case_study",
+      "title": "ACCPD employee fired for Flock camera misuse",
+      "url": "https://www.redandblack.com/athensnews/accpd-employee-fired-for-flock-camera-misuse/article_b5d3da8d-70d3-4d1a-bc7d-11bf6c52936e.html",
+      "jurisdiction": "Athens-Clarke County, GA",
+      "state": "GA",
+      "agency": "Athens-Clarke County Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Nick Barker, a criminal intelligence analyst supervisor at the Athens-Clarke County Police Department, was fired after an internal investigation found he improperly used the department's Flock ALPR system to search his ex-wife's license plate numerous times over several months, in violation of a policy restricting the system to official law enforcement purposes. His ex-wife filed the complaint; ACCPD requested an independent criminal investigation from the Georgia Bureau of Investigation.",
+      "date_added": "2026-09-03",
+      "submitted_by": "Tim Denson",
+      "status": "approved"
+    },
+    {
+      "id": "102",
+      "date_published": "2026-09-02",
+      "publication": "Fox 5 Atlanta",
+      "submission_type": "case_study",
+      "title": "Clayton County deputy arrested for alleged misuse of Flock system",
+      "url": "https://www.fox5atlanta.com/news/clayton-county-deputy-arrested-alleged-misuse-flock-system",
+      "jurisdiction": "Clayton County, GA",
+      "state": "GA",
+      "agency": "Clayton County Sheriff's Office",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "Clayton County Sheriff's Office Deputy Errol Farrell Jr. was arrested and charged with misuse of a license plate reader system after a Georgia Bureau of Investigation probe found he used the department's Flock system for non-law-enforcement purposes. Farrell turned himself in and was booked into the Clayton County Jail; his employment status was not disclosed. The arrest is part of a wave of similar Flock misuse cases across Georgia law enforcement agencies following internal audits.",
+      "date_added": "2026-09-03",
+      "submitted_by": "Tim Denson",
+      "status": "approved"
+    },
+    {
+      "id": "103",
+      "date_published": "2026-09-01",
+      "publication": "WALB News 10",
+      "submission_type": "case_study",
+      "title": "GDC special agent arrested after being accused of misusing Flock cameras",
+      "url": "https://www.walb.com/2026/09/01/gdc-special-agent-arrested-after-being-accused-misusing-flock-cameras/",
+      "jurisdiction": "Georgia",
+      "state": "GA",
+      "agency": "Georgia Department of Corrections",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "Georgia Department of Corrections special agent Robert 'Bobby' Michael Keim was arrested and charged with misuse of a license plate reader system after a Georgia Bureau of Investigation probe found he used the Flock ALPR system for non-law-enforcement purposes; specific details of the alleged misuse were not disclosed. The arrest came the same week three Hall County Sheriff's Office deputies resigned amid similar Flock misuse accusations.",
+      "date_added": "2026-09-03",
+      "submitted_by": "Tim Denson",
+      "status": "approved",
+      "notes": "Submitter selected 'stalking / targeted surveillance' as a category, but the source article does not disclose who or what was searched, so only unauthorized_access was applied. Revisit if follow-up reporting names a target."
     }
   ]
 }
