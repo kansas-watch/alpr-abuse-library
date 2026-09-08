@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-09-03",
+    "last_updated": "2026-09-08",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -27,14 +27,18 @@
       "submission_type": "case_study",
       "title": "Kechi police lieutenant arrested for using police technology to stalk wife",
       "url": "https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/",
+      "additional_urls": [
+        "https://www.kwch.com/2023/04/05/former-kechi-police-lieutenant-convicted-stalking-charges/"
+      ],
       "jurisdiction": "Kechi, KS",
       "state": "KS",
       "agency": "Kechi Police Department",
       "abuse_categories": [
         "stalking_targeting"
       ],
-      "description": "Kechi Police Lieutenant Victor Heiar was arrested by the Wichita Police Department after it was discovered he utilized his position within the police department to unlawfully access WPD's Flock license plate reader technology to monitor where his estranged wife was located.",
-      "status": "approved"
+      "description": "Kechi Police Lieutenant Victor Heiar was arrested by the Wichita Police Department after it was discovered he utilized his position within the police department to unlawfully access WPD's Flock license plate reader technology to monitor where his estranged wife was located. Heiar was later convicted of computer crime and stalking (both misdemeanors) and sentenced to 24 months in jail with 18 months probation.",
+      "status": "approved",
+      "notes": "2026-09-08: A resubmission of this same case (conviction follow-up article) was received via the submission form and folded into this existing entry rather than creating a duplicate, per the one-entry-per-case rule."
     },
     {
       "id": "002",
@@ -1918,6 +1922,99 @@
       "submitted_by": "Tim Denson",
       "status": "approved",
       "notes": "Submitter selected 'stalking / targeted surveillance' as a category, but the source article does not disclose who or what was searched, so only unauthorized_access was applied. Revisit if follow-up reporting names a target."
+    },
+    {
+      "id": "104",
+      "date_published": "2026-07-29",
+      "publication": "WIS-TV",
+      "submission_type": "news_report",
+      "title": "Richland County deputy fired, arrested for misusing Flock camera system",
+      "url": "https://www.wistv.com/2026/07/29/rcsd-former-deputy-arrested-misuse-flock-camera-system/",
+      "jurisdiction": "Richland County, SC",
+      "state": "SC",
+      "agency": "Richland County Sheriff's Department",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "Richland County Sheriff's Department Deputy Russell Kenton II was fired and arrested for Misconduct in Office after an internal Professional Standards Division audit found he used the department's Flock ALPR system to research information unrelated to his law enforcement duties. Kenton was booked and released on a $20,000 personal recognizance bond; the specific information he accessed was not disclosed.",
+      "date_added": "2026-09-08",
+      "status": "approved"
+    },
+    {
+      "id": "105",
+      "date_published": "2026-08-27",
+      "publication": "Georgia Bureau of Investigation",
+      "submission_type": "case_study",
+      "title": "GBI Arrests Former Covington Police Department Officer for Misuse of a License Plate Reader System",
+      "url": "https://gbi.georgia.gov/press-releases/2026-08-27/gbi-arrests-former-covington-police-department-officer-misuse-license",
+      "jurisdiction": "Covington, GA",
+      "state": "GA",
+      "agency": "City of Covington Police Department",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "Former Covington Police Department Officer Michael Canty was arrested by the Georgia Bureau of Investigation and charged with misuse of a license plate reader system and violation of oath of office, after CPD requested a GBI probe into his access to the Flock Safety system for non-law-enforcement purposes. The case will be prosecuted by the Alcovy Judicial Circuit District Attorney's Office.",
+      "date_added": "2026-09-08",
+      "submitted_by": "JM",
+      "status": "approved",
+      "notes": "Submitter selected 'Unauthorized access, Misuse of ALPR' -- 'Misuse of ALPR' is not a category in the controlled vocabulary, so only unauthorized_access was applied."
+    },
+    {
+      "id": "106",
+      "date_published": "2025-01-30",
+      "publication": "Village of Matteson Police Department",
+      "submission_type": "investigative_article",
+      "title": "Village of Matteson Police Department Memorandum",
+      "url": "https://stopflock.org/foias/matteson-internal-investigation.pdf",
+      "jurisdiction": "Matteson, IL",
+      "state": "IL",
+      "agency": "Matteson Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "An internal investigation by the Matteson, IL Police Department found Officer Jaila Cole-Clark conducted roughly 294 unauthorized Flock ALPR searches over about a month, nearly all targeting two vehicles registered to her former partner and her former partner's current partner, with dozens more searches through the state LEADS/NCIC system on the same two women. Cole-Clark resigned rather than participate in her disciplinary hearing; the department's internal investigation memo was obtained and published via a public records request.",
+      "date_added": "2026-09-08",
+      "submitted_by": "Sam",
+      "status": "approved"
+    },
+    {
+      "id": "107",
+      "date_published": "2026-04-22",
+      "publication": "WBAY",
+      "submission_type": "news_report",
+      "title": "Oshkosh council rescinds Flock camera contract after ‘false statements’",
+      "url": "https://www.wbay.com/2026/04/23/oshkosh-council-rescinds-flock-camera-contract-after-false-statements/",
+      "jurisdiction": "Oshkosh, WI",
+      "state": "WI",
+      "agency": "Oshkosh City Council and Flock Group Inc.",
+      "abuse_categories": [
+        "other"
+      ],
+      "description": "Flock Safety representatives told the Oshkosh, WI city council that the company's ALPR system does not create 'heat maps' capable of tracking vehicle movement patterns; the police chief determined this statement was false, and the council unanimously voted to rescind its year-long Flock contract renewal less than 24 hours after approving it. Flock disputed the characterization, saying its heat map feature shows point-in-time captures rather than continuous tracking.",
+      "date_added": "2026-09-08",
+      "submitted_by": "Sam Grayson",
+      "status": "approved",
+      "notes": "Submitter selected 'Misrepresentation by Flock Group Inc.', which is not a category in the controlled vocabulary. Categorized as 'other' since the documented harm is a vendor's alleged misrepresentation of its own system's capabilities to a public body, not a specific instance of ALPR data being misused against an individual."
+    },
+    {
+      "id": "108",
+      "date_published": "2025-08-11",
+      "publication": "Unraveled Press",
+      "submission_type": "case_study",
+      "title": "DEA agent used Illinois cop’s Flock license plate reader password for immigration enforcement searches",
+      "url": "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/",
+      "jurisdiction": "Palos Heights, IL",
+      "state": "IL",
+      "agency": "Palos Heights Police Department",
+      "abuse_categories": [
+        "immigration_enforcement",
+        "unauthorized_access"
+      ],
+      "description": "A DEA agent on a Chicago-area drug task force used the Flock ALPR login credentials of Palos Heights, IL Detective Todd Hutchinson to run at least 24 searches logged as 'immigration violation' inquiries, in violation of Illinois law restricting ALPR data from immigration-enforcement use. Hutchinson, who had shared his password with task force members, was disciplined and retrained after Palos Heights PD's audit and a subsequently FOIA'd internal memo surfaced the searches; the department did not use multifactor authentication at the time.",
+      "date_added": "2026-09-08",
+      "submitted_by": "Sam Grayson",
+      "status": "approved"
     }
   ]
 }
