@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-09-08",
+    "last_updated": "2026-09-16",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -2015,6 +2015,83 @@
       "date_added": "2026-09-08",
       "submitted_by": "Sam Grayson",
       "status": "approved"
+    },
+    {
+      "id": "109",
+      "date_published": "2026-08-06",
+      "publication": "NewsNation",
+      "submission_type": "investigative_article",
+      "title": "Police officer accused of stalking wife using Flock camera",
+      "url": "https://www.newsnationnow.com/us-news/midwest/police-officer-stalking-ex-wife-flock-camera/",
+      "jurisdiction": "Brentwood, MO",
+      "state": "MO",
+      "agency": "Brentwood Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "An unnamed Brentwood, MO police officer admitted using the department's Flock license plate reader system to locate his then-wife during their divorce. St. Louis County Police investigated and found no criminal violation under Missouri law, which does not bar officers from personal use of ALPR data, but Brentwood's own internal investigation found \"sustained policy violations\"; the department declined to disclose the officer's identity or discipline status, citing personnel privacy.",
+      "date_added": "2026-09-16",
+      "submitted_by": "An angry American combat veteran",
+      "status": "approved",
+      "notes": "Submitter's third category pick, 'Department investigation found \"sustained policy violations\"', is not part of the controlled vocabulary and was omitted; stalking_targeting and unauthorized_access were retained."
+    },
+    {
+      "id": "110",
+      "date_published": "2026-09-08",
+      "publication": "WPTV",
+      "submission_type": "news_report",
+      "title": "Former Fort Pierce officer accused of using Flock cameras, police databases to track ex-girlfriend",
+      "url": "https://www.wptv.com/news/local-news/our-community/fort-pierce/former-fort-pierce-police-officer-arrested-for-alleged-misuse-of-police-database-systems",
+      "jurisdiction": "Fort Pierce, FL",
+      "state": "FL",
+      "agency": "Fort Pierce Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Former Fort Pierce, FL police officer Josepher Crutchfield was arrested on four felony counts after a department audit found he made 382 unauthorized Flock ALPR searches of his ex-girlfriend's license plate, plus additional unauthorized queries across the FCIC/NCIC, DAVID, and TLO databases, between October 2025 and July 2026. Most of the queries, which surfaced her address and date of birth, were made while he was off duty; he resigned before his arrest, which carried an $80,000 bond.",
+      "date_added": "2026-09-16",
+      "status": "approved",
+      "notes": "Submitter selected only 'Stalking / targeted surveillance'; unauthorized_access was added given the hundreds of documented off-duty queries across multiple non-Flock databases beyond the ALPR searches. Agency name corrected from the submitter's 'Fort Police Department' to 'Fort Pierce Police Department'."
+    },
+    {
+      "id": "111",
+      "date_published": "2026-09-08",
+      "publication": "News Channel 10 KFDA",
+      "submission_type": "case_study",
+      "title": "‘I had to change where my kids sleep’: Man shares terrifying experience, says Amarillo officer tracked him 78 times",
+      "url": "https://www.newschannel10.com/2026/09/08/i-had-change-where-my-kids-sleep-man-shares-terrifying-experience-says-amarillo-officer-tracked-him-78-times/",
+      "jurisdiction": "Amarillo, TX",
+      "state": "TX",
+      "agency": "Amarillo Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Former Amarillo, TX police officer Christian Eder used the department's Flock ALPR system to track a man's vehicle 76 times over roughly five months, along with searches in the TLOxp database and off-duty access to colleagues' body camera feeds, to monitor a man his fellow-officer ex-girlfriend had previously dated, entering falsified justifications like \"city planning.\" An internal APD audit uncovered the pattern; Eder was fired and faces 78 criminal counts of tampering with a government record.",
+      "date_added": "2026-09-16",
+      "status": "approved",
+      "notes": "Submitter selected only 'Stalking / targeted surveillance'; unauthorized_access was added given the falsified search justifications and unauthorized off-duty access to the TLOxp database and colleagues' body camera feeds documented in the audit."
+    },
+    {
+      "id": "112",
+      "date_published": "2026-09-11",
+      "publication": "The Red & Black",
+      "submission_type": "case_study",
+      "title": "IT employee disciplined by UGAPD for unauthorized Flock camera use",
+      "url": "https://www.redandblack.com/uganews/it-employee-disciplined-by-ugapd-for-unauthorized-flock-camera-use/article_aa44bf3f-62db-4f60-8a64-b65db3ae869d.html",
+      "jurisdiction": "University of Georgia, Athens, GA",
+      "state": "GA",
+      "agency": "University of Georgia Police Department",
+      "abuse_categories": [
+        "unauthorized_access"
+      ],
+      "description": "A University of Georgia Police Department civilian IT employee was suspended without pay for 20 business days and demoted after a periodic audit found he accessed the department's Flock ALPR database twice in 2025 to look into off-campus incidents reported to other agencies, out of personal interest and without his supervisor's authorization. UGA's Internal Affairs investigation found no criminal intent.",
+      "date_added": "2026-09-16",
+      "submitted_by": "Tim Denson",
+      "status": "approved",
+      "notes": "Submitter selected 'Data breach, Unauthorized access'; data_breach was dropped since the article describes an employee looking up cases out of personal interest without authorization, not data being exposed or leaked externally (consistent with how similar internal-misuse cases, e.g. id 101, are categorized)."
     }
   ]
 }
