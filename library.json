@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-09-16",
+    "last_updated": "2026-10-03",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -2092,6 +2092,45 @@
       "submitted_by": "Tim Denson",
       "status": "approved",
       "notes": "Submitter selected 'Data breach, Unauthorized access'; data_breach was dropped since the article describes an employee looking up cases out of personal interest without authorization, not data being exposed or leaked externally (consistent with how similar internal-misuse cases, e.g. id 101, are categorized)."
+    },
+    {
+      "id": "113",
+      "date_published": "2026-09-10",
+      "publication": "WRVO Public Media",
+      "submission_type": "news_report",
+      "title": "Albany County Sheriff's investigator searched Flock cameras for ex's car 3,000 times",
+      "url": "https://www.wrvo.org/2026-09-09/albany-county-sheriff-flock-camera-surveillance-arrest",
+      "jurisdiction": "Albany County, NY",
+      "state": "NY",
+      "agency": "Albany County Sheriff's Office",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Albany County, NY Senior Investigator Laurie Moore was charged with official misconduct and falsifying business records after a sheriff's office audit, triggered by an anonymous tip, found she ran more than 4,000 Flock ALPR searches without a legitimate law enforcement purpose — about 3,000 targeting her ex-girlfriend's vehicle and the rest targeting four other acquaintances over more than a year. The department now requires supervisor approval, a case number, and monthly audits for all searches.",
+      "date_added": "2026-10-03",
+      "submitted_by": "Amber",
+      "status": "approved",
+      "notes": "Submitter linked a YouTube clip (CBS6 Albany) that couldn't be verified directly; substituted a WRVO text article covering the same sheriff's press conference and charges. Categories match submitter's picks."
+    },
+    {
+      "id": "114",
+      "date_published": "2026-09-30",
+      "publication": "Pinellas County Sheriff's Office",
+      "submission_type": "case_study",
+      "title": "Pinellas County Sheriff's Office Arrests Two Deputies For Official Misconduct",
+      "url": "https://www.pinellassheriff.gov/Contents/ContentItems/4x4ahx0dz7baq2r38qatxafkx3",
+      "jurisdiction": "Pinellas County, FL",
+      "state": "FL",
+      "agency": "Pinellas County Sheriff's Office",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Pinellas County, FL Sheriff Bob Gualtieri announced the arrests of two deputies for using law enforcement databases, including ALPR/Flock tools, to pursue women romantically. Deputy Karl Gwynne, 57, made 381 unauthorized queries across five databases between January 2025 and July 2026 to gather information on a woman he pursued, an audit found after a reporter flagged a database anomaly; he resigned September 11, 2026. Deputy Travis Stanton, 33, ran unauthorized queries on a 17-year-old girl and her family and visited her workplace at least nine times between July 28 and September 17, 2026; he resigned September 25, 2026. Both face official misconduct and unauthorized computer access charges.",
+      "date_added": "2026-10-03",
+      "status": "approved",
+      "notes": "Submitter's source (Miami Herald) is paywalled; substituted PCSO's own press release, which covers both deputies under one announcement. Combined into a single entry rather than splitting by deputy since both share identical jurisdiction and agency with no further distinguishing detail in any coverage — splitting them would trip the validator's accidental-duplicate check. Added unauthorized_access beyond the submitter's single 'stalking_targeting' pick given the official-misconduct computer-access charges filed against both."
     }
   ]
 }
