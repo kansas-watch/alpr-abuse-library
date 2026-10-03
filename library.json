@@ -2131,6 +2131,27 @@
       "date_added": "2026-10-03",
       "status": "approved",
       "notes": "Submitter's source (Miami Herald) is paywalled; substituted PCSO's own press release, which covers both deputies under one announcement. Combined into a single entry rather than splitting by deputy since both share identical jurisdiction and agency with no further distinguishing detail in any coverage — splitting them would trip the validator's accidental-duplicate check. Added unauthorized_access beyond the submitter's single 'stalking_targeting' pick given the official-misconduct computer-access charges filed against both."
+    },
+    {
+      "id": "115",
+      "date_published": "2026-09-09",
+      "publication": "The Palm Bayer",
+      "submission_type": "news_report",
+      "title": "They Ripped Down the Cameras. They Couldn't Erase the Lawsuit.",
+      "url": "https://news.thepalmbayer.com/news/flock-niebuhr-federal-lawsuit/",
+      "jurisdiction": "Palm Bay / Melbourne, FL",
+      "state": "FL",
+      "agency": "Palm Bay Police Department / Melbourne Airport Police",
+      "abuse_categories": [
+        "stalking_targeting",
+        "false_arrest",
+        "other"
+      ],
+      "description": "A federal wrongful-death lawsuit (Estate of John Jay Niebuhr v. Sheriff Brown et al., M.D. Fla.) alleges Palm Bay, FL police added resident John Niebuhr's license plate to a Flock ALPR watchlist under a vague \"Intel\" code without a warrant or investigation, after an officer remarked that his jewelry resembled an unrelated shooting suspect's; when Niebuhr complained about the surveillance, the department allegedly labeled him \"paranoid\" in an internal bulletin and reassigned his complaint to the officer he'd complained about. On June 28, 2024, a Melbourne Airport Police officer shot and killed Niebuhr during an airport stop, a death the medical examiner ruled a homicide; the suit names the City of Palm Bay, Palm Bay PD, Flock Group Inc., and the Melbourne Airport Authority as defendants and cites a five-year absence of written ALPR policy or audits at PBPD. Palm Bay defunded its 51-camera Flock network on September 3, 2026; the lawsuit remains pending and unadjudicated.",
+      "date_added": "2026-10-03",
+      "submitted_by": "Noah Pullen",
+      "status": "approved",
+      "notes": "Initially held per the repo's policy of holding submissions that implicate ongoing legal proceedings — this is an active, unadjudicated federal lawsuit naming individual officers in a death. Included at the user's explicit direction given the extensive documentation (dispatch logs, body camera footage, the medical examiner's homicide ruling, and a detailed federal complaint). Description attributes contested causal claims to the lawsuit rather than stating them as established fact. Dropped submitter's third category pick (\"Death of a citizen as a result of abuse of Flock data usage\"), not part of the controlled vocabulary; added 'other' to cover the retaliation/policy-vacuum claims not captured by stalking_targeting or false_arrest."
     }
   ]
 }
