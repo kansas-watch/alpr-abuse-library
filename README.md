@@ -136,6 +136,7 @@ Browse the full index: [`library.json`](./library.json) | [Formatted table below
 | 2026-09-10 | WRVO Public Media | News Report | [Albany County Sheriff's investigator searched Flock cameras for ex's car 3,000 times](https://www.wrvo.org/2026-09-09/albany-county-sheriff-flock-camera-surveillance-arrest) | Albany County, NY | Albany County Sheriff's Office | stalking_targeting, unauthorized_access |
 | 2026-09-11 | The Red & Black | Case Study | [IT employee disciplined by UGAPD for unauthorized Flock camera use](https://www.redandblack.com/uganews/it-employee-disciplined-by-ugapd-for-unauthorized-flock-camera-use/article_aa44bf3f-62db-4f60-8a64-b65db3ae869d.html) | University of Georgia, Athens, GA | University of Georgia Police Department | unauthorized_access |
 | 2026-09-30 | Pinellas County Sheriff's Office | Case Study | [Pinellas County Sheriff's Office Arrests Two Deputies For Official Misconduct](https://www.pinellassheriff.gov/Contents/ContentItems/4x4ahx0dz7baq2r38qatxafkx3) | Pinellas County, FL | Pinellas County Sheriff's Office | stalking_targeting, unauthorized_access |
+| 2026-10-13 | FOX19 NOW | News Report | [Prosecutors: Tri-State police lieutenant indicted for illegal use of Flock cameras](https://www.fox19.com/2026/10/13/prosecutors-tri-state-police-lieutenant-indicted-illegal-use-flock-cameras/) | Sharonville, OH | Sharonville Police Department | stalking_targeting, unauthorized_access |
 
 ---
 

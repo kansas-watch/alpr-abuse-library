@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-10-03",
+    "last_updated": "2026-10-14",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -2152,6 +2152,25 @@
       "submitted_by": "Noah Pullen",
       "status": "approved",
       "notes": "Initially held per the repo's policy of holding submissions that implicate ongoing legal proceedings — this is an active, unadjudicated federal lawsuit naming individual officers in a death. Included at the user's explicit direction given the extensive documentation (dispatch logs, body camera footage, the medical examiner's homicide ruling, and a detailed federal complaint). Description attributes contested causal claims to the lawsuit rather than stating them as established fact. Dropped submitter's third category pick (\"Death of a citizen as a result of abuse of Flock data usage\"), not part of the controlled vocabulary; added 'other' to cover the retaliation/policy-vacuum claims not captured by stalking_targeting or false_arrest."
+    },
+    {
+      "id": "116",
+      "date_published": "2026-10-13",
+      "publication": "FOX19 NOW",
+      "submission_type": "news_report",
+      "title": "Prosecutors: Tri-State police lieutenant indicted for illegal use of Flock cameras",
+      "url": "https://www.fox19.com/2026/10/13/prosecutors-tri-state-police-lieutenant-indicted-illegal-use-flock-cameras/",
+      "jurisdiction": "Sharonville, OH",
+      "state": "OH",
+      "agency": "Sharonville Police Department",
+      "abuse_categories": [
+        "stalking_targeting",
+        "unauthorized_access"
+      ],
+      "description": "Sharonville, OH Police Lt. Walter Cordes, 48, was indicted by Hamilton County prosecutors on October 13, 2026 for unauthorized use of computer or telecommunications property after allegedly using the department's Flock camera system 29 times between December 19, 2024 and April 20, 2026 to track an individual's whereabouts for purposes unrelated to law enforcement. According to prosecutors, Cordes self-reported the searches during a June 2026 departmental audit and admitted to them. He was placed on administrative leave, and the department announced mandatory additional training on database and technology use for all officers.",
+      "date_added": "2026-10-14",
+      "status": "approved",
+      "notes": "Self-curated at editor's request; no form submission. Indicted, not convicted — description attributes facts to prosecutors. stalking_targeting assigned on the basis of repeated non-law-enforcement location tracking of a single individual; the article doesn't describe the relationship or use the word stalking, and the charge itself is computer misuse only."
     }
   ]
 }
