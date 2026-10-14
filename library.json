@@ -2,7 +2,7 @@
   "_meta": {
     "description": "ALPR Abuse Library — curated index of news articles documenting ALPR misuse and civil liberties concerns",
     "maintained_by": "Kansas Watch (kansas.watch)",
-    "last_updated": "2026-10-14",
+    "last_updated": "2026-10-03",
     "schema_version": "1.2",
     "submission_form": "https://forms.gle/isGYpLcKu9YeFzSm9",
     "schema_notes": "v1.2 adds a normalized 'state' field (USPS two-letter code, array of codes for multi-state entries, or null for national/non-state-specific entries) alongside the free-text 'jurisdiction' field. jurisdiction remains the human-readable display string; state is for filtering, aggregation, and the state heatmap."
@@ -2152,31 +2152,6 @@
       "submitted_by": "Noah Pullen",
       "status": "approved",
       "notes": "Initially held per the repo's policy of holding submissions that implicate ongoing legal proceedings — this is an active, unadjudicated federal lawsuit naming individual officers in a death. Included at the user's explicit direction given the extensive documentation (dispatch logs, body camera footage, the medical examiner's homicide ruling, and a detailed federal complaint). Description attributes contested causal claims to the lawsuit rather than stating them as established fact. Dropped submitter's third category pick (\"Death of a citizen as a result of abuse of Flock data usage\"), not part of the controlled vocabulary; added 'other' to cover the retaliation/policy-vacuum claims not captured by stalking_targeting or false_arrest."
-    },
-    {
-      "id": "116",
-      "date_published": "2026-10-06",
-      "publication": "Local 4 News - Detroit (WDIV)",
-      "submission_type": "case_study",
-      "title": "Former Oakland County deputy accused of misusing Flock System after leaving job",
-      "url": "https://www.clickondetroit.com/news/local/2026/10/06/former-oakland-county-deputy-accused-of-misusing-flock-system-after-leaving-job/",
-      "additional_urls": [
-        "https://www.fox2detroit.com/news/metro-detroit-police-accused-using-flock-cameras-help-ice-make-arrests",
-        "https://www.wxyz.com/news/region/oakland-county/oakland-county-investigating-alleged-misuse-of-flock-camera-data-by-former-deputy",
-        "https://www.detroitnews.com/story/news/local/oakland-county/2026/10/05/ex-oakland-sheriffs-employee-used-flock-for-immigration-searches-department-says/92103293007/"
-      ],
-      "jurisdiction": "Oakland County, MI",
-      "state": "MI",
-      "agency": "Oakland County Sheriff's Office",
-      "abuse_categories": [
-        "unauthorized_access",
-        "immigration_enforcement"
-      ],
-      "description": "The Oakland County, MI Sheriff's Office opened a criminal investigation into a former deputy who allegedly kept accessing and running lookups in the county's Flock Safety system after leaving the department; the office stressed the individual \"was no longer employed by Oakland County in any capacity\" at the time and said criminal charges are possible. The Detroit News reported, citing the department, that the searches were immigration-related, and the case surfaced amid Michigan Immigrant Rights Center allegations that several Metro Detroit agencies used Flock data to assist ICE. The office has not disclosed how the access continued after separation or how many searches were run.",
-      "date_added": "2026-10-14",
-      "submitted_by": "Peter Rayes",
-      "status": "approved",
-      "notes": "Primary URL (WDIV) and WXYZ/FOX 2 follow-ups are free; the immigration angle is sourced only to the Detroit News (paywalled, headline: 'department says') and is framed in FOX 2's ICE coverage, so the description attributes it rather than stating it as fact. Kept submitter's immigration_enforcement + unauthorized_access picks on that basis. Did not include the submitter's claim that the searches were for leads at the person's new job — not stated in any accessible source. Ongoing investigation, no charges filed as of publication."
     }
   ]
 }
